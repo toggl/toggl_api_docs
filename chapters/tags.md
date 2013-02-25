@@ -48,6 +48,7 @@ Successful response
 		"name":"not billed"
 	}
 }
+```
 
 ##Delete a tag##
 

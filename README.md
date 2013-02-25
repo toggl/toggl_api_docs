@@ -72,8 +72,8 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 
 ##Supported API requests##
 
-*[Authentication](chapters/authentication.md)
-*[Tags](chapters/tags.md)
+* [Authentication](chapters/authentication.md)
+* [Tags](chapters/tags.md)
 
 ##Help us towards a better API##
 
