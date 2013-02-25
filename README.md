@@ -3,10 +3,13 @@ Toggl API v8
 
 ##Introduction##
 
-The API accepts only JSON requests. Please make sure you're setting `Content-type: application/json`in your request header. Each request returns a JSON-encoded body.
+**This API is still under development.**
+
+The API accepts only JSON requests. Please make sure you're setting `Content-type: application/json`in your request header. Each request returns a **JSON-encoded** body.
 If the time entry is currently running, the *duration* attribute contains a negative value, denoting the start of the time entry in seconds since epoch (Jan 1 1970). The correct duration can be calculated as current_time + duration, where current_time is the current time in seconds since epoch.
 
 The result of each action is communicated via standard HTTP response codes.
+
 
 ###Successful requests###
 
@@ -61,9 +64,17 @@ Response
 
 Each user in Toggl.com has an API token. They can find it under "My Profile" in their Toggl account.
 
-##Sessions##
+##Authentication##
 
 To use the API, you need to authenticate yourself. This can be done via HTTP POST or HTTP Basic Auth. After successful authentication a session is created using a cookie.
 
-If authentication fails, HTTP status code 403 is returned.
+If authentication fails, HTTP status code 403 is returned. You can read more about authentication and see sample requests [here](chapters/authentication.md).
 
+##Supported API requests##
+
+*[Authentication](chapters/authentication.md)
+*[Tags](chapters/tags.md)
+
+##Help us towards a better API##
+
+The Toggl API has moved to Github so you could actively participate in helping us making the API better. If you have any requests or you found a bug, you can use Github issues to let us know. You can also fork the docs and send a pull request with improvements
