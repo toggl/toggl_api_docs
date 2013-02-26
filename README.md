@@ -13,7 +13,7 @@ The result of each action is communicated via standard HTTP response codes.
 
 ###Successful requests###
 
-When request is successful (2xx), a nested response object is returned.
+When request is successful (2xx), a nested response object is returned. Fields which value is NULL are not in the response.
 
 Example request
 
