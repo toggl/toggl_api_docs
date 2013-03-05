@@ -17,9 +17,9 @@ It's possible to get user's fullname. For that you have to send the `fields` par
 * fullname: full name of the user, who is added to the project
 
 
-#Actions for single project user#
+##Actions for single project user##
 
-##Create a project user##
+###Create a project user###
 
 `POST https://www.toggl.com/api/v8/project_users`
 
@@ -49,7 +49,7 @@ Successful response
 ```
 
 
-##Update a project user##
+###Update a project user###
 
 `PUT https://www.toggl.com/api/v8/project_users/{project_user_id}`
 
@@ -79,7 +79,7 @@ Successful response
 }
 ```
 
-##Delete a project user##
+###Delete a project user###
 
 `DELETE https://www.toggl.com/api/v8/project_users/{project_user_id}`
 
@@ -92,9 +92,9 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
 
 
-#Mass Actions#
+##Mass Actions##
 
-##Create multiple project users for single project##
+###Create multiple project users for single project###
 To create multiple project users for a single project, you must add multiple user ids separated with a comma with the `uid` parameter
 
 `POST https://www.toggl.com/api/v8/project_users`
@@ -140,7 +140,7 @@ Successful response is an array of project_users.
 
 ```
 
-##Mass update for project users##
+###Mass update for project users###
 
 By supplying multiple project user ids, you can mass update project users.
 `PUT https://www.toggl.com/api/v8/project_users/{project_user_ids}`
@@ -187,7 +187,7 @@ Successful response is an array of project_users.
 }
 ```
 
-##Delete multiple project users##
+###Delete multiple project users###
 
 By supplying multiple project user ids, you can mass update project users.
 `DELETE https://www.toggl.com/api/v8/project_users/{project_user_ids}`
