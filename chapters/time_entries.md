@@ -119,7 +119,6 @@ Successful response
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-d '{"_method":"DELETE"}'\
 	-X DELETE https://www.toggl.com/api/v8/time_entries/1239455
 ```
 
