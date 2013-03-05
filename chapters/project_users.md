@@ -95,7 +95,7 @@ Successful request will return `200 OK`. If the user has no access to delete, yo
 ##Mass Actions##
 
 ###Create multiple project users for single project###
-To create multiple project users for a single project, you must add multiple user ids separated with a comma with the `uid` parameter
+To create multiple project users for a single project, you must add multiple user ids separated with a comma with the `uid` parameter.
 
 `POST https://www.toggl.com/api/v8/project_users`
 
@@ -189,7 +189,7 @@ Successful response is an array of project_users.
 
 ###Delete multiple project users###
 
-By supplying multiple project user ids, you can mass update project users.
+By supplying multiple project user ids, you can mass delete project users.
 `DELETE https://www.toggl.com/api/v8/project_users/{project_user_ids}`
 
 Example request
