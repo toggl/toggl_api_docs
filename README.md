@@ -77,6 +77,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 * [Project users](chapters/project_users.md)
 * [Tags](chapters/tags.md)
 * [Tasks](chapters/tasks.md) *(available only for pro workspaces)*
+* [Time entries](chapters/time_entries.md)
 
 
 ##Help us towards a better API##
