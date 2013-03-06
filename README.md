@@ -73,11 +73,34 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 ##Supported API requests##
 
 * [Authentication](chapters/authentication.md)
+ - HTTP Basic Auth with e-mail and password
+ - HTTP Basic Auth with API token
 * [Clients](chapters/clients.md)
+ - create a client
+ - update a client
+ - delete a client
 * [Project users](chapters/project_users.md)
+ - create a project user
+ - update a project user
+ - delete a project user
+ - add multiple users to a project
+ - update multiple project users
+ - delete multiple project users
 * [Tags](chapters/tags.md)
+ - create a tag
+ - update a tag
+ - delete a tag
 * [Tasks](chapters/tasks.md) *(available only for pro workspaces)*
+ - create a task
+ - update a task
+ - delete a task
+ - update multiple tasks
+ - delete multiple tasks
 * [Time entries](chapters/time_entries.md)
+ - create a time entry
+ - get time entry details
+ - update time entry
+ - delete time entry
 * [Workspaces](chapters/workspaces.md)
  - get user workspaces
  - get workspace users
