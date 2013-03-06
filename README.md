@@ -78,6 +78,12 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 * [Tags](chapters/tags.md)
 * [Tasks](chapters/tasks.md) *(available only for pro workspaces)*
 * [Time entries](chapters/time_entries.md)
+* [Workspaces](chapters/workspaces.md)
+ - get user workspaces
+ - get workspace users
+ - get workspace clients
+ - get workspace projects
+ - get workspace tasks
 
 
 ##Help us towards a better API##
