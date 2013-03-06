@@ -9,12 +9,12 @@ User has the following properties
 
 The request responds with all the workspaces, clients, projects, tasks, time entries and tags which the user can see.
 To get only user properties add the parameter `with_related_data=false`
+If you want to retrieve objects which have changed after certain time add `since` parameter to the query. The value should be a unix timestamp (e.g. `since=1362579886`)
 
 Example request *without* related data
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.com/api/v8/me?with_related_data=false
-
 ```
 
 Successful response

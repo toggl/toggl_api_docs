@@ -103,6 +103,8 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - get time entry details
  - update time entry
  - delete time entry
+* [Users](chapters/users.md)
+ - get current user data and time entries
 * [Workspaces](chapters/workspaces.md)
  - get user workspaces
  - get workspace users
