@@ -1,0 +1,143 @@
+Users
+=================
+
+User has the following properties
+*
+
+## Get current user data ##
+`GET https://www.toggl.com/api/v8/me`
+
+The request responds with all the workspaces, clients, projects, tasks, time entries and tags which the user can see.
+To get only user properties add the parameter `with_related_data=false`
+
+Example request *without* related data
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.com/api/v8/me?with_related_data=false
+
+```
+
+Successful response
+```json
+{
+	"since":1362575771,
+	"data": {
+		"id":9000,
+		"api_token":"1971800d4d82861d8f2c1651fea4d212",
+		"default_wid":777,
+		"email":"johnt@swift.com",
+		"fullname":"John Swift",
+		"jquery_timeofday_format":"h:i A",
+		"jquery_date_format":"m/d/Y",
+		"timeofday_format":"h:mm A",
+		"date_format":"MM/DD/YYYY",
+		"store_start_and_stop_time":true,
+		"beginning_of_week":0,
+		"language":"en_US",
+		"image_url":"https://www.toggl.com/system/avatars/9000/small/open-uri20121116-2767-b1qr8l.png",
+		"sidebar_piechart":false,
+		"at":"2013-03-06T12:18:42+00:00",
+		"retention":9,
+		"record_timeline":true,
+		"render_timeline":true,
+		"timeline_enabled":true,
+		"timeline_experiment":true,
+		"new_blog_post":{},
+		"invitation":{}
+	}
+}
+```
+
+Example request with all the connected data
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.com/api/v8/me?with_related_data=false
+```
+
+Successful response
+```json
+{
+	"since":1362575771,
+	"data": {
+		"id":9000,
+		"api_token":"1971800d4d82861d8f2c1651fea4d212",
+		"default_wid":777,
+		"email":"johnt@swift.com",
+		"fullname":"John Swift",
+		"jquery_timeofday_format":"h:i A",
+		"jquery_date_format":"m/d/Y",
+		"timeofday_format":"h:mm A",
+		"date_format":"MM/DD/YYYY",
+		"store_start_and_stop_time":true,
+		"beginning_of_week":0,
+		"language":"en_US",
+		"image_url":"https://www.toggl.com/system/avatars/9000/small/open-uri20121116-2767-b1qr8l.png",
+		"sidebar_piechart":false,
+		"at":"2013-03-06T12:18:42+00:00",
+		"retention":9,
+		"record_timeline":true,
+		"render_timeline":true,
+		"timeline_enabled":true,
+		"timeline_experiment":true,
+		"new_blog_post":
+		{
+			"title":"Increasing perceived performance with _.throttle()",
+			"url":"http://blog.toggl.com/2013/02/increasing-perceived-performance-with-_throttle/?utm_source=rss&utm_medium=rss&utm_campaign=increasing-perceived-performance-with-_throttle"
+		},
+		"time_entries":[
+			{
+				"id":435559433,
+				"wid":777,
+				"billable":false,
+				"start":"2013-03-06T10:08:23+00:00",
+				"stop":"2013-03-06T14:08:23+00:00",
+				"duration":14400,
+				"description":"Best work so far",
+				"tags":[""],
+				"at":"2013-03-06T14:08:23+00:00"
+			}
+		],
+		"projects":[
+			{
+				"id":1230994,
+				"wid":777,
+				"name":"Important project",
+				"billable":false,
+				"active":false,
+				"at":"2013-03-06T09:13:31+00:00"
+			}
+		],
+		"tags":[
+			{
+				"id":159637,
+				"wid":188309,
+				"name":"billable",
+				"at":"2013-02-21T14:57:46+00:00"
+			},{
+				"id":159654,
+				"wid":188309,
+				"name":"important",
+				"at":"2013-02-22T14:06:17+00:00"
+			}
+		],
+		"workspaces":[
+			{
+				"id":777,
+				"name":
+				"John's WS",
+				"premium":true,
+				"at":"2013-03-06T09:00:30+00:00"
+			}
+		],
+		"clients":[
+			{
+				"id":923476,
+				"wid":777,
+				"name":"Best client",
+				"at":"2013-03-06T09:00:30+00:00"
+			}
+		]
+
+	}
+}
+```
