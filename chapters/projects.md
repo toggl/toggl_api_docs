@@ -43,3 +43,32 @@ Successful response
 	}
 }
 ```
+
+##Get project data##
+
+`GET https://www.toggl.com/api/v8/projects/{project_id}`
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X GET https://www.toggl.com/api/v8/projects/193838628
+
+```
+
+Successful response
+```json
+{
+	"data": {
+		"id":193838628,
+		"wid":777,
+		"cid":123397,
+		"name":"An awesome project",
+		"billable":false,
+		"is_private":true,
+		"active":true,
+		"at":"2013-03-06T12:15:37+00:00",
+		"template":true
+	}
+}
+```
