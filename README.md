@@ -3,8 +3,6 @@ Toggl API v8
 
 ##Introduction##
 
-**This API is still under development.**
-
 The API accepts only JSON requests. Please make sure you're setting `Content-type: application/json`in your request header. Each request returns a **JSON-encoded** body.
 If the time entry is currently running, the *duration* attribute contains a negative value, denoting the start of the time entry in seconds since epoch (Jan 1 1970). The correct duration can be calculated as current_time + duration, where current_time is the current time in seconds since epoch.
 
@@ -82,6 +80,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 * [Projects](chapters/projects.md)
  - create a project
  - get project data
+ - update project data
 * [Project users](chapters/project_users.md)
  - create a project user
  - update a project user

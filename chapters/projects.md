@@ -24,7 +24,6 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-type: application/json" \
 	-d '{"project":{"name":"An awesome project","wid":777,"template_id":10237,"is_private":true,"cid":123397}}' \
 	-X POST https://www.toggl.com/api/v8/projects
-
 ```
 
 Successful response
@@ -66,6 +65,36 @@ Successful response
 		"name":"An awesome project",
 		"billable":false,
 		"is_private":true,
+		"active":true,
+		"at":"2013-03-06T12:15:37+00:00",
+		"template":true
+	}
+}
+```
+
+##Update project data##
+
+`PUT https://www.toggl.com/api/v8/projects/{project_id}`
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-H "Content-type: application/json" \
+	-d '{"project":{"name":"Changed the name","is_private":false,"cid":123398}}' \
+	-X PUT https://www.toggl.com/api/v8/projects/193838628
+```
+
+
+Successful response
+```json
+{
+	"data": {
+		"id":193838628,
+		"wid":777,
+		"cid":123398,
+		"name":"Changed the name",
+		"billable":false,
 		"active":true,
 		"at":"2013-03-06T12:15:37+00:00",
 		"template":true
