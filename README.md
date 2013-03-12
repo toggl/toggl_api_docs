@@ -73,6 +73,8 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 * [Authentication](chapters/authentication.md)
  - HTTP Basic Auth with e-mail and password
  - HTTP Basic Auth with API token
+ - Authentication with a session cookie
+ - Destroy the session
 * [Clients](chapters/clients.md)
  - create a client
  - update a client
