@@ -128,6 +128,7 @@ Successful request will return `200 OK`
 ##Get time entries started in a specific time range##
 
 `GET https://www.toggl.com/api/v8/time_entries`
+
 With `start_date` and `end_date` parameters you can specify the date range of the time entries returned. If `start_date` and `end_date` are not specified, time entries started during the last 9 days are returned.
 `start_date` and `end_date` must be ISO 8601 date and time strings.
 
