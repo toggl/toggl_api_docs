@@ -123,3 +123,45 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful request will return `200 OK`
+
+
+##Get time entries started in a specific time range##
+
+`GET https://www.toggl.com/api/v8/time_entries`
+With `start_date` and `end_date` parameters you can specify the date range of the time entries returned. If `start_date` and `end_date` are not specified, time entries started during the last 9 days are returned.
+`start_date` and `end_date` must be ISO 8601 date and time strings.
+
+Example request with start date 2013-03-10T15:42:46+02:00 and end_date 2013-03-12T15:42:46+02:00
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X GET "https://www.toggl.com/api/v8/time_entries?start_date=2013-03-10T15%3A42%3A46%2B02%3A00&end_date=2013-03-12T15%3A42%3A46%2B02%3A00"
+```
+
+Successful response
+```json
+[
+	{
+		"id":436691234,
+		"wid":777,
+		"pid":123,
+		"billable":true,
+		"start":"2013-03-11T11:36:00+00:00",
+		"stop":"2013-03-11T15:36:00+00:00",
+		"duration":14400,
+		"description":"Meeting with the client",
+		"tags":[""],
+		"at":"2013-03-11T15:36:58+00:00"
+	},{
+		"id":436776436,
+		"wid":777,
+		"billable":false,
+		"start":"2013-03-12T10:32:43+00:00",
+		"stop":"2013-03-12T14:32:43+00:00",
+		"duration":18400,
+		"description":"important work",
+		"tags":[""],
+		"at":"2013-03-12T14:32:43+00:00"
+	}
+]
+```
