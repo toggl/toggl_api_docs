@@ -96,6 +96,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - delete a tag
 * [Tasks](chapters/tasks.md) *(available only for pro workspaces)*
  - create a task
+ - get task details
  - update a task
  - delete a task
  - update multiple tasks

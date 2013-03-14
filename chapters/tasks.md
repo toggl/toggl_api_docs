@@ -46,8 +46,31 @@ Successful response
 		"estimated_seconds":0
 	}
 }
+```
 
+###Get task details###
 
+`GET https://www.toggl.com/api/v8/tasks/{task_id}`
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X GET https://www.toggl.com/api/v8/tasks/1335076912
+```
+
+Successful response
+```json
+{
+	"data": {
+		"name":"A new task",
+		"id":1335076912,
+		"wid":888,
+		"pid":777,
+		"active":true,
+		"estimated_seconds":0
+	}
+}
 ```
 
 ###Update a task###
