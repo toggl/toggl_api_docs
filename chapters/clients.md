@@ -72,3 +72,32 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
+
+##Get clients visible to user##
+
+`GET https://www.toggl.com/api/v8/clients`
+
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X GET https://www.toggl.com/api/v8/clients
+```
+
+Successful response is an array of clients
+```json
+[
+	{
+		"id":1239455,
+		"wid":777,
+		"name":"Very Big Company",
+		"notes":"something about the client",
+		"at":"2013-02-26T08:55:28+00:00"
+	}, {
+		"id":1239456,
+		"wid":777,
+		"name":"Small Startup",
+		"notes":"Really cool people",
+		"at":"2013-03-26T08:55:28+00:00"
+	}
+]
+```

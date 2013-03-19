@@ -79,6 +79,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - create a client
  - update a client
  - delete a client
+ - get clients visible to user
 * [Projects](chapters/projects.md)
  - create a project
  - get project data
