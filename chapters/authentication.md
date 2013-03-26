@@ -4,13 +4,10 @@ Authentication
 To use the API, you need to authenticate yourself. This can be done via HTTP POST or HTTP Basic Auth. After successful authentication a session is created using a cookie.
 
 For HTTP Basic Auth you have to add the Authorization header with the request. The Authorization header is constructed as follows:
-
 * Username and password are combined into a string `username:password` or if you use the api token it should be combined `xxxx:api_token` (xxx indicating user's personal token)
 * The resulting string literal is then encoded using Base64
 * The authorization method and a space i.e. "Basic " is then put before the encoded string.
-* For example, if the user agent uses 'Aladdin' as the username and 'open sesame' as the password then the header is formed as follows:
-
-`Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==`
+* For example, if the user agent uses 'Aladdin' as the username and 'open sesame' as the password then the header is formed as follows: `Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==`
 
 If authentication fails, HTTP status code 403 is returned.
 
