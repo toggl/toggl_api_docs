@@ -8,6 +8,15 @@ If the time entry is currently running, the *duration* attribute contains a nega
 
 The result of each action is communicated via standard HTTP response codes.
 
+###Example requests###
+
+The example requests here are done using a command line tool called [cURL](http://en.wikipedia.org/wiki/CURL). If you want to try the request out yourself you can download cURL for different platforms from here: [http://curl.haxx.se/download.html](http://curl.haxx.se/download.html)
+
+Under Ubuntu it's terrifcally easy:
+
+```shell
+sudo apt-get install
+```
 
 ###Successful requests###
 
