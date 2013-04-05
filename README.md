@@ -15,7 +15,7 @@ The example requests here are done using a command line tool called [cURL](http:
 Under Ubuntu installing cURL is terrifcally easy:
 
 ```shell
-sudo apt-get install
+sudo apt-get install curl
 ```
 
 ###Successful requests###
