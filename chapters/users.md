@@ -64,7 +64,7 @@ Successful response
 Example request with all the connected data
 
 ```shell
-curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.com/api/v8/me?with_related_data=false
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.com/api/v8/me?with_related_data=true
 ```
 
 Successful response
