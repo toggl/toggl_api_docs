@@ -56,7 +56,7 @@ Example request:
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET http://localhost:8080/api/v8/time_entries/436694100
+-X GET https://www.toggl.com/api/v8/time_entries/436694100
 ```
 
 Successful response
