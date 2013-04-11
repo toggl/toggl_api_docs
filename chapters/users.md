@@ -21,8 +21,8 @@ User has the following properties
 `GET https://www.toggl.com/api/v8/me`
 
 By default the request responds with user properties.
-To get all the workspaces, clients, projects, tasks, time entries and tags which the user can see add the parameter `with_related_data=true`
-If you want to retrieve objects which have changed after certain time add `since` parameter to the query. The value should be a unix timestamp (e.g. `since=1362579886`)
+To get all the workspaces, clients, projects, tasks, time entries and tags which the user can see, add the parameter `with_related_data=true`
+If you want to retrieve objects which have changed after certain time, add `since` parameter to the query. The value should be a unix timestamp (e.g. `since=1362579886`)
 
 Example request *without* related data
 
