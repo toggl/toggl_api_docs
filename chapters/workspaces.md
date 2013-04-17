@@ -133,13 +133,16 @@ Successful response is an array of workspace clients
 To get a successful response, the token owner must be workspace admin.
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/projects`
 
+To filter projects by their state you can add the additional param to the request url:
+* active: possible values `true`/`false`/`both`. By default true. If false, only archived projects are returned.
+
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 -X GET https://www.toggl.com/api/v8/workspaces/777/projects
 ```
 
-Successful response is an array of workspace projects
+Successful response is an array of active workspace projects
 ```json
 [
 	{
