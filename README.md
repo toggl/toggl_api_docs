@@ -12,7 +12,7 @@ The result of each action is communicated via standard HTTP response codes.
 
 The example requests here are done using a command line tool called [cURL](http://en.wikipedia.org/wiki/CURL). If you want to try the requests out yourself, you can download cURL from [here](http://curl.haxx.se/download.html). It is available for all possible operating systems.
 
-Under Ubuntu installing cURL is terrifcally easy:
+Under Ubuntu installing cURL is very easy:
 
 ```shell
 sudo apt-get install curl
