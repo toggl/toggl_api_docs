@@ -13,7 +13,7 @@ If authentication fails, HTTP status code 403 is returned.
 
 ## HTTP Basic Auth with e-mail and password ##
 
-Example request
+Example request ([See also chapter about getting detailed user data](users.md))
 ```shell
 curl -v -u john.doe@gmail.com:secret \
 -X GET https://www.toggl.com/api/v8/me
