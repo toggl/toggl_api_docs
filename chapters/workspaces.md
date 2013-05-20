@@ -174,6 +174,9 @@ To get a successful response, the token owner must be workspace admin.
 Get all not done tasks in this workspace.
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/tasks`
 
+To filter tasks by their state you can add the additional param to the request url:
+* active: possible values `true`/`false`/`both`. By default true. If false, only done tasks are returned.
+
 
 Example request
 ```shell
