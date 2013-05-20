@@ -158,3 +158,41 @@ Successful response
 ##Get workspace users##
 
 Retrieving workspace users is documented [here](chapters/workspaces.md#get-workspace-users).
+
+##Sign up new user##
+
+To create a user you must provide two parameters for the user:
+* email: a valid email for the user whose account is created (string, required)
+* password: password at least 6 characters long (string, required)
+
+`POST https://www.toggl.com/api/v8/signups`
+
+Example request
+```shell
+curl -H "Content-type: application/json" \
+-d '{"user":{"email":"test.user@toggl.com","password":"StrongPassword"}}' \
+-X POST https://www.toggl.com/api/v8/signups
+```
+
+Successful response includes created user's data and API token
+```json
+{
+	"data":{
+		"id":599978901,
+		"api_token":"808lolae4eab897cce9729a53642124effe",
+		"default_wid":983493,
+		"email":"test.user@toggl.com",
+		"fullname":"Test User",
+		"jquery_timeofday_format":"",
+		"jquery_date_format":"",
+		"timeofday_format":"",
+		"date_format":"",
+		"store_start_and_stop_time":false,
+		"beginning_of_week":0,
+		"sidebar_piechart":false,
+		"timeline_experiment":false,
+		"new_blog_post":{},
+		"invitation":{}
+	}
+}
+```
