@@ -154,3 +154,7 @@ Successful response
 	}
 }
 ```
+
+##Get workspace users##
+
+Retrieving workspace users is documented [here](chapters/workspaces.md#get-workspace-users).

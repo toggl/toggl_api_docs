@@ -73,7 +73,9 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
 
+
 ##Get workspace clients##
+
 Retrieving workspace clients is documented [here](chapters/workspaces.md#get-workspace-clients).
 
 

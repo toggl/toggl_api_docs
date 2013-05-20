@@ -103,10 +103,6 @@ Successful response
 ```
 
 
-##Get workspace projects##
-
-Retrieving workspace projects is documented [here](chapters/workspaces.md#get-workspace-projects).
-
 ##Get project users##
 
 `GET https://www.toggl.com/api/v8/projects/{project_id}/project_users`
@@ -141,3 +137,7 @@ Successful response is an array of the project's users
 	}
 ]
 ```
+
+##Get workspace projects##
+
+Retrieving workspace projects is documented [here](chapters/workspaces.md#get-workspace-projects).
