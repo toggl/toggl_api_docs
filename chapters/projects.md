@@ -101,3 +101,43 @@ Successful response
 	}
 }
 ```
+
+
+##Get workspace projects##
+
+Retrieving workspace projects is documented [here](chapters/workspaces.md#get-workspace-projects).
+
+##Get project users##
+
+`GET https://www.toggl.com/api/v8/projects/{project_id}/project_users`
+Read more about project user fields from [here](chapters/project_users.md).
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X GET https://www.toggl.com/api/v8/projects/193838628/project_users
+
+```
+
+Successful response is an array of the project's users
+```json
+[
+	{
+		"id":4692190,
+		"pid":777,
+		"uid":123,
+		"wid":99,
+		"manager":true,
+		"rate":4
+	},
+	{
+		"id":4692193,
+		"pid":777,
+		"uid":125,
+		"wid":99,
+		"manager":false,
+		"rate":4
+	}
+]
+```
