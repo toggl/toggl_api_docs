@@ -73,6 +73,10 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
 
+##Get workspace clients##
+Retrieving workspace clients is documented [here](chapters/workspaces.md#get-workspace-clients).
+
+
 ##Get clients visible to user##
 
 `GET https://www.toggl.com/api/v8/clients`
@@ -98,6 +102,38 @@ Successful response is an array of clients
 		"name":"Small Startup",
 		"notes":"Really cool people",
 		"at":"2013-03-26T08:55:28+00:00"
+	}
+]
+```
+
+##Get client projects##
+
+`GET https://www.toggl.com/api/v8/clients/{client_id}/projects`
+
+To filter projects by their state you can add the additional param to the request url:
+* active: possible values `true`/`false`/`both`. By default true. If false, only archived projects are returned.
+
+Successful response is an array of client projects
+```json
+[
+	{
+		"id":909,
+		"wid":777,
+		"cid":987,
+		"name":"Very lucrative project",
+		"billable":false,
+		"is_private":true,
+		"active":true,
+		"at":"2013-03-06T09:15:18+00:00"
+	},{
+		"id":32143,
+		"wid":777,
+		"cid":987,
+		"name":"Factory server infrastructure",
+		"billable":true,
+		"is_private":true,
+		"active":true,
+		"at":"2013-03-06T09:16:06+00:00"
 	}
 ]
 ```
