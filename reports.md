@@ -31,18 +31,23 @@ You can authenticate in the reports API **only** with your API token. For HTTP B
 
 The following parameters and filters can be used in all of the reports
 * workspace_id: integer, **required**. The workspace which data you want to access.
-* since: string, ISO 8601 date (YYYY-MM-DD), by default today
-* until: string, ISO 8601 date (YYYY-MM-DD), by default start - 6 days.
+* since: string, ISO 8601 date (YYYY-MM-DD), by default until - 6 days.
+* until: string, ISO 8601 date (YYYY-MM-DD), by default today
 * billable: possible values: yes/no/both, default both
 * client_ids: client ids separated by a comma, **0** if you want to filter out time entries without a client
 * project_ids: project ids separated by a comma, **0** if you want to filter out time entries without a project
 * user_ids: user ids separated by a comma
 * tag_ids: tag ids separated by a comma, **0** if you want to filter out time entries without a tag
+* task_ids: task ids separated by a comma, **0** if you want to filter out time entries without a task
+* time_entry_ids: time entry ids separated by a comma
 * description: string, time entry description
 * without_description: true/false, filters out the time entries which do not have a description ('(no description)')
-* order_field: project/
-* order_desc: 1/0
-* distinct_rates: default off
+* order_field:
+  * date/description/duration/user in detailed reports
+  * title/duration/amount in summary reports
+  * title/day1/day2/day3/day4/day5/day6/day7/week_total in weekly report
+* order_desc: 1/0, one for descending and 0 for ascending order
+* distinct_rates: on/off, default off
 * rounding: on/off, default off, rounds time according to workspace settings
 * display_hours: decimal/minutes, display hours with minutes or as a decimal number, default minutes
 
