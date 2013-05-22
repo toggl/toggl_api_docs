@@ -45,18 +45,18 @@ Grouping is `users`
 Example
 ```json
   {
-    title: { user: "John Swift" },
+    title: {user:"John Swift"},
     uid: 352243,
-    totals: [null, null, 14400000, null, 14400000, null,null,28800000],
+    totals: [null,null,14400000,null,14400000,null,null,28800000],
     details: [
       {
         pid: 73649,
-        title: { client: "Toggl", project: "Toggl Desktop"},
-        totals: [null, null, null, null, 14400000, null, null, 14400000]
+        title: { client:"Toggl",project:"Toggl Desktop"},
+        totals: [null,null,null,null,14400000,null,null,14400000]
       },
       {
         pid: 1120651,
-        title: { client: null, project: "Super big client"},
+        title: {client:null,project:"Super big client"},
         totals: [null,null,14400000,null,null,null,null,14400000]
       }
     ]
@@ -66,21 +66,21 @@ Example
 The totals array is different depending on the selected calculation method.
 If `calculate=time`, it is a simple array with 8 numbers - each for one day and the 8th for the seven day total.
 ```json
-  totals: [null, null, 0, null, 40, null, null, 40]
+  totals:[null,null,0,null,40,null,null,40]
 ```
 
 If `calculate=earnings`, it is an array of objects with currency string and the amounts array with 8 numbers - each for one day and the 8th for the seven day total.
 ```json
-totals:[
-  {
-    currency: "EUR",
-    amount: [null, null, 0, null, 40, null, null, 40]
-  },
-  {
-    currency: "USD",
-    amount: [20, null, 0, null, 14, null, null, 34]
-  }
-]
+  totals:[
+    {
+      currency:"EUR",
+      amount:[null,null,0,null,40,null,null,40]
+    },
+    {
+      currency:"USD",
+      amount:[20,null,0,null,14,null,null,34]
+    }
+  ]
 ```
 
 ##Example##
