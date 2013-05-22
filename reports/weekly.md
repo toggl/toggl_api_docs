@@ -1,10 +1,11 @@
 #Weekly report#
 
-The weekly report gives aggregated 7 day durations or earnings grouped by users and projects.
+The weekly report gives aggregated 7 day durations or earnings grouped by users and projects. The `until` parameter is ignored for weekly report, 7 days starting from since are shown.
 
 Additional parameters for this report are:
 * grouping: users/projects, default projects. If one grouping is selected, the other acts as subgrouping.
 * calculate: time/earnings, default time
+
 
 ##Response##
 
