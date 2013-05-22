@@ -1,4 +1,4 @@
-Reports API v2
+Toggl Reports API v2
 =================
 
 Here you can get the general information about how to use Toggl reports API, from how to authenticate, what filters to use and how the response is structured. The available reports are similar to the reports available in [Toggl reports page](https://www.toggl.com/report/show)
