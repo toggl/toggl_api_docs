@@ -13,13 +13,19 @@ More detailed information for the reports.
 The reports API base URL is `https://toggl.com/reports/api/v2`
 
 Weekly report URL `GET https://toggl.com/reports/api/v2/weekly`
+
 Detailed report URL: `GET https://toggl.com/reports/api/v2/details`
+
 Summary report URL: `GET https://toggl.com/reports/api/v2/summary`
 
 
 ##Authentication##
 
-You can authenticate in the reports API **only** with your API token. Read more about [HTTP Basic Auth with API token](chapters/authentication.md#http-basic-auth-with-api-token).
+You can authenticate in the reports API **only** with your API token. For HTTP Basic Auth you have to add the Authorization header with the request. The Authorization header is constructed as follows:
+* String with api token `xxxx:api_token` (xxx indicating user's personal token)
+* The resulting string literal is then encoded using Base64
+* The authorization method and a space i.e. "Basic " is then put before the encoded string.
+* For example, if the user agent uses 'Aladdin' as the username and 'open sesame' as the password then the header is formed as follows: `Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==`
 
 ##Request Parameters##
 
