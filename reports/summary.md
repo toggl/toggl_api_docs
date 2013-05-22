@@ -47,18 +47,17 @@ General structure of the item in the data array
 
 ```json
   {
-    id: 1,
-    title: {}
-    time: 14400000,
-    total_currency: [{currency: "",amount: null}
-    ],
-    items: [
+    id:1,
+    title:{},
+    time:14400000,
+    total_currency:[{currency:"",amount:null}],
+    items:[
       {
-        title: {},
-        time: 14400000,
-        cur: "",
-        sum: null,
-        rate: null
+        title:{},
+        time:14400000,
+        cur:"",
+        sum:null,
+        rate:null
       }
     ]
   }
@@ -75,66 +74,66 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://toggl.com/
 Successful response
 ```json
   {
-    total_grand: 36004000,
-    total_billable: 14400000,
-    total_currency: [{currency: "EUR", amount: 40}],
+    total_grand:36004000,
+    total_billable:14400000,
+    total_currency:[{currency:"EUR",amount:40}],
     data: [
       {
-        id: 73569,
-        title: {project: "Toggl Desktop", client: "Toggl"},
-        time: 14400000,
-        total_currency: [{currency: "EUR", amount: 40}],
-        items: [
+        id:73569,
+        title:{project:"Toggl Desktop",client:"Toggl"},
+        time:14400000,
+        total_currency:[{currency:"EUR",amount:40}],
+        items:[
           {
-            title: {time_entry: "Implementing some important things"},
-            time: 14400000,
-            cur: "EUR",
-            sum: 40,
-            rate: 10
+            title:{time_entry:"Implementing some important things"},
+            time:14400000,
+            cur:"EUR",
+            sum:40,
+            rate:10
           }
         ]
       },
       {
-        id: 193009951,
-        title: { project: "Toggl Development", client: null},
-        time: 14400000,
-        total_currency: [{currency: "EUR", amount: 0}],
-        items: [
+        id:193009951,
+        title:{project:"Toggl Development",client:null},
+        time:14400000,
+        total_currency:[{currency:"EUR",amount:0}],
+        items:[
           {
-            title: {time_entry: "Hard work"},
-            time: 14400000,
-            cur: "EUR",
-            sum: 0,
-            rate: 50
+            title:{time_entry:"Hard work"},
+            time:14400000,
+            cur:"EUR",
+            sum:0,
+            rate:50
           }
         ]
       },
       {
-        id: null,
-        title: {project: null, client: null},
-        time: 7204000,
-        total_currency: [],
-        items: [
+        id:null,
+        title:{project:null,client:null},
+        time:7204000,
+        total_currency:[],
+        items:[
           {
-            title: {time_entry: "No title yet"},
-            time: 1000,
-            cur: "EUR",
-            sum: 0,
-            rate: 50
+            title:{time_entry:"No title yet"},
+            time:1000,
+            cur:"EUR",
+            sum:0,
+            rate:50
           },
           {
-            title: { time_entry: "Did nothing"},
-            time: 1000,
-            cur: "EUR",
-            sum: 0,
-            rate: 50
+            title:{time_entry:"Did nothing"},
+            time:1000,
+            cur:"EUR",
+            sum:0,
+            rate:50
           },
           {
-            title: {time_entry: "Hard work again"},
-            time: 7202000,
-            cur: "EUR",
-            sum: 0,
-            rate: 50
+            title:{time_entry:"Hard work again"},
+            time:7202000,
+            cur:"EUR",
+            sum:0,
+            rate:50
           }
         ]
       }

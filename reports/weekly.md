@@ -45,19 +45,19 @@ Grouping is `users`
 Example
 ```json
   {
-    title: {user:"John Swift"},
-    uid: 352243,
-    totals: [null,null,14400000,null,14400000,null,null,28800000],
-    details: [
+    title:{user:"John Swift"},
+    uid:352243,
+    totals:[null,null,14400000,null,14400000,null,null,28800000],
+    details:[
       {
-        pid: 73649,
-        title: { client:"Toggl",project:"Toggl Desktop"},
-        totals: [null,null,null,null,14400000,null,null,14400000]
+        pid:73649,
+        title:{ client:"Toggl",project:"Toggl Desktop"},
+        totals:[null,null,null,null,14400000,null,null,14400000]
       },
       {
-        pid: 1120651,
-        title: {client:null,project:"Super big client"},
-        totals: [null,null,14400000,null,null,null,null,14400000]
+        pid:1120651,
+        title:{client:null,project:"Super big client"},
+        totals:[null,null,14400000,null,null,null,null,14400000]
       }
     ]
   }
@@ -65,7 +65,7 @@ Example
 
 The totals array is different depending on the selected calculation method.
 If `calculate=time`, it is a simple array with 8 numbers - each for one day and the 8th for the seven day total.
-```json
+```
   totals:[null,null,0,null,40,null,null,40]
 ```
 
