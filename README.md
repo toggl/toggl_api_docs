@@ -11,9 +11,6 @@ For managing user/workspace/project data you need to use the **Toggl API**.
 
 If you want to get time entries of all the workspace users and aggregated data for reporting, you need to use the **Reports API**, which gives you many options for filtering, grouping and sorting.
 
-The two parts are actually on our side two different applications. Toggl API is written in [Go](http://golang.org/) and Reports API in [Ruby](http://www.ruby-lang.org/).
-
-
 ##The API Format##
 
 The API accepts only JSON requests. Please make sure you're setting `Content-type: application/json`in your request header. Each request returns a **JSON-encoded** body.
