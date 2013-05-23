@@ -7,9 +7,11 @@ Toggl API is divided into two
 * [Reports API](reports.md)
 
 
-For managing user/workspace/project etc data you need to use the **Toggl API**, but if you want to get time_entries of all the workspace users and aggregated data for reporting, you need to use the **Reports API**, which gives you many options for filtering, grouping and sorting.
+For managing user/workspace/project data you need to use the **Toggl API**.
 
-The two parts are actually on our side two different web applications. Toggl API is written in [Go](http://golang.org/) and Reports API in Ruby.
+If you want to get time entries of all the workspace users and aggregated data for reporting, you need to use the **Reports API**, which gives you many options for filtering, grouping and sorting.
+
+The two parts are actually on our side two different web applications. Toggl API is written in [Go](http://golang.org/) and Reports API in [Ruby](http://www.ruby-lang.org/).
 
 
 ##The API Format##
