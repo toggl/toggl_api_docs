@@ -3,8 +3,8 @@ Toggl API Documentation
 
 Toggl API is divided into two
 
-* (Toggl API)[toggl_api.md]
-* (Reports API)[reports.md]
+* [Toggl API](toggl_api.md)
+* [Reports API](reports.md)
 
 
 For managing user/workspace/project etc data you need to use the **Toggl API**, but if you want to get time_entries of all the workspace users and aggregated data for reporting, you need to use the **Reports API**, which gives you many options for filtering, grouping and sorting.
