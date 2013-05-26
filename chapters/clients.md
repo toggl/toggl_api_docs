@@ -76,7 +76,7 @@ Successful request will return `200 OK`. If the user has no access to delete, yo
 
 ##Get workspace clients##
 
-Retrieving workspace clients is documented [here](chapters/workspaces.md#get-workspace-clients).
+Retrieving workspace clients is documented [here](workspaces.md#get-workspace-clients).
 
 
 ##Get clients visible to user##
