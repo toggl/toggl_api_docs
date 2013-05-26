@@ -106,7 +106,7 @@ Successful response
 ##Get project users##
 
 `GET https://www.toggl.com/api/v8/projects/{project_id}/project_users`
-Read more about project user fields from [here](chapters/project_users.md).
+Read more about project user fields from [here](project_users.md).
 
 Example request
 
@@ -140,4 +140,4 @@ Successful response is an array of the project's users
 
 ##Get workspace projects##
 
-Retrieving workspace projects is documented [here](chapters/workspaces.md#get-workspace-projects).
+Retrieving workspace projects is documented [here](workspaces.md#get-workspace-projects).
