@@ -32,6 +32,7 @@ You can authenticate in the reports API **only** with your API token. For HTTP B
 The API expects the request parameters as the query string of the URL.
 
 The following parameters and filters can be used in all of the reports
+* user_agent: string, **required**, the name of your application or your email address so we can get in touch in case you're doing something wrong.
 * workspace_id: integer, **required**. The workspace which data you want to access.
 * since: string, ISO 8601 date (YYYY-MM-DD), by default until - 6 days.
 * until: string, ISO 8601 date (YYYY-MM-DD), by default today
