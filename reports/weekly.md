@@ -96,7 +96,7 @@ Successful response
 {
     "total_grand":36004000,
     "total_billable":14400000,
-    "total_currency":[{"currency":"EUR","amount":40.00}],
+    "total_currencies":[{"currency":"EUR","amount":40.00}],
     "data":[
       {
         "title":{"project":"Toggl Desktop","client":"Toggl"},

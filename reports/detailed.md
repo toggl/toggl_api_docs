@@ -48,7 +48,7 @@ Successful response
     "total_billable":23045000,
     "total_count":2,
     "per_page":50,
-    "total_currency":[{"currency":"EUR","amount":128.07}],
+    "total_currencies":[{"currency":"EUR","amount":128.07}],
     "details":[
       {
         "id":43669578,

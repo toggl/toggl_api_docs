@@ -50,7 +50,7 @@ General structure of the item in the data array
     "id":1,
     "title":{},
     "time":14400000,
-    "total_currency":[{"currency":"","amount":null}],
+    "total_currencies":[{"currency":"","amount":null}],
     "items":[
       {
         "title":{},
@@ -76,13 +76,13 @@ Successful response
   {
     "total_grand":36004000,
     "total_billable":14400000,
-    "total_currency":[{"currency":"EUR","amount":40}],
+    "total_currencies":[{"currency":"EUR","amount":40}],
     "data": [
       {
         "id":73569,
         "title":{"project":"Toggl Desktop","client":"Toggl"},
         "time":14400000,
-        "total_currency":[{"currency":"EUR","amount":40}],
+        "total_currencies":[{"currency":"EUR","amount":40}],
         "items":[
           {
             "title":{"time_entry":"Implementing some important things"},
@@ -96,7 +96,7 @@ Successful response
         "id":193009951,
         "title":{"project":"Toggl Development","client":null},
         "time":14400000,
-        "total_currency":[{"currency":"EUR","amount":0}],
+        "total_currencies":[{"currency":"EUR","amount":0}],
         "items":[
           {
             "title":{"time_entry":"Hard work"},
@@ -110,7 +110,7 @@ Successful response
         "id":null,
         "title":{"project":null,"client":null},
         "time":7204000,
-        "total_currency":[],
+        "total_currencies":[],
         "items":[
           {
             "title":{"time_entry":"No title yet"},

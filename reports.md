@@ -61,7 +61,7 @@ The general structure of the successful response
   {
     "total_grand":null,
     "total_billable":null,
-    "total_currency":[{"currency":null,"amount":null}],
+    "total_currencies":[{"currency":null,"amount":null}],
     "data":[]
   }
 ```
@@ -69,7 +69,7 @@ The response may include some additional attributes depending on the report type
 
 * total_grand: total time in milliseconds for the selected report
 * total_billable: total billable time in milliseconds for the selected report
-* total_currency: an array with amounts and currencies for the selected report
+* total_currencies: an array with amounts and currencies for the selected report
 * data: an array with detailed information of the requested report. The structure of the data in the array depends on the report.
 
 ##Failed requests##
