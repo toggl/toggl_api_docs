@@ -112,6 +112,12 @@ Successful response is an array of clients
 
 `GET https://www.toggl.com/api/v8/clients/{client_id}/projects`
 
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X GET https://www.toggl.com/api/v8/clients/1239455/projects
+```
+
 To filter projects by their state you can add the additional param to the request url:
 * active: possible values `true`/`false`/`both`. By default true. If false, only archived projects are returned.
 
