@@ -73,6 +73,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - Destroy the session
 * [Clients](chapters/clients.md)
  - create a client
+ - get client details
  - update a client
  - delete a client
  - get clients visible to user
