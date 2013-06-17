@@ -35,3 +35,9 @@ Each user in Toggl.com has an API token. They can find it under "My Profile" in 
 ##Help us towards a better API##
 
 The Toggl API has moved to Github so you could actively participate in helping us making the API better. If you have any requests or you found a bug, you can use Github issues to let us know. You can also fork the docs and send a pull request with improvements
+
+##Code examples##
+
+### Python ###
+
+* [Mosab Ahmad](https://github.com/mos3abof) has created a project using Toggl API to calculate how many hours he should work to achieve monthly goals: https://github.com/mos3abof/toggl_target
