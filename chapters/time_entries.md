@@ -48,6 +48,65 @@ Successful response
 }
 ```
 
+##Start a time entry##
+
+`POST https://www.toggl.com/api/v8/time_entries/start`
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-H "Content-type: application/json" \
+	-d '{"time_entry":{"description":"Meeting with possible clients","tags":["billed"],"pid":123}}' \
+	-X POST https://www.toggl.com/api/v8/time_entries/start
+
+```
+
+Successful response
+```json
+{
+	"data":
+	{
+		"id":436694100,
+		"pid":123,
+		"wid":777,
+		"billable":false,
+		"start":"2013-03-05T07:58:58.000Z",
+		"duration":-1362470338,
+		"description":"Meeting with possible clients",
+		"tags":["billed"]
+	}
+}
+```
+
+##Stop a time entry##
+
+`PUT https://www.toggl.com/api/v8/time_entries/{time_entry_id}/stop`
+
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-H "Content-type: application/json" \
+	-X PUT https://www.toggl.com/api/v8/time_entries/436694100/stop
+```
+
+Successful response
+```json
+{
+	"data":
+	{
+		"id":436694100,
+		"pid":123,
+		"wid":777,
+		"billable":false,
+		"start":"2013-03-05T07:58:58.000Z",
+		"duration":60,
+		"description":"Meeting with possible clients",
+		"tags":["billed"]
+	}
+}
+```
+
 ##Get time entry details##
 
 `GET https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
