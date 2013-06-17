@@ -103,6 +103,8 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - delete multiple tasks
 * [Time entries](chapters/time_entries.md)
  - create a time entry
+ - start a time entry
+ - stop a time entry
  - get time entry details
  - update time entry
  - delete time entry
