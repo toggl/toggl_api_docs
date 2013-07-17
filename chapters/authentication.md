@@ -15,8 +15,7 @@ If authentication fails, HTTP status code 403 is returned.
 
 Example request ([See also chapter about getting detailed user data](users.md))
 ```shell
-curl -v -u john.doe@gmail.com:secret \
--X GET https://www.toggl.com/api/v8/me
+curl -v -u john.doe@gmail.com:secret -X GET https://www.toggl.com/api/v8/me
 
 ```
 
@@ -118,8 +117,7 @@ It's possible to create a session. The session creation request sets a cookie in
 Example request
 
 ```shell
-curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X POST https://www.toggl.com/api/v8/sessions
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X POST https://www.toggl.com/api/v8/sessions
 ```
 
 Successful response header includes the cookie
@@ -168,8 +166,7 @@ Destroy the session manually by sending an according request to the API.
 Example request
 
 ```shell
-curl -v --cookie toggl_api_session=MTM2MzA4MJa8jA3OHxEdi1CQkFFQ180SUFBUkFCRUFBQVlQLUNBQUVHYzNSeWFXNW5EQXdBQ25ObGMzTnBiMjVmYVdRR2MzUnlhVzVuREQ0QVBIUnZaMmRzTFdGd2FTMXpaWE56YVc5dUxUSXRaalU1WmpaalpEUTVOV1ZsTVRoaE1UaGhaalpqWkRkbU5XWTJNV0psWVRnd09EWmlPVEV3WkE9PXweAkG7kI6NBG-iqvhNn1MSDhkz2Pz_UYTzdBvZjCaA== \
-	-X DELETE https://www.toggl.com/api/v8/sessions
+curl -v --cookie toggl_api_session=MTM2MzA4MJa8jA3OHxEdi1CQkFFQ180SUFBUkFCRUFBQVlQLUNBQUVHYzNSeWFXNW5EQXdBQ25ObGMzTnBiMjVmYVdRR2MzUnlhVzVuREQ0QVBIUnZaMmRzTFdGd2FTMXpaWE56YVc5dUxUSXRaalU1WmpaalpEUTVOV1ZsTVRoaE1UaGhaalpqWkRkbU5XWTJNV0psWVRnd09EWmlPVEV3WkE9PXweAkG7kI6NBG-iqvhNn1MSDhkz2Pz_UYTzdBvZjCaA== -X DELETE https://www.toggl.com/api/v8/sessions
 ```
 
 Successful request will return `200 OK`.
