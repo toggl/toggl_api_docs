@@ -165,6 +165,10 @@ To create a user you must provide two parameters for the user:
 * email: a valid email for the user whose account is created (string, required)
 * password: password at least 6 characters long (string, required)
 
+Additional fields, that are not mandatory yet, are:
+* tzoffset: timezone offset from UTC, in seconds. If it's blank, UTC is used as user timezone (int, not required)
+* created_with: in free form, name of the app that signed the user app (string, not required)
+
 `POST https://www.toggl.com/api/v8/signups`
 
 Example request
