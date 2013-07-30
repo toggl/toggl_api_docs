@@ -104,7 +104,7 @@ Successful response
 
 ##Delete a project##
 
-`DELETE https://www.toggl.com/api/v8/project_users/{project_id}`
+`DELETE https://www.toggl.com/api/v8/projects/{project_id}`
 
 Example request
 ```shell
@@ -150,3 +150,17 @@ Successful response is an array of the project's users
 ##Get workspace projects##
 
 Retrieving workspace projects is documented [here](workspaces.md#get-workspace-projects).
+
+
+##Mass Actions##
+
+###Delete multiple projects###
+
+By supplying multiple projectuser ids, you can mass delete projects.
+`DELETE https://www.toggl.com/api/v8/projects/{project_ids}`
+
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X DELETE https://www.toggl.com/api/v8/projects/4692190,4692192,4692193
+```
