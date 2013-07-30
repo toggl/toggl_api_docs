@@ -102,6 +102,15 @@ Successful response
 }
 ```
 
+##Delete a project##
+
+`DELETE https://www.toggl.com/api/v8/project_users/{project_id}`
+
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X DELETE https://www.toggl.com/api/v8/projects/4692190
+```
 
 ##Get project users##
 
