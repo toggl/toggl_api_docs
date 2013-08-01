@@ -1,7 +1,7 @@
 #Detailed report#
 
 The detailed report returns the time entries for the requested parameters/filters.
-There is one additiona parameter in detaield reports. As the returned data is paginated you have to add the page parameter.
+There is one additional parameter in detailed reports. As the returned data is paginated you have to add the page parameter.
 * page: integer, default 1
 
 ##Response##
