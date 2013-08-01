@@ -10,7 +10,7 @@ Additional parameters for this report are:
 ##Response##
 
 General data
-* week_totals: array of total amouns/hours for every day (null if there's no work on a certain day)
+* week_totals: array of total amounts/hours for every day (null if there's no work on a certain day)
 
 ###Data array###
 
