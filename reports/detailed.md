@@ -7,7 +7,7 @@ There is one additional parameter in detailed reports. As the returned data is p
 ##Response##
 
 General data
-* total_count: total number of time entries that were found for the request. Pay attention to the fact that the amount of time entries returned is max the number which is returned with the `per_page` parameter (currently 50). To get the next batch of time entries you need to do a new request with same parameters and the incremented `page` parameter. It is not possible to get all the time entries with one request.
+* total_count: total number of time entries that were found for the request. Pay attention to the fact that the amount of time entries returned is max the number which is returned with the `per_page` field (currently 50). To get the next batch of time entries you need to do a new request with same parameters and the incremented `page` parameter. It is not possible to get all the time entries with one request.
 * per_page: how many time entries are displayed in one request
 
 
