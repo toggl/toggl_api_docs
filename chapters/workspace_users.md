@@ -12,7 +12,7 @@ Workspace user has the following properties:
 
 You can add users to workspace by email addresses. A letter inviting the user to your workspace is sent to the user's email.
 
-`POST https://www.toggl.com/api/v8/workspace/{workspace_id}/invite`
+`POST https://www.toggl.com/api/v8/workspaces/{workspace_id}/invite`
 
 Request has the following properties:
 * emails: array of emails
@@ -28,7 +28,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-type: application/json" \
 	-d '{"emails":["john.doe@toggl.com", "Jane.Swift@toggl.com"]}' \
-	-X POST https://www.toggl.com/api/v8/workspace/777/invite
+	-X POST https://www.toggl.com/api/v8/workspaces/777/invite
 ```
 
 Successful response
