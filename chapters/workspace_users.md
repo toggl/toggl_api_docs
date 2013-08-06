@@ -28,7 +28,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-type: application/json" \
 	-d '{"emails":["john.doe@toggl.com", "Jane.Swift@toggl.com"]}' \
-	-X POST hhttps://www.toggl.com/api/v8/workspace/777/invite
+	-X POST https://www.toggl.com/api/v8/workspace/777/invite
 ```
 
 Successful response
