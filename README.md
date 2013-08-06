@@ -7,9 +7,9 @@ Toggl API is divided into two
 * [Reports API](reports.md)
 
 
-For managing user/workspace/project data you need to use the **Toggl API**.
+For changing data, including tracking time, you'll need to use the **Toggl API**.
 
-If you want to get time entries of all the workspace users and aggregated data for reporting, you need to use the **Reports API**, which gives you many options for filtering, grouping and sorting.
+If you want to get time entries of all the workspace users and aggregated data for reporting, you need to use the read-only **Reports API**, which gives you many options for filtering, grouping and sorting.
 
 ##The API Format##
 
