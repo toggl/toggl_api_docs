@@ -15,7 +15,7 @@ User has the following properties
 * image_url: url with the user's profile picture(string)
 * sidebar_piechart: should a piechart be shown on the sidebar (boolean)
 * at: timestamp of last changes
-* new_blog_post: an object with toggl blog post title and link
+* new_blog_post: an object with Toggl blog post title and link
 
 ## Get current user data ##
 `GET https://www.toggl.com/api/v8/me`
