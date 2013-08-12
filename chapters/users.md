@@ -167,21 +167,21 @@ Successful response
 You can update the following user fields:
 * fullname: string
 * email: string, valid email
-* send_product_emails, boolean
-* send_weekly_report, boolean
-* send_timer_notifications, boolean
-* store_start_and_stop_time, boolean
-* beginning_of_week, integer 1-6
-* timezone, string, [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-* timeofday_format, string, two formats are supported:
+* send_product_emails: boolean
+* send_weekly_report: boolean
+* send_timer_notifications: boolean
+* store_start_and_stop_time: boolean
+* beginning_of_week: integer, in the range of 0-6
+* timezone: string, [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+* timeofday_format: string, two formats are supported:
  * "H:mm" for 24-hour format
  * "h:mm A" for 12-hour format (AM/PM)
-* date_format, string, possible values: "YYYY-MM-DD", "DD.MM.YYYY", "DD-MM-YYYY", "MM/DD/YYYY", "DD/MM/YYYY", "MM-DD-YYYY"
+* date_format: string, possible values: "YYYY-MM-DD", "DD.MM.YYYY", "DD-MM-YYYY", "MM/DD/YYYY", "DD/MM/YYYY", "MM-DD-YYYY"
 
 To change password you have to have the following fields:
-* current_password, string
-* password, string
-* password_confirmation, string
+* current_password: string
+* password: string
+* password_confirmation: string
 
 Example request
 
