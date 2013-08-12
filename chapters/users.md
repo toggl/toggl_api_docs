@@ -20,7 +20,7 @@ User has the following properties
 * send_weekly_report: (boolean) if user receives weekly report
 * send_timer_notifications: (boolean) email user about long-running (more than 8 hours) tasks
 * openid_enabled: (boolean) google signin enabled
-* timezone: (string) timezone user has set on the "My profile" page
+* timezone: (string) timezone user has set on the "My profile" page ( [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) )
 
 ## Get current user data ##
 `GET https://www.toggl.com/api/v8/me`
@@ -156,6 +156,74 @@ Successful response
 			}
 		]
 
+	}
+}
+```
+
+##Update user data##
+
+`PUT https://www.toggl.com/api/v8/me`
+
+You can update the following user fields:
+* fullname: string
+* email: string, valid email
+* send_product_emails, boolean
+* send_weekly_report, boolean
+* send_timer_notifications, boolean
+* store_start_and_stop_time, boolean
+* beginning_of_week, integer 1-6
+* timezone, string, [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+* timeofday_format, string, two formats are supported:
+ * "H:mm" for 24-hour format
+ * "h:mm A" for 12-hour format (AM/PM)
+* date_format, string, possible values: "YYYY-MM-DD", "DD.MM.YYYY", "DD-MM-YYYY", "MM/DD/YYYY", "DD/MM/YYYY", "MM-DD-YYYY"
+
+To change password you have to have the following fields:
+* current_password, string
+* password, string
+* password_confirmation, string
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-H "Content-type: application/json" \
+	-d '{"user":{"fullname":"John Smith"}}' \
+	-X PUT https://www.toggl.com/api/v8/me
+```
+
+Successful response
+
+```json
+{
+	"data":{
+		"id":123123123,
+		"api_token":"1971800d4d82861d8f2c1651fea4d212",
+		"default_wid":777,
+		"email":"john@toggl.com",
+		"fullname":"John Smith",
+		"jquery_timeofday_format":"h:i A",
+		"jquery_date_format":"d.m.Y",
+		"timeofday_format":"h:mm A",
+		"date_format":"DD.MM.YYYY",
+		"store_start_and_stop_time":true,
+		"beginning_of_week":1,
+		"language":"en_US",
+		"image_url":"https://www.toggl.com/system/avatars/9000/small/open-uri20121116-2767-b1qr8l.png",
+		"sidebar_piechart":false,
+		"at":"2013-08-12T11:55:58+03:00",
+		"retention":9,
+		"record_timeline":true,
+		"render_timeline":true,
+		"timeline_enabled":true,
+		"timeline_experiment":true,
+		"new_blog_post":{},
+		"timezone":"Europe/Tallinn",
+		"openid_enabled":true,
+		"send_product_emails":true,
+		"send_weekly_report":true,
+		"send_timer_notifications":true,
+		"invitation":{}
 	}
 }
 ```
