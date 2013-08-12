@@ -166,13 +166,11 @@ Retrieving workspace users is documented [here](workspaces.md#get-workspace-user
 
 ##Sign up new user##
 
-To create a user you must provide two parameters for the user:
+To create a user you must provide these parameters for the user:
 * email: a valid email for the user whose account is created (string, required)
 * password: password at least 6 characters long (string, required)
-
-Additional fields, that are not mandatory yet, are:
-* tzoffset: timezone offset from UTC, in seconds. If it's blank, UTC is used as user timezone (int, not required)
-* created_with: in free form, name of the app that signed the user app (string, not required)
+* timezone: for example "Etc/UTC" (string, required)
+* created_with: in free form, name of the app that signed the user app (string, required)
 
 `POST https://www.toggl.com/api/v8/signups`
 
