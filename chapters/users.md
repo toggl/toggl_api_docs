@@ -10,12 +10,17 @@ User has the following properties
 * timeofday_format: (string)
 * date_format: (string)
 * store_start_and_stop_time: whether start and stop time are saved on time entry (boolean)
-* beginning_of_week: (integer, Sunday=0)
+* beginning_of_week: (integer 0-6, Sunday=0)
 * language: user's language (string)
 * image_url: url with the user's profile picture(string)
 * sidebar_piechart: should a piechart be shown on the sidebar (boolean)
 * at: timestamp of last changes
 * new_blog_post: an object with toggl blog post title and link
+* send_product_emails: (boolean) Toggl can send newsletters over e-mail to the user
+* send_weekly_report: (boolean) if user receives weekly report
+* send_timer_notifications: (boolean) email user about long-running (more than 8 hours) tasks
+* openid_enabled: (boolean) google signin enabled
+* timezone: (string) timezone user has set on the "My profile" page
 
 ## Get current user data ##
 `GET https://www.toggl.com/api/v8/me`
