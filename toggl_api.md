@@ -113,6 +113,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 * [Users](chapters/users.md)
  - get current user data and time entries
  - update current user data
+ - reset API token
  - sign up new user
 * [Workspaces](chapters/workspaces.md)
  - get user workspaces
