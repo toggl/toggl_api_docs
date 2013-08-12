@@ -239,7 +239,9 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response is a string with the new API token: 
-```"a0123123b8e43343d614553f95f9192ab9c1"```
+```
+"a0123123b8e43343d614553f95f9192ab9c1"
+```
 
 
 ##Get workspace users##
