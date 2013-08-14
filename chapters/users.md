@@ -181,7 +181,6 @@ You can update the following user fields:
 To change password you have to have the following fields:
 * current_password: string
 * password: string
-* password_confirmation: string
 
 Example request
 
