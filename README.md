@@ -38,8 +38,11 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ##Code examples##
 
-### Ruby ###
-* [Tom Kane](https://github.com/kanet77) has written a Ruby wrapper for Toggl API v8: https://github.com/kanet77/togglv8
+### Java ###
+* [Benno](https://github.com/bennob) has updated JToggl, a Java wrapper for the Toggl API to support v8: http://code.google.com/p/jtoggl/
 
 ### Python ###
 * [Mosab Ahmad](https://github.com/mos3abof) has created a project using Toggl API to calculate how many hours he should work to achieve monthly goals: https://github.com/mos3abof/toggl_target
+
+### Ruby ###
+* [Tom Kane](https://github.com/kanet77) has written a Ruby wrapper for Toggl API v8: https://github.com/kanet77/togglv8
