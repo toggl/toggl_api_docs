@@ -23,6 +23,10 @@ Following groupings with subgroupings are available in the summary report
   * projects
   * clients
 
+##Request##
+In order to construct a valid query, you have to include a mandatory query parameter, `user_agent`, which can contain a name for your application or an email so that we can get in touch with you in case we need to.
+Please note, that `the user_agent` variable needs to be a query parameter in the URL and that sending a valid `UserAgent` HTTP header with the same information wont be considdered valid by the API.
+
 ##Response##
 
 ###Data array###
@@ -67,7 +71,7 @@ General structure of the item in the data array
 
 Example request
 ```shell
-curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://toggl.com/reports/api/v2/summary?workspace_id=123&since=2013-05-19&until=2013-05-20"
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://toggl.com/reports/api/v2/summary?workspace_id=123&since=2013-05-19&until=2013-05-20&user_agent=myclient"
 ```
 
 
