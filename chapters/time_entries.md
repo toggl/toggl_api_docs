@@ -173,7 +173,7 @@ Successful response
 ##Delete a time entry##
 
 
-`POST https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
+`DELETE https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
 
 Example request
 ```shell
