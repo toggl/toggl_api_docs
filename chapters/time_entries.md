@@ -225,3 +225,59 @@ Successful response
 	}
 ]
 ```
+
+## Bulk update time entries tags ##
+
+`PUT https://www.toggl.com/api/v8/time_entries/{time_entry_ids_separated_by_a_comma}`
+
+You can mass assign and remove tags from time entries. Just instead of one `time_entry_id`, you need to send all the time entry ids, which you want to update, separated by a comma in the request url.
+The request is similar to regular time entry update.
+
+You can use the following properties:
+* tags: a list of tag names (array of strings), providing only this atteribute overrides tags on the time entries.
+* tag_action: (string, possible values: `add`, `remove`). Merges to or removes from the current time entry tags the values provided by the `tags` property.
+
+
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-H "Content-type: application/json" \
+	-d '{"time_entry":{"tags":["billed","productive"], "tag_action": "add"}}' \
+	-X PUT https://www.toggl.com/api/v8/time_entries/436694100,436694101
+```
+
+Successful response
+
+```json
+{	"data":[
+		{
+			"id":436694100,
+			"guid":"dfc88541-f3b0-bffe-fa2e-46a09fa97664",
+			"wid":777,
+			"pid":20123718,
+			"billable":true,
+			"start":"2013-08-01T10:46:00",
+			"stop":"2013-08-01T11:46:02",
+			"duration":3602,
+			"description":"Development",
+			"tags":["billed","poductive","overhours"],
+			"duronly":false,
+			"at":"2013-08-01T12:04:57"
+		},{
+			"id":436694101,
+			"guid":"ce3c2409-e624-64e2-6742-c623ff284091",
+			"wid":777,
+			"billable":false,
+			"start":"2013-08-01T11:11:00",
+			"stop":"2013-08-01T11:46:04",
+			"duration":2104,
+			"description":"Meeting with the client",
+			"tags":["billed","poductive","holiday"],
+			"duronly":false,
+			"at":"2013-08-01T11:46:08"
+		}
+	]
+}
+```
