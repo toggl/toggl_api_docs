@@ -110,6 +110,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - update time entry
  - delete time entry
  - get time entries started in a specific time range
+ - bulk update time entries tags
 * [Users](chapters/users.md)
  - get current user data and time entries
  - update current user data
