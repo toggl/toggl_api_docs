@@ -13,6 +13,7 @@ Project has the following properties
 * auto_estimates: whether the esitamated hours is calculated based on task esimations or is fixed manually(boolean, default false, not required, premium functionality)
 * estimated_hours: if auto_estimates is true then the sum of task estimations is returned, otherwise user inserted hours (integer, not required, premium functionality)
 * at: timestamp that is sent in the response for PUT, indicates the time task was last updated
+* rate: hourly rate of the project (float, not required, premium functionality)
 
 
 ##Create project##
