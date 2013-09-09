@@ -67,7 +67,7 @@ General structure of the item in the data array
 
 Example request
 ```shell
-curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://toggl.com/reports/api/v2/summary?workspace_id=123&since=2013-05-19&until=2013-05-20"
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://toggl.com/reports/api/v2/summary?workspace_id=123&since=2013-05-19&until=2013-05-20&user_agent=api_test"
 ```
 
 
