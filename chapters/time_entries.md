@@ -188,7 +188,7 @@ Successful request will return `200 OK`
 
 `GET https://www.toggl.com/api/v8/time_entries`
 
-With `start_date` and `end_date` parameters you can specify the date range of the time entries returned. If `start_date` and `end_date` are not specified, time entries started during the last 9 days are returned. **The limit of returned time entries is 1000.** So only the first 1000 found time entries are returned. To get all time entries for a specific time span, you should consider using the [detailed report](reports/detailed.md) request, which returns paginated results, but enables you to get all the asked time entries with multiple requests.
+With `start_date` and `end_date` parameters you can specify the date range of the time entries returned. If `start_date` and `end_date` are not specified, time entries started during the last 9 days are returned. **The limit of returned time entries is 1000.** So only the first 1000 found time entries are returned. To get all time entries for a specific time span, you should consider using the [detailed report](../reports/detailed.md) request, which returns paginated results, but enables you to get all the asked time entries with multiple requests.
 
 `start_date` and `end_date` must be ISO 8601 date and time strings.
 
