@@ -216,3 +216,32 @@ Successful response is an array of workspace tasks
 
 ]
 ```
+
+##Get workspace tags##
+
+`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/tags`
+
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+-X GET https://www.toggl.com/api/v8/workspaces/777/tags
+```
+
+Successful response is an array of active workspace projects
+```json
+[
+	{
+		"id":151285,
+		"wid":777,
+		"name":"Billed"
+	},{
+		"id":1596623,
+		"wid":777,
+		"name":"Invoiced"
+	},{
+		"id":159643,
+		"wid":777,
+		"name":"Discarded"
+	}
+]
+```
