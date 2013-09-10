@@ -122,6 +122,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - get workspace clients
  - get workspace projects
  - get workspace tasks
+ - get workspace tags
 * [Workspace users](chapters/workspace_users.md)
  - invite users to workspace
  - update workspace user
