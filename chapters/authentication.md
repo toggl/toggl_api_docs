@@ -46,6 +46,7 @@ Response
 				"billable":true,
 				"active":true,
 				"at":"2013-02-12T09:47:57+00:00"
+				"color":"5"
 			}
 		],
 		"tags": [
