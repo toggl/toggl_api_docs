@@ -55,9 +55,9 @@ Successful response
 		"wid":777,
 		"name":"Very Big Company",
 		"at":"2013-02-26T08:45:28+00:00",
-    "notes": "Contact: John Jacob Jingleheimer Schmidt",
-    "hrate": 12,
-    "cur": "AUD"
+		"notes": "Contact: John Jacob Jingleheimer Schmidt",
+		"hrate": 12,
+		"cur": "AUD"
 	}
 }
 ```
