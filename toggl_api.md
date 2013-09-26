@@ -84,6 +84,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - get project data
  - update project data
  - get project users
+ - get project tasks
 * [Project users](chapters/project_users.md)
  - create a project user
  - update a project user

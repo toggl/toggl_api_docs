@@ -150,6 +150,42 @@ Successful response is an array of the project's users
 ]
 ```
 
+##Get project tasks##
+
+`GET https://www.toggl.com/api/v8/projects/{project_id}/tasks`
+Read more about task fields from [here](tasks.md).
+
+Example request
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-X GET https://www.toggl.com/api/v8/projects/777/tasks
+
+```
+
+Successful response is an array of the project's tasks
+```json
+[
+	{
+		"name":"A new task",
+		"id":1335076912,
+		"wid":888,
+		"pid":777,
+		"active":false,
+		"at":"2013-02-26T15:09:52+00:00",
+		"estimated_seconds":3600,
+	}, {
+		"name":"Another task",
+		"id":1335076911,
+		"uid": 12309,
+		"wid":888,
+		"pid":777,
+		"active":false,
+		"at":"2013-02-26T15:09:52+00:00",
+	}
+]
+```
+
 ##Get workspace projects##
 
 Retrieving workspace projects is documented [here](workspaces.md#get-workspace-projects).
