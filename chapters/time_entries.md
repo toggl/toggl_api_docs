@@ -19,7 +19,7 @@ Time entry has the following properties
 
 ##Create a time entry##
 
-`POST https://www.toggl.com/api/v8/time_entries/`
+`POST https://www.toggl.com/api/v8/time_entries`
 
 Example request
 
