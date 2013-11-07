@@ -123,6 +123,7 @@ Successful response
 				"billable":false,
 				"active":false,
 				"at":"2013-03-06T09:13:31+00:00"
+				"color":"5"
 			}
 		],
 		"tags":[
