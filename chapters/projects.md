@@ -13,6 +13,7 @@ Project has the following properties
 * auto_estimates: whether the esitamated hours is calculated based on task esimations or is fixed manually(boolean, default false, not required, premium functionality)
 * estimated_hours: if auto_estimates is true then the sum of task estimations is returned, otherwise user inserted hours (integer, not required, premium functionality)
 * at: timestamp that is sent in the response for PUT, indicates the time task was last updated
+* color: id of the color selected for the project
 * rate: hourly rate of the project (float, not required, premium functionality)
 
 
@@ -42,6 +43,7 @@ Successful response
 		"active":true,
 		"at":"2013-03-06T12:15:37+00:00",
 		"template_id":10237
+		"color": "5"
 	}
 }
 ```
@@ -71,6 +73,7 @@ Successful response
 		"active":true,
 		"at":"2013-03-06T12:15:37+00:00",
 		"template":true
+		"color": "5"
 	}
 }
 ```
@@ -84,7 +87,7 @@ Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-type: application/json" \
-	-d '{"project":{"name":"Changed the name","is_private":false,"cid":123398}}' \
+	-d '{"project":{"name":"Changed the name","is_private":false,"cid":123398, "color": "6"}}' \
 	-X PUT https://www.toggl.com/api/v8/projects/193838628
 ```
 
@@ -101,6 +104,7 @@ Successful response
 		"active":true,
 		"at":"2013-03-06T12:15:37+00:00",
 		"template":true
+		"color":"6"
 	}
 }
 ```
