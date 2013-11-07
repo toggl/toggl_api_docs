@@ -49,7 +49,7 @@ Successful response
     "total_count":2,
     "per_page":50,
     "total_currencies":[{"currency":"EUR","amount":128.07}],
-    "details":[
+    "data":[
       {
         "id":43669578,
         "pid":1930589,
