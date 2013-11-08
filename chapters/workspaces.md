@@ -7,10 +7,10 @@ Workspace has the following properties
 * admin: shows whether currently requesting user has admin access to the workspace (boolean)
 * default_hourly_rate: default hourly rate for workspace, won't be shown to non-admins if the only_admins_see_billable_rates flag is set to true (float)
 * default_currency: default currency for workspace (string)
-* only_admins_may_create_projects:
-* only_admins_see_billable_rates:
-* rounding:
-* rounding_minutes:
+* only_admins_may_create_projects: whether only the admins can create projects or everybody (boolean)
+* only_admins_see_billable_rates: whether only the admins can see billable rates or everybody (boolean)
+* rounding: type of rounding (integer)
+* rounding_minutes: round up to nearest minute (integer)
 * at: timestamp that indicates the time workspace was last updated
 * logo_url: URL pointing to the logo (if set, otherwise omited) (string)
 
