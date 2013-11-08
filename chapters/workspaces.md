@@ -1,11 +1,21 @@
 Workspaces
 ====================
 
+Workspace has the following properties
+* name: the name of the workspace (string)
+* premium: If it's a pro workspace or not. Shows if someone is paying for the workspace or not (boolean)
+* admin: shows whether currently requesting user has admin access to the workspace (boolean)
+* default_hourly_rate: default hourly rate for workspace, won't be shown to non-admins if the only_admins_see_billable_rates flag is set to true (float)
+* default_currency: default currency for workspace (string)
+* only_admins_may_create_projects:
+* only_admins_see_billable_rates:
+* rounding:
+* rounding_minutes:
+* at: timestamp that indicates the time workspace was last updated
+* logo_url: URL pointing to the logo (if set, otherwise omited) (string)
+
+
 ##Get workspaces##
-Workspace has the following properties:
-* name: (string, required)
-* premium: If it's a pro workspace or not. Shows if someone is paying for the workspace or not (boolean, not required)
-* at: timestamp that is sent in the response, indicates the time item was last updated
 
 `GET https://www.toggl.com/api/v8/workspaces`
 Get data about all the workspaces where the token owner belongs to.
@@ -22,14 +32,94 @@ Successful response is an array of workspaces
 	{
 		"id":3134975,
 		"name":"John's personal ws",
-		"at":"2012-12-03T13:06:06+00:00"
+		"premium":true,
+		"admin":true,
+		"default_hourly_rate":50,
+		"default_currency":"USD",
+		"only_admins_may_create_projects":false,
+		"only_admins_see_billable_rates":true,
+		"rounding":1,
+		"rounding_minutes":15,
+		"at":"2013-08-28T16:22:21+00:00",
+		"logo_url":"my_logo.png"
 	},{
 		"id":777,
 		"name":"My Company Inc",
 		"premium":true,
-		"at":"2012-09-03T11:30:32+00:00"
+		"admin":true,
+		"default_hourly_rate":40,
+		"default_currency":"EUR",
+		"only_admins_may_create_projects":false,
+		"only_admins_see_billable_rates":true,
+		"rounding":1,
+		"rounding_minutes":15,
+		"at":"2013-08-28T16:22:21+00:00"
 	}
 ]
+```
+
+##Get single workspace##
+`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}`
+
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+-X GET https://www.toggl.com/api/v8/workspaces/3134975
+```
+
+Successful response
+```json
+{
+	"data":	{
+		"id":3134975,
+		"name":"John's personal ws",
+		"premium":true,
+		"admin":true,
+		"default_hourly_rate":150,
+		"default_currency":"USD",
+		"only_admins_may_create_projects":false,
+		"only_admins_see_billable_rates":false,
+		"rounding":1,
+		"rounding_minutes":15,
+		"at":"2013-08-28T16:22:21+03:00",
+		"logo_url":"my_logo.png"
+	}
+}
+```
+
+##Update workspace##
+
+`PUT https://www.toggl.com/api/v8/workspaces/{workspace_id}`
+
+Example request
+
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+	-H "Content-type: application/json" \
+	-d '{"workspace":{"default_currency": "EUR", "default_hourly_rate": 50, "name": "John's ws", "only_admins_may_create_projects": false, "only_admins_see_billable_rates": true, "rounding": 1, "rounding_minutes": 60}}' \
+	-X PUT https://www.toggl.com/api/v8/workspaces/3134975
+```
+
+
+Successful response
+```json
+{
+	"data": {
+		"id":3134975,
+		"name":"John's ws",
+		"premium":true,
+		"admin":true,
+		"default_hourly_rate":50,
+		"default_currency":"USD",
+		"only_admins_may_create_projects":false,
+		"only_admins_see_billable_rates":true,
+		"rounding":1,
+		"rounding_minutes":60,
+		"at":"2013-08-28T16:22:21+03:00",
+		"logo_url":"my_logo.png"
+	}
+}
 ```
 
 ##Get workspace users##
