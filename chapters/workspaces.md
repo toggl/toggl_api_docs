@@ -226,6 +226,9 @@ To get a successful response, the token owner must be workspace admin.
 To filter projects by their state you can add the additional param to the request url:
 * active: possible values `true`/`false`/`both`. By default true. If false, only archived projects are returned.
 
+To get the completed hours per project you can add the additional param to the request url:
+* actual_hours: `true`. By default false.
+
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
