@@ -104,7 +104,7 @@ Successful response
 		"billable":false,
 		"active":true,
 		"at":"2013-03-06T12:15:37+00:00",
-		"template":true
+		"template":true,
 		"color":"6"
 	}
 }
