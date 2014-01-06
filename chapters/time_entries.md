@@ -4,7 +4,7 @@ Time Entries
 The requests are scoped with the user whose API token is used. Only his/her time entries are updated, retrieved and created.
 
 Time entry has the following properties
-* description: (string, required)
+* description: (string, strongly suggested to be used)
 * wid: workspace ID (integer, required if pid or tid not supplied)
 * pid: project ID (integer, not required)
 * tid: task ID (integer, not required)
