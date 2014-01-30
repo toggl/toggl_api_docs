@@ -157,10 +157,10 @@ Successful response
 		"wid":777,
 		"pid":193791,
 		"billable":false,
-    "start":"2014-01-30T09:08:04+00:00",
+		"start":"2014-01-30T09:08:04+00:00",
 		"duration":-1391072884,
 		"description":"Running time entry",
-    "at":"2014-01-30T09:08:12+00:00"
+		"at":"2014-01-30T09:08:12+00:00"
 	}
 }
 ```
