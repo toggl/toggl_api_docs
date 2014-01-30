@@ -138,6 +138,34 @@ Successful response
 ```
 
 
+##Get running time entry##
+
+`GET https://www.toggl.com/api/v8/time_entries/current`
+
+Example request:
+
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+-X GET https://www.toggl.com/api/v8/time_entries/current
+```
+
+Successful response
+```json
+{
+	"data":{
+		"id":436694100,
+		"wid":777,
+		"pid":193791,
+		"billable":false,
+    "start":"2014-01-30T09:08:04+00:00",
+		"duration":-1391072884,
+		"description":"Running time entry",
+    "at":"2014-01-30T09:08:12+00:00"
+	}
+}
+```
+
+
 ##Update a time entry##
 `PUT https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
 
