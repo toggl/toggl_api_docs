@@ -10,14 +10,9 @@ Task has the following properties
 * estimated_seconds: estimated duration of task in seconds (integer, not required)
 * active: whether the task is done or not (boolean, by default true)
 * at: timestamp that is sent in the response for PUT, indicates the time task was last updated
+* tracked_seconds: total time tracked (in seconds) for the task
 
 Workspace id (wid) and project id (pid) can't be changed on update.
-
-###Additional fields###
-It's possible to get additional info for the task. For that you have to send the `fields` parameter in request with desired property names separated by comma.
-
-* done_seconds: duration (in seconds) of all the time entries registered for this task
-* uname: full name of the person to whom the task is assigned to
 
 ##Actions for single project user##
 ###Create a task###
