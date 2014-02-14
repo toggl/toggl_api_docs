@@ -14,10 +14,10 @@ Activity object has the following properties
 * description: (Description property is not present if time entry description is empty)
 * stop: time entry stop time (ISO 8601 date and time. Stop property is not present when time entry is still running)
 
-The most active user object holds the data of the top 5 users who have tracked the most time during last week.
+The most active user object holds the data of the top 5 users who have tracked the most time during last 7 days.
 Most active user object has the following properties
 * user_id: user ID
-* duration: Sum of time entry durations that are created during last 7 days
+* duration: Sum of time entry durations that have been created during last 7 days
 
 ##Get Dashboard data##
 
