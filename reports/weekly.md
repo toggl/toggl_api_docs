@@ -138,7 +138,7 @@ Successful response
 ```
 
 Example code snippet in Ruby
-```json
+```ruby
 require 'net/http'
 require 'JSON'
 
