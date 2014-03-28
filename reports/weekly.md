@@ -136,3 +136,23 @@ Successful response
     "week_totals":[null,null,14401000,7203000,14400000,null,null,36004000]
   }
 ```
+
+Example code snippet in Ruby
+```json
+require 'net/http'
+require 'JSON'
+
+wsid = # your workspace id
+api_token = #your api token
+
+uri = URI("https://toggl.com/reports/api/v2/weekly?workspace_id=#{wsid}&since=2014-03-01&until=2014-03-05&user_agent=api_example_test")
+
+req = Net::HTTP::Get.new(uri)
+req.basic_auth api_token, 'api_token'
+
+http = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true)
+resp = http.request(req)
+
+puts resp.body
+puts JSON.parse(resp.body)
+```
