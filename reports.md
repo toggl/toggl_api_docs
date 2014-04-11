@@ -18,6 +18,8 @@ Detailed report URL: `GET https://toggl.com/reports/api/v2/details`
 
 Summary report URL: `GET https://toggl.com/reports/api/v2/summary`
 
+For PDF response add .pdf to the end of the URL.
+
 
 ##Authentication##
 
