@@ -229,6 +229,9 @@ To filter projects by their state you can add the additional param to the reques
 To get the completed hours per project you can add the additional param to the request url:
 * actual_hours: `true`. By default false.
 
+To get only project templates add the additional param to the request url:
+* only_templates: `true`. By default false.
+
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
