@@ -72,7 +72,7 @@ Successful response
          "user_id":426055,
          "project_id":3689864,
          "duration":-1392021417,
-         "description":"writing post "
+         "description":"writing post"
       },
       {
          "user_id":6822650,
@@ -104,7 +104,7 @@ Successful response
          "user_id":6822638,
          "project_id":3534557,
          "duration":12600,
-         "description":"call ",
+         "description":"call",
          "stop":"2014-02-10T12:22:00+00:00"
       },
       {
