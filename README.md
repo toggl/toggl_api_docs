@@ -19,6 +19,9 @@ The result of each action is communicated via standard HTTP response codes.
 
 Times and dates use the ISO 8601 standard, more specifically a subset described in [RFC 3339](http://www.ietf.org/rfc/rfc3339.txt).
 
+Please do note that the times and dates are parsed stored in UTC (GMT), on return the data is set into the appropriate timezone according to the setting in user profile.
+3rd party applications should make sure that they are using correct timezones and also consider daylight saving (where applicable).
+
 ###Example requests###
 
 The example requests here are done using a command line tool called [cURL](http://en.wikipedia.org/wiki/CURL). If you want to try the requests out yourself, you can download cURL from [here](http://curl.haxx.se/download.html). It is available for all possible operating systems.
