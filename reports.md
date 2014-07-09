@@ -23,11 +23,9 @@ For PDF response add .pdf to the end of the URL.
 
 ##Authentication##
 
-You can authenticate in the reports API **only** with your API token. For HTTP Basic Auth you have to add the Authorization header with the request. The Authorization header is constructed as follows:
-* String with api token `xxxx:api_token` (xxx indicating user's personal token)
-* The resulting string literal is then encoded using Base64
-* The authorization method and a space i.e. "Basic " is then put before the encoded string.
-* For example, if the user agent uses 'Aladdin' as the username and 'open sesame' as the password then the header is formed as follows: `Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==`
+You can authenticate in the reports API **only** with your API token. For HTTP Basic Auth you have to add the Authorization header with the request.
+The token is sent as user name and the string 'api_token' as the password.
+Whenever possible please use the tools and interfaces provided by your http library to do Basic Auth (for example, curl uses the -u switch for that).
 
 ##Request Parameters##
 
