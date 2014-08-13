@@ -18,8 +18,8 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H 'Content-type: application/json' \
-	-d '{"time_entry":{"description":"New time entry","created_with":"API example code","start":"2012-02-12T15:35:47+02:00","duration":1200,"wid":{"id":31366}}}' \
+	-H "Content-Type: application/json" \
+	-d '{"time_entry":{"description":"New time entry","created_with":"API example code","start":"2012-02-12T15:35:47+02:00","duration":1200,"wid":31366}}' \
 	 -X POST https://www.toggl.com/api/v8/time_entries
 
 ```
