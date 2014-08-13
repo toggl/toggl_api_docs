@@ -13,7 +13,7 @@ If you want to get time entries of all the workspace users and aggregated data f
 
 ##The API Format##
 
-The API accepts only JSON requests. Please make sure you're setting `Content-type: application/json`in your request header. Each request returns a **JSON-encoded** body.
+The API accepts only JSON requests. Please make sure you're setting `Content-Type: application/json`in your request header. Each request returns a **JSON-encoded** body.
 
 The result of each action is communicated via standard HTTP response codes.
 

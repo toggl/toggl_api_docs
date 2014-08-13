@@ -26,7 +26,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"project":{"name":"An awesome project","wid":777,"template_id":10237,"is_private":true,"cid":123397}}' \
 	-X POST https://www.toggl.com/api/v8/projects
 ```
@@ -87,7 +87,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"project":{"name":"Changed the name","is_private":false,"cid":123398, "color": "6"}}' \
 	-X PUT https://www.toggl.com/api/v8/projects/193838628
 ```

@@ -27,7 +27,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"project_user":{"pid":777,"uid":123,"rate":4.0,"manager":true}}' \
 	-X POST https://www.toggl.com/api/v8/project_users
 
@@ -58,7 +58,7 @@ Workspace id (wid), project id (pid) and user id (uid) can't be changed.
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"project_user":{"manager":false,"rate":15,"fields":"fullname"}}' \
 	-X PUT https://www.toggl.com/api/v8/project_users/4692190
 ```
@@ -103,7 +103,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"project_user":{"pid":777,"uid":"1267998,29624,112047","rate":4.0,"manager":true,"fields":"fullname"}}' \
 	-X POST https://www.toggl.com/api/v8/project_users
 
@@ -149,7 +149,7 @@ By supplying multiple project user ids, you can mass update project users.
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"project_user":{"manager":false,"rate":15,"fields":"fullname"}}' \
 	-X PUT https://www.toggl.com/api/v8/project_users/4692190,4692192,4692191
 ```

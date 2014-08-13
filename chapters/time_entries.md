@@ -25,7 +25,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"time_entry":{"description":"Meeting with possible clients","tags":["billed"],"duration":1200,"start":"2013-03-05T07:58:58.000Z","pid":123}}' \
 	-X POST https://www.toggl.com/api/v8/time_entries
 
@@ -56,7 +56,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"time_entry":{"description":"Meeting with possible clients","tags":["billed"],"pid":123}}' \
 	-X POST https://www.toggl.com/api/v8/time_entries/start
 
@@ -86,7 +86,7 @@ Successful response
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-X PUT https://www.toggl.com/api/v8/time_entries/436694100/stop
 ```
 
@@ -173,7 +173,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"time_entry":{"description":"Meeting with possible clients","tags":[""],"duration":1240,"start":"2013-03-05T07:58:58.000Z","stop":"2013-03-05T08:58:58.000Z","duronly":true,"pid":123,"billable":true}}' \
 	-X PUT https://www.toggl.com/api/v8/time_entries/436694100
 
@@ -272,7 +272,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"time_entry":{"tags":["billed","productive"], "tag_action": "add"}}' \
 	-X PUT https://www.toggl.com/api/v8/time_entries/436694100,436694101
 ```

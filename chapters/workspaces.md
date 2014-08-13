@@ -96,7 +96,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"workspace":{"default_currency": "EUR", "default_hourly_rate": 50, "name": "John's ws", "only_admins_may_create_projects": false, "only_admins_see_billable_rates": true, "rounding": 1, "rounding_minutes": 60}}' \
 	-X PUT https://www.toggl.com/api/v8/workspaces/3134975
 ```

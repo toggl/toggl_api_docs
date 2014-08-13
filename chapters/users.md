@@ -187,7 +187,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-H "Content-type: application/json" \
+	-H "Content-Type: application/json" \
 	-d '{"user":{"fullname":"John Smith"}}' \
 	-X PUT https://www.toggl.com/api/v8/me
 ```
@@ -260,7 +260,7 @@ To create a user you must provide these parameters for the user:
 
 Example request
 ```shell
-curl -H "Content-type: application/json" \
+curl -H "Content-Type: application/json" \
 -d '{"user":{"email":"test.user@toggl.com","password":"StrongPassword"}}' \
 -X POST https://www.toggl.com/api/v8/signups
 ```
