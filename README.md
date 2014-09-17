@@ -58,4 +58,4 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### C++ ###
 
-TogglDesktop has a [open source, cross platform library](https://github.com/toggl/toggldesktop/tree/master/src/lib) that can be reused in your own apps.
+TogglDesktop has an [open source, cross platform library](https://github.com/toggl/toggldesktop/tree/master/src/lib) that can be reused in your own apps.
