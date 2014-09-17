@@ -55,3 +55,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### Node.js ###
 * [Alexander Makarenko](https://github.com/estliberitas) has written a library for Node.js for Toggl API v8: https://github.com/7eggs/node-toggl-api
+
+### C++ ###
+
+TogglDesktop has a [open source, cross platform library](https://github.com/toggl/toggldesktop/tree/master/src/lib) that can be reused in your own apps.
