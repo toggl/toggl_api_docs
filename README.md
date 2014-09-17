@@ -58,4 +58,8 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### C++ ###
 
-TogglDesktop has an [open source, cross platform library](https://github.com/toggl/toggldesktop/tree/master/src/lib) that can be reused in your own apps.
+* TogglDesktop has an [open source, cross platform library](https://github.com/toggl/toggldesktop/tree/master/src/lib) that can be reused in your own apps.
+
+### .NET ###
+
+Our mobile apps have a [shared C# library (Phoebe)](https://github.com/toggl/mobile/tree/master/Phoebe) which provides access to API and also some common clientside business logic we use. Feel free to use as little or much of it you want.
