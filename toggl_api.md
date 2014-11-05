@@ -129,4 +129,6 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - update workspace user
  - delete workspace user
  - get workspace users for a workspace
+* [Dashboard](chapters/dashboard.md)
+ - Get a generic overview of your team
 
