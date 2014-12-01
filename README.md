@@ -49,6 +49,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ### Python ###
 * [Mosab Ahmad](https://github.com/mos3abof) has created a project using Toggl API to calculate how many hours he should work to achieve monthly goals: https://github.com/mos3abof/toggl_target
 * [Beau Raines](https://github.com/beauraines) has updated the older v6 [toggl-cli](https://github.com/drobertadams/toggl-cli) to Toggl API v8: https://github.com/beauraines/toggl-cli
+* [Mikhail Novikov](https://github.com/kurtgn) has created a graphical utility for displaying historical data: https://github.com/kurtgn/chronicl
 
 ### Ruby ###
 * [Tom Kane](https://github.com/kanet77) has written a Ruby wrapper for Toggl API v8: https://github.com/kanet77/togglv8
