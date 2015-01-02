@@ -64,3 +64,6 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ### .NET ###
 
 * Toggl mobile apps have a [shared C# library (Phoebe)](https://github.com/toggl/mobile/tree/master/Phoebe) which provides access to API and also some common clientside business logic we use. Feel free to use as little or much of it you want.
+
+### Scala ###
+* [Gabriele Alese](https://github.com/gabalese) has written a command line client for Toggl: https://github.com/gabalese/toggl-cli
