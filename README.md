@@ -67,3 +67,6 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### Scala ###
 * [Gabriele Alese](https://github.com/gabalese) has written a command line client for Toggl: https://github.com/gabalese/toggl-cli
+
+##3rd party apps##
+* [Federico Vaga](https://github.com/FedericoVaga) has writtena little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
