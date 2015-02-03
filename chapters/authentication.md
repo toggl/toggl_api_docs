@@ -3,6 +3,8 @@ Authentication
 
 To use the API, you need to authenticate yourself. This can be done via HTTP POST or HTTP Basic Auth. After successful authentication a session is created using a cookie.
 
+In the current API implementation and for this documentation, the "username" is simply the user's email.
+
 For HTTP Basic Auth you have to add the Authorization header with the request. The Authorization header is constructed as follows:
 * Username and password are combined into a string `username:password` or if you use the api token it should be combined `xxxx:api_token` (xxx indicating user's personal token)
 * The resulting string literal is then encoded using Base64
