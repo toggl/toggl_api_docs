@@ -38,7 +38,12 @@ Response
 		"store_start_and_stop_time":true,
 		"beginning_of_week":1,
 		"language":"en_US",
+		"duration_format": "improved",
 		"image_url":"https://www.toggl.com/images/profile.png",
+		"at": "2015-02-17T16:58:53+00:00",
+    		"created_at": "2014-07-31T07:51:17+00:00",
+    		"timezone": "Europe/London",
+    		"retention": 9,
 		"new_blog_post":{},
 		"projects": [
 			{
@@ -61,7 +66,15 @@ Response
 		"tasks": [],
 		"workspaces": [
 			{
-				"id":777,"name":"John's WS","at":"2012-11-28T11:56:49+00:00"
+				"id":777,
+				"name":"John's WS",
+				"at":"2012-11-28T11:56:49+00:00",
+				"default_hourly_rate": 0,
+				"default_currency": "USD",
+				"projects_billable_by_default": true,
+			        "rounding": 1,
+				"rounding_minutes": 0,
+				"api_token": "ea897...",
 			}
 		],
 		"clients": []
