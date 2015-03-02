@@ -70,6 +70,9 @@ General structure of the item in the data array
   }
 ```
 
+##Project colors##
+When grouped by project the title part of the return will contain color and color_hex fields. First one contains the color id (returned also by APIv8), second one will return the corresponding HEX value. (Please note: color return is a subject of change).
+
 ##Example##
 
 Example request
