@@ -43,7 +43,7 @@ Successful response
 		"is_private":true,
 		"active":true,
 		"at":"2013-03-06T12:15:37+00:00",
-		"template_id":10237
+		"template_id":10237,
 		"color": "5"
 	}
 }
@@ -73,7 +73,7 @@ Successful response
 		"is_private":true,
 		"active":true,
 		"at":"2013-03-06T12:15:37+00:00",
-		"template":true
+		"template":true,
 		"color": "5"
 	}
 }
@@ -178,7 +178,7 @@ Successful response is an array of the project's tasks
 		"pid":777,
 		"active":false,
 		"at":"2013-02-26T15:09:52+00:00",
-		"estimated_seconds":3600,
+		"estimated_seconds":3600
 	}, {
 		"name":"Another task",
 		"id":1335076911,
@@ -186,7 +186,7 @@ Successful response is an array of the project's tasks
 		"wid":888,
 		"pid":777,
 		"active":false,
-		"at":"2013-02-26T15:09:52+00:00",
+		"at":"2013-02-26T15:09:52+00:00"
 	}
 ]
 ```
