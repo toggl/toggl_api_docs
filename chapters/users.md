@@ -1,32 +1,35 @@
 Users
 =================
 
-User has the following properties
-* api_token: (string)
-* default_wid: default workspace id (integer)
-* email: (string)
-* jquery_timeofday_format: (string)
-* jquery_date_format:(string)
-* timeofday_format: (string)
-* date_format: (string)
-* store_start_and_stop_time: whether start and stop time are saved on time entry (boolean)
-* beginning_of_week: (integer 0-6, Sunday=0)
-* language: user's language (string)
-* image_url: url with the user's profile picture(string)
-* sidebar_piechart: should a piechart be shown on the sidebar (boolean)
-* at: timestamp of last changes
-* new_blog_post: an object with toggl blog post title and link
-* send_product_emails: (boolean) Toggl can send newsletters over e-mail to the user
-* send_weekly_report: (boolean) if user receives weekly report
-* send_timer_notifications: (boolean) email user about long-running (more than 8 hours) tasks
-* openid_enabled: (boolean) google signin enabled
-* timezone: (string) timezone user has set on the "My profile" page ( [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) )
+User has the following properties :
+
+* **`api_token`**: (string)
+* **`default_wid`**: default workspace id (integer)
+* **`email`**: (string)
+* **`jquery_timeofday_format`**: (string)
+* **`jquery_date_format`**:(string)
+* **`timeofday_format`**: (string)
+* **`date_format`**: (string)
+* **`store_start_and_stop_time`**: whether start and stop time are saved on time entry (boolean)
+* **`beginning_of_week`**: (integer 0-6, Sunday=0)
+* **`language`**: user's language (string)
+* **`image_url`**: url with the user's profile picture(string)
+* **`sidebar_piechart`**: should a piechart be shown on the sidebar (boolean)
+* **`at`**: timestamp of last changes
+* **`new_blog_post`**: an object with toggl blog post title and link
+* **`send_product_emails`**: (boolean) Toggl can send newsletters over e-mail to the user
+* **`send_weekly_report`**: (boolean) if user receives weekly report
+* **`send_timer_notifications`**: (boolean) email user about long-running (more than 8 hours) tasks
+* **`openid_enabled`**: (boolean) google signin enabled
+* **`timezone`**: (string) timezone user has set on the "My profile" page ( [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) )
 
 ## Get current user data ##
 `GET https://www.toggl.com/api/v8/me`
 
 By default the request responds with user properties.
-To get all the workspaces, clients, projects, tasks, time entries and tags which the user can see, add the parameter `with_related_data=true`
+
+To get all the workspaces, clients, projects, tasks, time entries and tags which the user can see, add the parameter `with_related_data=true`.
+
 If you want to retrieve objects which have changed after certain time, add `since` parameter to the query. The value should be a unix timestamp (e.g. `since=1362579886`)
 
 Example request *without* related data
@@ -36,6 +39,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.c
 ```
 
 Successful response
+
 ```json
 {
 	"since":1362575771,
@@ -73,6 +77,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.c
 ```
 
 Successful response
+
 ```json
 {
 	"since":1362575771,
@@ -166,22 +171,24 @@ Successful response
 `PUT https://www.toggl.com/api/v8/me`
 
 You can update the following user fields:
-* fullname: string
-* email: string, valid email
-* send_product_emails: boolean
-* send_weekly_report: boolean
-* send_timer_notifications: boolean
-* store_start_and_stop_time: boolean
-* beginning_of_week: integer, in the range of 0-6
-* timezone: string, [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-* timeofday_format: string, two formats are supported:
- * "H:mm" for 24-hour format
- * "h:mm A" for 12-hour format (AM/PM)
-* date_format: string, possible values: "YYYY-MM-DD", "DD.MM.YYYY", "DD-MM-YYYY", "MM/DD/YYYY", "DD/MM/YYYY", "MM-DD-YYYY"
+
+* **`fullname`**: string
+* **`email`**: string, valid email
+* **`send_product_emails`**: boolean
+* **`send_weekly_report`**: boolean
+* **`send_timer_notifications`**: boolean
+* **`store_start_and_stop_time`**: boolean
+* **`beginning_of_week`**: integer, in the range of 0-6
+* **`timezone`**: string, as [IANA TZ timezones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+* **`timeofday_format`**: string, two formats are supported:
+ * `H:mm` for 24-hour format
+ * `h:mm A` for 12-hour format (AM/PM)
+* **`date_format`**: string, possible values are `YYYY-MM-DD`, `DD.MM.YYYY`, `DD-MM-YYYY`, `MM/DD/YYYY`, `DD/MM/YYYY`, `MM-DD-YYYY`
 
 To change password you have to have the following fields:
-* current_password: string
-* password: string
+
+* **`current_password`**: string
+* **`password`**: string
 
 Example request
 
@@ -229,6 +236,7 @@ Successful response
 ```
 
 ##Reset API token##
+
 `POST https://www.toggl.com/api/v8/reset_token`
 
 Example request
@@ -239,6 +247,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response is a string with the new API token: 
+
 ```
 "a0123123b8e43343d614553f95f9192ab9c1"
 ```
@@ -251,14 +260,16 @@ Retrieving workspace users is documented [here](workspaces.md#get-workspace-user
 ##Sign up new user##
 
 To create a user you must provide these parameters for the user:
-* email: a valid email for the user whose account is created (string, required)
-* password: password at least 6 characters long (string, required)
-* timezone: for example "Etc/UTC" (string, required)
-* created_with: in free form, name of the app that signed the user app (string, required)
+
+* **`email`**: a valid email for the user whose account is created (string, required)
+* **`password`**: password at least 6 characters long (string, required)
+* **`timezone`**: for example "Etc/UTC" (string, required)
+* **`created_with`**: in free form, name of the app that signed the user app (string, required)
 
 `POST https://www.toggl.com/api/v8/signups`
 
 Example request
+
 ```shell
 curl -H "Content-Type: application/json" \
 -d '{"user":{"email":"test.user@toggl.com","password":"StrongPassword"}}' \
@@ -266,6 +277,7 @@ curl -H "Content-Type: application/json" \
 ```
 
 Successful response includes created user's data and API token
+
 ```json
 {
 	"data":{

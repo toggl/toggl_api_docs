@@ -1,20 +1,21 @@
 Project users
 ====================
 Project user has the following properties
-* pid: project ID (integer, required)
-* uid: user ID, who is added to the project (integer, required)
-* wid: workspace ID, where the project belongs to (integer, not-required, project's workspace id is used)
-* manager: admin rights for this project (boolean, default false)
-* rate: hourly rate for the project user (float, not-required, only for pro workspaces) in the currency of the project's client or in workspace default currency.
-* at: timestamp that is sent in the response, indicates when the project user was last updated
 
-Workspace id (wid), project id (pid) and user id (uid) can't be changed on update.
+* **`pid`**: project ID (integer, required)
+* **`uid`**: user ID, who is added to the project (integer, required)
+* **`wid`**: workspace ID, where the project belongs to (integer, not-required, project's workspace id is used)
+* **`manager`**: admin rights for this project (boolean, default false)
+* **`rate`**: hourly rate for the project user (float, not-required, only for pro workspaces) in the currency of the project's client or in workspace default currency.
+* **`at`**: timestamp that is sent in the response, indicates when the project user was last updated
+
+*Workspace ID* `wid`, *project ID* `pid` and *user ID* `uid` properties can't be changed on update.
 
 
 ###Additional fields###
 It's possible to get user's fullname. For that you have to send the `fields` parameter in request with desired property name.
 
-* fullname: full name of the user, who is added to the project
+* **`fullname`**: full name of the user, who is added to the project
 
 
 ##Actions for single project user##
@@ -34,6 +35,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -53,9 +55,11 @@ Successful response
 
 `PUT https://www.toggl.com/api/v8/project_users/{project_user_id}`
 
-Workspace id (wid), project id (pid) and user id (uid) can't be changed.
+:warning: **Workspace ID `wid`, project ID `pid` and user ID `uid` can't be changed.**
+
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
@@ -64,6 +68,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -84,6 +89,7 @@ Successful response
 `DELETE https://www.toggl.com/api/v8/project_users/{project_user_id}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/project_users/4692190
@@ -110,6 +116,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response is an array of project_users.
+
 ```json
 {
 	"data":[
@@ -147,6 +154,7 @@ By supplying multiple project user ids, you can mass update project users.
 
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
@@ -155,6 +163,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response is an array of project_users.
+
 ```json
 {
 	"data":[
@@ -190,9 +199,11 @@ Successful response is an array of project_users.
 ###Delete multiple project users###
 
 By supplying multiple project user ids, you can mass delete project users.
+
 `DELETE https://www.toggl.com/api/v8/project_users/{project_user_ids}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/project_users/4692190,4692192,4692193
