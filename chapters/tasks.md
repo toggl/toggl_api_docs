@@ -2,17 +2,18 @@ Tasks
 ====================
 Tasks are available only for pro workspaces.
 
-Task has the following properties
-* name: The name of the task (string, required, unique in project)
-* pid: project ID for the task (integer, required)
-* wid: workspace ID, where the task will be saved (integer, project's workspace id is used when not supplied)
-* uid: user ID, to whom the task is assigned to (integer, not required)
-* estimated_seconds: estimated duration of task in seconds (integer, not required)
-* active: whether the task is done or not (boolean, by default true)
-* at: timestamp that is sent in the response for PUT, indicates the time task was last updated
-* tracked_seconds: total time tracked (in seconds) for the task
+Task has the following properties :
 
-Workspace id (wid) and project id (pid) can't be changed on update.
+* **`name`**: The name of the task (string, required, unique in project)
+* **`pid`**: project ID for the task (integer, required)
+* **`wid`**: workspace ID, where the task will be saved (integer, project's workspace id is used when not supplied)
+* **`uid`**: user ID, to whom the task is assigned to (integer, not required)
+* **`estimated_seconds`**: estimated duration of task in seconds (integer, not required)
+* **`active`**: whether the task is done or not (boolean, by default true)
+* **`at`**: timestamp that is sent in the response for PUT, indicates the time task was last updated
+* **`tracked_seconds`**: total time tracked (in seconds) for the task
+
+Workspace ID `wid` and project ID `pid` properties can't be changed on update.
 
 ##Actions for single project user##
 ###Create a task###
@@ -30,6 +31,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -55,6 +57,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -72,7 +75,10 @@ Successful response
 
 `PUT https://www.toggl.com/api/v8/tasks/{task_id}`
 
+:warning: **Workspace ID `wid` and project ID `pid` properties can't be changed.**
+
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
@@ -81,6 +87,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -102,6 +109,7 @@ Successful response
 `DELETE https://www.toggl.com/api/v8/tasks/{task_id}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/tasks/1335076912
@@ -118,6 +126,7 @@ By supplying multiple task ids, you can mass update tasks. This is good for mark
 `PUT https://www.toggl.com/api/v8/tasks/{task_ids}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
@@ -126,6 +135,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response is an array of tasks.
+
 ```json
 {
 	"data": [
@@ -155,9 +165,11 @@ Successful response is an array of tasks.
 
 ###Delete multiple tasks###
 By supplying multiple task ids, you can mass delete tasks.
+
 `DELETE https://www.toggl.com/api/v8/tasks/{task_ids}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/tasks/1335076912,1335076911,1335076910

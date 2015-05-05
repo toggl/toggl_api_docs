@@ -3,19 +3,20 @@ Time Entries
 
 The requests are scoped with the user whose API token is used. Only his/her time entries are updated, retrieved and created.
 
-Time entry has the following properties
-* description: (string, strongly suggested to be used)
-* wid: workspace ID (integer, required if pid or tid not supplied)
-* pid: project ID (integer, not required)
-* tid: task ID (integer, not required)
-* billable: (boolean, not required, default false, available for pro workspaces)
-* start: time entry start time (string, required, ISO 8601 date and time)
-* stop: time entry stop time (string, not required, ISO 8601 date and time)
-* duration: time entry duration in seconds. If the time entry is currently running, the duration attribute contains a negative value, denoting the start of the time entry in seconds since epoch (Jan 1 1970). The correct duration can be calculated as current_time + duration, where current_time is the current time in seconds since epoch. (integer, required)
-* created_with: the name of your client app (string, required)
-* tags: a list of tag names (array of strings, not required)
-* duronly: should Toggl show the start and stop time of this time entry? (boolean, not required)
-* at: timestamp that is sent in the response, indicates the time item was last updated
+Time entry has the following properties :
+
+* **`description`**: (string, strongly suggested to be used)
+* **`wid`**: workspace ID (integer, required if pid or tid not supplied)
+* **`pid`**: project ID (integer, not required)
+* **`tid`**: task ID (integer, not required)
+* **`billable`**: (boolean, not required, default false, available for pro workspaces)
+* **`start`**: time entry start time (string, required, ISO 8601 date and time)
+* **`stop`**: time entry stop time (string, not required, ISO 8601 date and time)
+* **`duration`**: time entry duration in seconds. If the time entry is currently running, the duration attribute contains a negative value, denoting the start of the time entry in seconds since epoch (Jan 1 1970). The correct duration can be calculated as *current\_time* + *duration*, where *current\_time* is the current time in seconds since epoch. (integer, required)
+* **`created_with`**: the name of your client app (string, required)
+* **`tags`**: a list of tag names (array of strings, not required)
+* **`duronly`**: should Toggl show the start and stop time of this time entry? (boolean, not required)
+* **`at`**: timestamp that is sent in the response, indicates the time item was last updated
 
 ##Create a time entry##
 
@@ -32,6 +33,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data":
@@ -63,6 +65,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data":
@@ -84,6 +87,7 @@ Successful response
 `PUT https://www.toggl.com/api/v8/time_entries/{time_entry_id}/stop`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
@@ -91,6 +95,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data":
@@ -119,6 +124,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data":{
@@ -137,7 +143,6 @@ Successful response
 }
 ```
 
-
 ##Get running time entry##
 
 `GET https://www.toggl.com/api/v8/time_entries/current`
@@ -150,6 +155,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data":{
@@ -180,6 +186,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data":
@@ -204,6 +211,7 @@ Successful response
 `DELETE https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/time_entries/1239455
@@ -216,7 +224,9 @@ Successful request will return `200 OK`
 
 `GET https://www.toggl.com/api/v8/time_entries`
 
-With `start_date` and `end_date` parameters you can specify the date range of the time entries returned. If `start_date` and `end_date` are not specified, time entries started during the last 9 days are returned. **The limit of returned time entries is 1000.** So only the first 1000 found time entries are returned. To get all time entries for a specific time span, you should consider using the [detailed report](../reports/detailed.md) request, which returns paginated results, but enables you to get all the asked time entries with multiple requests.
+With `start_date` and `end_date` parameters you can specify the date range of the time entries returned. If `start_date` and `end_date` are not specified, time entries started during the last 9 days are returned. 
+
+**The limit of returned time entries is 1000,** so only the first 1000 found time entries are returned. To get all time entries for a specific time span, you should consider using the [detailed report](../reports/detailed.md) request, which returns paginated results, but enables you to get all the asked time entries with multiple requests.
 
 `start_date` and `end_date` must be ISO 8601 date and time strings.
 
@@ -228,6 +238,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 [
 	{
@@ -263,9 +274,9 @@ You can mass assign and remove tags from time entries. Just instead of one `time
 The request is similar to regular time entry update.
 
 You can use the following properties:
-* tags: a list of tag names (array of strings), providing only this atteribute overrides tags on the time entries.
-* tag_action: (string, possible values: `add`, `remove`). Merges to or removes from the current time entry tags the values provided by the `tags` property.
 
+* **`tags`**: a list of tag names (array of strings), providing only this atteribute overrides tags on the time entries.
+* **`tag_action`**: (string, possible values: `add`, `remove`). Merges to or removes from the current time entry tags the values provided by the `tags` property.
 
 
 Example request

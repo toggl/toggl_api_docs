@@ -1,10 +1,11 @@
 Toggl API v8
 ====================
 
-The API accepts only JSON requests. Please make sure you're setting `Content-Type: application/json`in your request header. Each request returns a **JSON-encoded** body.
-If the time entry is currently running, the *duration* attribute contains a negative value, denoting the start of the time entry in seconds since epoch (Jan 1 1970). The correct duration can be calculated as current_time + duration, where current_time is the current time in seconds since epoch.
+The API accepts only **JSON** requests, so make sure that `Content-Type: application/json` is set in your request header. Each request returns a **JSON-encoded** body.  
 
 The result of each action is communicated via standard HTTP response codes.
+
+If the time entry is currently running, the `duration` attribute contains a negative value, denoting the start of the time entry in seconds since epoch (Jan 1 1970). The correct duration can be calculated as current_time + duration, where current_time is the current time in seconds since epoch.
 
 ###CORS###
 
@@ -23,6 +24,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	 -X POST https://www.toggl.com/api/v8/time_entries
 
 ```
+
 Response
 
 ```json

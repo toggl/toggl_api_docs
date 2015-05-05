@@ -6,22 +6,25 @@ To use the API, you need to authenticate yourself. This can be done via HTTP POS
 In the current API implementation and for this documentation, the "username" is simply the user's email.
 
 For HTTP Basic Auth you have to add the Authorization header with the request. The Authorization header is constructed as follows:
-* Username and password are combined into a string `username:password` or if you use the api token it should be combined `xxxx:api_token` (xxx indicating user's personal token)
-* The resulting string literal is then encoded using Base64
-* The authorization method and a space i.e. "Basic " is then put before the encoded string.
-* For example, if the user agent uses 'Aladdin' as the username and 'open sesame' as the password then the header is formed as follows: `Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==`
+
+1. Username and password are combined into a string **`username:password`** or if you use the api token it should be combined **`xxxx:api_token`** (xxx indicating user's personal token)
+2. The resulting string literal is then encoded using Base64
+3. The authorization method and a space i.e. "Basic " is then put before the encoded string.
+4. For example, if the user agent uses 'Aladdin' as the username and 'open sesame' as the password then the header is formed as follows: `Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==`
 
 If authentication fails, HTTP status code 403 is returned.
 
 ## HTTP Basic Auth with e-mail and password ##
 
 Example request ([See also chapter about getting detailed user data](users.md))
+
 ```shell
 curl -v -u john.doe@gmail.com:secret -X GET https://www.toggl.com/api/v8/me
 
 ```
 
 Response
+
 ```json
 {
 	"since":1361780172,
@@ -92,6 +95,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.c
 ```
 
 Response
+
 ```json
 {
 	"since":1361780172,

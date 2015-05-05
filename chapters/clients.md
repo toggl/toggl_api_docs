@@ -2,12 +2,13 @@ Clients
 ====================
 
 Client has the following properties
-* name: The name of the client (string, required, unique in workspace)
-* wid: workspace ID, where the client will be used (integer, required)
-* notes: Notes for the client (string, not required)
-* hrate: The hourly rate for this client (float, not required, available only for pro workspaces)
-* cur: The name of the client's currency (string, not required, available only for pro workspaces)
-* at: timestamp that is sent in the response, indicates the time client was last updated
+
+* **`name`**: The name of the client (string, required, unique in workspace)
+* **`wid`**: workspace ID, where the client will be used (integer, required)
+* **`notes`**: Notes for the client (string, not required)
+* **`hrate`**: The hourly rate for this client (float, not required, available only for pro workspaces)
+* **`cur`**: The name of the client's currency (string, not required, available only for pro workspaces)
+* **`at`**: timestamp that is sent in the response, indicates the time client was last updated
 
 ##Create a client##
 
@@ -24,6 +25,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -48,6 +50,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -68,6 +71,7 @@ Successful response
 Workspace id (wid) can't be changed.
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
@@ -76,6 +80,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data": {
@@ -93,6 +98,7 @@ Successful response
 `DELETE https://www.toggl.com/api/v8/clients/{client_id}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/clients/1239455
@@ -111,12 +117,14 @@ Retrieving workspace clients is documented [here](workspaces.md#get-workspace-cl
 `GET https://www.toggl.com/api/v8/clients`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X GET https://www.toggl.com/api/v8/clients
 ```
 
 Successful response is an array of clients
+
 ```json
 [
 	{
@@ -140,6 +148,7 @@ Successful response is an array of clients
 `GET https://www.toggl.com/api/v8/clients/{client_id}/projects`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X GET https://www.toggl.com/api/v8/clients/1239455/projects
@@ -149,6 +158,7 @@ To filter projects by their state you can add the additional param to the reques
 * active: possible values `true`/`false`/`both`. By default true. If false, only archived projects are returned.
 
 Successful response is an array of client projects
+
 ```json
 [
 	{

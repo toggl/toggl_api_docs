@@ -2,11 +2,12 @@ Workspace Users
 ====================
 
 Workspace user has the following properties:
-* id: workspace user id (integer)
-* uid: user id of the workspace user (integer)
-* admin: if user is workspace admin (boolean)
-* active: if the workspace user has accepted the invitation to this workspace (boolean)
-* invite_url: if user has not accepted the invitation the url for accepting his/her invitation is sent when the request is made by workspace_admin
+
+* **`id`**: workspace user id (integer)
+* **`uid`**: user id of the workspace user (integer)
+* **`admin`**: if user is workspace admin (boolean)
+* **`active`**: if the workspace user has accepted the invitation to this workspace (boolean)
+* **`invite_url`**: if user has not accepted the invitation the url for accepting his/her invitation is sent when the request is made by workspace_admin
 
 ##Invite users to workspace##
 
@@ -15,11 +16,13 @@ You can add users to workspace by email addresses. A letter inviting the user to
 `POST https://www.toggl.com/api/v8/workspaces/{workspace_id}/invite`
 
 Request has the following properties:
-* emails: array of emails
+
+* **`emails`**: array of emails
 
 Response has the following properties:
-* data:  array of created workspace user objects
-* notifications: array of strings. If some emails did not pass the validation the error is described here.
+
+* **`data`**:  array of created workspace user objects
+* **`notifications`**: array of strings. If some emails did not pass the validation the error is described here.
 
 
 Example request
@@ -32,6 +35,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 ```
 
 Successful response
+
 ```json
 {
 	"data":{[
@@ -63,8 +67,8 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X PUT https://www.toggl.com/api/v8/workspace_users/19012628
 ```
 
-
 Successful response
+
 ```json
 {
 	"data": {
@@ -82,6 +86,7 @@ Successful response
 `DELETE https://www.toggl.com/api/v8/workspace_users/{workspace_user_id}`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/workspace_users/19012628
@@ -92,15 +97,18 @@ Successful request will return `200 OK`. If the user has no access to delete, yo
 ##Get workspace users##
 
 This request returns not the user objects, but the `workspace_user` objects (the connection between user and workspace)
+
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/workspace_users`
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 -X GET https://www.toggl.com/api/v8/workspaces/777/workspace_users
 ```
 
 Successful response is an array of workspace's workspace users
+
 ```json
 [
 	{

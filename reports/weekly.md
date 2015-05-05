@@ -7,23 +7,27 @@ The weekly report gives aggregated 7 day durations or earnings grouped by users 
 The weekly report accepts all of the [standard request parameters](../reports.md#request-parameters), with the exception of the `until` parameter.  Instead, 7 days starting from `since` are shown.
 
 Additional request parameters for this report are:
-* `grouping`: `users`/`projects`, default projects. If one grouping is selected, the other acts as subgrouping.
-* `calculate`: `time`/`earnings`, default time
+
+* **`grouping`**: `users`/`projects`, default projects. If one grouping is selected, the other acts as subgrouping.
+* **`calculate`**: `time`/`earnings`, default time
 
 ##Response##
 
 The repsonse will include the [standard response parameters](../reports.md#successful-response), as well as:
-* `week_totals`: array of total amounts/hours for every day (null if there's no work on a certain day)
+
+* **`week_totals`**: array of total amounts/hours for every day (null if there's no work on a certain day)
 
 ###Data array###
 
-Grouping is `projects` the main grouping looks like this
-* title: object containing project and client name
-* pid: project id
-* totals: array of total amounts for the user during selected seven days
-* details: array of projects and project totals for the user during the seven days
+When **grouping** is `projects`, the main grouping looks like this :
+
+* **`title`**: object containing project and client name
+* **`pid`**: project id
+* **`totals`**: array of total amounts for the user during selected seven days
+* **`details`**: array of projects and project totals for the user during the seven days
 
 Example
+
 ```json
   {
     "title":{"project":"Toggl Desktop","client":"Toggl"},
@@ -40,13 +44,15 @@ Example
 
 ```
 
-Grouping is `users`
-* title: object containing the name of the user
-* uid: user id
-* totals: array of total amounts
-* details: array of users and their totals for this project during the seven days
+When **grouping** is `users`, the main grouping looks like this :
+
+* **`title`**: object containing the name of the user
+* **`uid`**: user id
+* **`totals`**: array of total amounts
+* **`details`**: array of users and their totals for this project during the seven days
 
 Example
+
 ```json
   {
     "title":{"user":"John Swift"},
@@ -69,11 +75,13 @@ Example
 
 The totals array is different depending on the selected calculation method.
 If `calculate=time`, it is a simple array with 8 numbers - each for one day and the 8th for the seven day total.
+
 ```
   totals:[null,null,0,null,40,null,null,40]
 ```
 
 If `calculate=earnings`, it is an array of objects with currency string and the amounts array with 8 numbers - each for one day and the 8th for the seven day total.
+
 ```json
   "totals":[
     {
@@ -90,11 +98,13 @@ If `calculate=earnings`, it is an array of objects with currency string and the 
 ##Example##
 
 Example request
+
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://toggl.com/reports/api/v2/weekly?workspace_id=123&since=2013-05-19&until=2013-05-20&user_agent=api_test"
 ```
 
 Successful response
+
 ```json
 {
     "total_grand":36004000,
@@ -141,6 +151,7 @@ Successful response
 ```
 
 Example code snippet in Ruby
+
 ```ruby
 require 'net/http'
 require 'JSON'
