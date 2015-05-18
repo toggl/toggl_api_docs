@@ -22,6 +22,8 @@ Times and dates use the ISO 8601 standard, more specifically a subset described 
 Please do note that the times and dates are stored in UTC (GMT), on return the data is set into the appropriate timezone according to the setting in user profile.
 3rd party applications should make sure that they are using correct timezones and also consider daylight saving (where applicable).
 
+For rate limiting we have implemented a [Leaky bucket](http://en.wikipedia.org/wiki/Leaky_bucket). When a limit has been hit the request will get a HTTP 429 response and it's the task of the client to sleep/wait until bucket is empty. Limits will and can change during time, but a safe window will be *1 request per second*.
+
 ###Example requests###
 
 The example requests here are done using a command line tool called [cURL](http://en.wikipedia.org/wiki/CURL). If you want to try the requests out yourself, you can download cURL from [here](http://curl.haxx.se/download.html). It is available for all possible operating systems.
@@ -74,4 +76,4 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Arend Jan Tetteroo](https://github.com/arendjantetteroo) has written a library for PHP for Toggl API v8, based on the excellent Guzzle library: https://github.com/arendjantetteroo/guzzle-toggl
 
 ##3rd party apps##
-* [Federico Vaga](https://github.com/FedericoVaga) has writtena little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
+* [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
