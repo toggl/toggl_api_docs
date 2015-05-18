@@ -23,6 +23,7 @@ Please do note that the times and dates are stored in UTC (GMT), on return the d
 3rd party applications should make sure that they are using correct timezones and also consider daylight saving (where applicable).
 
 For rate limiting we have implemented a [Leaky bucket](http://en.wikipedia.org/wiki/Leaky_bucket). When a limit has been hit the request will get a HTTP 429 response and it's the task of the client to sleep/wait until bucket is empty. Limits will and can change during time, but a safe window will be *1 request per second*.
+Limiting is applied per api token per IP, meaning two users from the same IP will get their rate allocated separately.
 
 ###Example requests###
 
