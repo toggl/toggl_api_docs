@@ -96,3 +96,25 @@ Example error
   }
 
 ```
+
+Notable error codes: 
+
+    402 Payment Required - feature is not included in current subscription level of
+        workspace
+    410 Gone -  this api version is deprecated. Update your client.
+    429 Too Many Requests - add delay between requests.
+  
+
+To provide third-party developers with important information, we will use
+[Warning](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.46) HTTP
+header in api responses. We recommend to set up automated notifications for
+Warning headers in all responses, in addition to notifying you about failed requests.
+
+Example warning
+
+    Warning:Human readable warning message
+
+There are two test endpoints, that return error so you can test client side 
+error handling: [Error 400](https://www.toggl.com/reports/api/v2/error400) and 
+[Error 500](https://www.toggl.com/reports/api/v2/error500) both of them set 
+Warning header to test value.
