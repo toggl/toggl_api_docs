@@ -20,6 +20,12 @@ Summary report URL: `GET https://toggl.com/reports/api/v2/summary`
 
 For PDF response add .pdf to the end of the URL.
 
+##Rate limiting##
+
+There is rate limiting of 1 request per second (per IP per API token), this
+limit may change in future. In case client application exceeds rate limit
+HTTP status 429 will be returned. Excessive requests may yield in stricter 
+limits set upon token/IP combination.
 
 ##Authentication##
 
