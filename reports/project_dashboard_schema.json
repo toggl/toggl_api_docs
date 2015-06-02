@@ -99,7 +99,7 @@
     "top_tasks": {
       "type": ["array", "null"],
       "description": "Tasks that contributed more than 10% of total time to project",
-      "minItems": 1,
+      "minItems": 0,
       "uniqueItems": true,
       "items": {
         "type": "object",
@@ -134,7 +134,7 @@
     "tasks_page": {
       "type":  ["array", "null"],
       "description": "Paginated list of tasks",
-      "minItems": 1,
+      "minItems": 0,
       "uniqueItems": true,
       "items": {
         "type": "object",

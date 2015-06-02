@@ -7,6 +7,7 @@ More detailed information for the reports.
 * [Weekly report](reports/weekly.md)
 * [Detailed report](reports/detailed.md)
 * [Summary report](reports/summary.md)
+* [Project dashboard](reports/project.md)
 
 ##URLs##
 
