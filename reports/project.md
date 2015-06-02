@@ -22,7 +22,7 @@ order
 ##Response##
 
 Project dashboard response has following strucure: ([json schema]
-(project/project_dashboard_schema.json))
+(project_dashboard_schema.json))
 
 ```json
 {
