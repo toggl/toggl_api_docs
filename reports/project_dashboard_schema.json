@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Toggl Project dashboard",
+  "type": "object",
+  "required": [
+    "name",
+    "duration",
+    "duration_without_task",
+    "billable_duration",
+    "billable_amount",
+    "tasks_count",
+    "currency",
+    "estimated_seconds",
+    "task_estimated_seconds",
+    "use_task_estimated_seconds",
+    "tasks_per_page",
+    "users",
+    "top_tasks",
+    "tasks_page"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of project"
+    },
+    "duration": {
+      "type": "integer",
+      "description": "Total time tracked for this project (ms)"
+    }, 
+    "duration_without_task": {
+      "type": "integer",
+      "description": "Time that was tracked without task"
+    },
+    "billable_duration": {
+      "type": ["integer", "null"],
+      "description": "Billable time tracked for this project (ms) <subject to visibility permissions>"
+    },
+    "billable_amount": {
+      "type": ["number", "null"],
+      "description": "Billable amount sum <subject to visibility permissions>"
+    },
+    "tasks_count": {
+      "type": "integer",
+      "description": "Total number of tasks in this project"
+    },
+    "currency": {
+      "type": "string",
+      "description": "Currency of  billable_amount <subject to visibility permissions>"
+    },
+    "estimated_seconds": {
+      "type": ["integer", "null"],
+      "description": "Estimate of how long project would take in seconds"
+    },
+    "task_estimated_seconds": {
+      "type": ["integer", "null"],
+      "description": "Total of each task time estimations in seconds"
+    },
+    "use_task_estimated_seconds": {
+      "type": "boolean",
+      "description": "Flag indicating if total of task time estimations (true) should be used as grand-estimate, for false value estimated_seconds should be used instead"
+    },
+    "tasks_per_page": {
+      "type": "integer",
+      "description": "Number of tasks per page in #tasks_page, use together with #tasks_count to display user with pagination links"
+    },
+    "users": {
+      "type": "array",
+      "description": "All users who contributed time to project",
+      "minItems": 0,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "duration",
+          "billable_duration",
+          "billable_amount"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Toggl user name"
+          },
+          "duration": {
+            "type": "integer",
+            "description": "Time tracked for this project by given user (ms)"
+          },
+          "billable_duration": {
+            "type": "integer",
+            "description": "Billable time tracked for this project by given user (ms) <subject to visibility permissions>"
+          },
+          "billable_amount": {
+            "type": "number",
+            "description": "Billable amount contributed by given user <subject to visibility permissions>"
+          }
+        }
+      }
+    },
+    "top_tasks": {
+      "type": ["array", "null"],
+      "description": "Tasks that contributed more than 10% of total time to project",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "duration",
+          "billable_amount"
+        ],
+        "properties": {
+          "duration": {
+            "type": "integer",
+            "description": "Time tracked for this project (ms)"
+          },
+          "billable_amount": {
+            "type": "number",
+            "description": "Billable amount contributed by this task <subject to visibility permissions>"
+          },
+          "name": {
+            "type":  ["string", "null"],
+            "description": "Name of task, null value for name has special meaning - 'Sum of Others'"
+          },
+          "estimated_seconds": {
+            "type": ["integer", "null"],
+            "description": "Estimate of how long task should take in seconds"
+          },
+          "asignee": {
+            "type":["string", "null"],
+            "description": "Toggl user assigned to this task"
+          }
+        }
+      }
+    },
+    "tasks_page": {
+      "type":  ["array", "null"],
+      "description": "Paginated list of tasks",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "duration",
+          "billable_amount"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of task"
+          },
+          "assignee": {
+            "type": "string",
+            "description": "Toggl user assigned to this task"
+          },
+          "estimated_seconds": {
+            "type": "integer",
+            "description": "Estimate of how long task should take in seconds"
+          },
+          "duration": {
+            "type": "integer",
+            "description": "Time tracked for this project (ms)"
+          },
+          "billable_amount": {
+            "type": "number",
+            "description": "Billable amount contributed by this task <subject to visibility permissions>"
+          }
+        }
+      }
+    }
+  }
+}
