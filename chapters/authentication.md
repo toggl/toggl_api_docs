@@ -52,7 +52,7 @@ Response
 				"name":"Our best project",
 				"billable":true,
 				"active":true,
-				"at":"2013-02-12T09:47:57+00:00"
+				"at":"2013-02-12T09:47:57+00:00",
 				"color":"5"
 			}
 		],
@@ -74,7 +74,7 @@ Response
 				"projects_billable_by_default": true,
 			        "rounding": 1,
 				"rounding_minutes": 0,
-				"api_token": "ea897...",
+				"api_token": "ea897..."
 			}
 		],
 		"clients": []
