@@ -12,7 +12,7 @@ Additional request parameters for this report are:
 
 ##Response##
 
-The repsonse will include the [standard response parameters](../reports.md#successful-response), as well as:
+The response will include the [standard response parameters](../reports.md#successful-response), as well as:
 * `week_totals`: array of total amounts/hours for every day (null if there's no work on a certain day)
 
 ###Data array###
