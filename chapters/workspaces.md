@@ -14,6 +14,13 @@ Workspace has the following properties
 * at: timestamp that indicates the time workspace was last updated
 * logo_url: URL pointing to the logo (if set, otherwise omited) (string)
 
+### Rounding type
+| Type       | Integer |
+| ---------- | :-----: |
+| round down | -1      |
+| nearest    | 0       |
+| round up   | 1       |
+
 
 ##Get workspaces##
 
