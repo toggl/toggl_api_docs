@@ -78,3 +78,6 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ##3rd party apps##
 * [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
+* 
+### Perl ###
+* [Jason Kruczynski] (https://github.com/jkruczynski) has written a perl wrapper for the API. It creates and authenticates a session for API V8 or API V2 depending on the URL. It implements a few functions for exporting reports. https://github.com/jkruczynski/Toggl-API-Wrapper-Perl
