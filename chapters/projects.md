@@ -10,7 +10,7 @@ Project has the following properties
 * template: whether the project can be used as a template (boolean, not required)
 * template_id: id of the template project used on current project's creation
 * billable: whether the project is billable or not (boolean, default true, available only for pro workspaces)
-* auto_estimates: whether the estimated hours is calculated based on task estimations or is fixed manually (boolean, default false, not required, premium functionality)
+* auto_estimates: whether the estimated hours are automatically calculated based on task estimations or manually fixed based on the value of 'estimated_hours' (boolean, default false, not required, premium functionality)
 * estimated_hours: if auto_estimates is true then the sum of task estimations is returned, otherwise user inserted hours (integer, not required, premium functionality)
 * at: timestamp that is sent in the response for PUT, indicates the time task was last updated (read-only)
 * color: id of the color selected for the project
