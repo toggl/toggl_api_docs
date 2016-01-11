@@ -61,6 +61,8 @@ The following parameters and filters can be used in all of the reports
 * rounding: on/off, default off, rounds time according to workspace settings
 * display_hours: decimal/minutes, display hours with minutes or as a decimal number, default minutes
 
+NB! Maximum date span (until - since) is one year.
+
 ##Successful response##
 
 The general structure of the successful response
