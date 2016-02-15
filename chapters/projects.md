@@ -15,7 +15,7 @@ Project has the following properties
 * at: timestamp that is sent in the response for PUT, indicates the time task was last updated (read-only)
 * color: id of the color selected for the project
 * rate: hourly rate of the project (float, not required, premium functionality)
-* created_at: timestamp indicating when the project was created (UTC time), read-only
+* at: timestamp indicating when the project was created (UTC time), read-only
 
 
 ##Create project##
