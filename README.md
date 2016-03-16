@@ -77,6 +77,10 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ### PHP ###
 * [Arend Jan Tetteroo](https://github.com/arendjantetteroo) has written a library for PHP for Toggl API v8, based on the excellent Guzzle library: https://github.com/arendjantetteroo/guzzle-toggl
 
+### Elixir ###
+
+* [Víctor Viruete](https://github.com/hopsor) has written an Elixir wrapper for Toggl API v8 and Reports API: https://github.com/diacode/togglex
+
 ##3rd party apps##
 * [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
 
