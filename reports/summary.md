@@ -30,7 +30,7 @@ Following groupings with subgroupings are available in the summary report
 
 ##Response##
 
-The repsonse will include the [standard response parameters](../reports.md#successful-response).
+The response will include the [standard response parameters](../reports.md#successful-response).
 
 ###Data array###
 
