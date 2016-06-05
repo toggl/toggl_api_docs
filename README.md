@@ -78,7 +78,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Arend Jan Tetteroo](https://github.com/arendjantetteroo) has written a library for PHP for Toggl API v8, based on the excellent Guzzle library: https://github.com/arendjantetteroo/guzzle-toggl
 
 ### Go ###
-* [Doug Chimento] (https://github.com/dougEfresh) has written a go wrapper for the API. https://github.com/dougEfresh/gtoggl 
+* [Doug Chimento] (https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
 
 ##3rd party apps##
 * [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
