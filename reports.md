@@ -47,6 +47,8 @@ The following parameters and filters can be used in all of the reports
 * client_ids: client ids separated by a comma, **0** if you want to filter out time entries without a client
 * project_ids: project ids separated by a comma, **0** if you want to filter out time entries without a project
 * user_ids: user ids separated by a comma
+* members_of_group_ids: group ids separated by a comma. This limits provided user_ids to the provided group members
+* or_members_of_group_ids: group ids separated by a comma. This extends provided user_ids with the provided group members
 * tag_ids: tag ids separated by a comma, **0** if you want to filter out time entries without a tag
 * task_ids: task ids separated by a comma, **0** if you want to filter out time entries without a task
 * time_entry_ids: time entry ids separated by a comma
