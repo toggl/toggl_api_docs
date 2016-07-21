@@ -47,7 +47,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ##Code examples##
 
 ### Java ###
-* [Benno](https://github.com/bennob) has updated JToggl, a Java wrapper for the Toggl API to support v8: http://code.google.com/p/jtoggl/
+* [Benno](https://github.com/bennob) has updated JToggl, a Java wrapper for the Toggl API to support v8: https://github.com/bbaumgartner/jtoggl
 
 ### Python ###
 * [Mosab Ahmad](https://github.com/mos3abof) has created a project using Toggl API to calculate how many hours he should work to achieve monthly goals: https://github.com/mos3abof/toggl_target
