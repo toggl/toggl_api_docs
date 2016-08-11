@@ -156,6 +156,7 @@ Successful response is an array of the project's users
 ```
 
 ##Get project tasks##
+Available only for pro workspaces
 
 `GET https://www.toggl.com/api/v8/projects/{project_id}/tasks`
 Read more about task fields from [here](tasks.md).
