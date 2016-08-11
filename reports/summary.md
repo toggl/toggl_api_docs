@@ -7,8 +7,8 @@ Summary report returns the aggregated time entries data.
 In addition to the [standard request parameters](../reports.md#request-parameters), summaries accept the following additional parameters:
 * `grouping`
 * `subgrouping`
-* `subgrouping_ids` (boolean) - whether returned items will contain 'ids' key containing coma separated group item ID values
-* `grouped_time_entry_ids` (boolean) - whether returned items will contain 'time_entry_ids' key containing coma separated time entries ID values for given item
+* `subgrouping_ids` (boolean) - whether returned items will contain 'ids' key containing comma separated group item ID values
+* `grouped_time_entry_ids` (boolean) - whether returned items will contain 'time_entry_ids' key containing comma separated time entries ID values for given item
 
 Use the grouping and subgrouping params to organize the data as needed. By default `grouping:projects` and `subgrouping:time_entries`
 
@@ -30,7 +30,7 @@ Following groupings with subgroupings are available in the summary report
 
 ##Response##
 
-The repsonse will include the [standard response parameters](../reports.md#successful-response).
+The response will include the [standard response parameters](../reports.md#successful-response).
 
 ###Data array###
 
