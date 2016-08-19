@@ -6,7 +6,7 @@ Dashboard request returns two objects:
 * Activity
 * Most active user
 
-The activity object holds the data of 10 latest actions in the workspace.
+The activity object holds the data of 20 latest actions in the workspace.
 Activity object has the following properties
 * user_id: user ID
 * project_id: project ID (ID is 0 if time entry doesn't have project connected to it)
