@@ -94,6 +94,14 @@ Successful request will return `200 OK`. If the user has no access to delete, yo
 
 ##Mass Actions##
 
+###Get list of project users in a Workspace###
+```shell
+curl -v -u TOKEN:api_token https://www.toggl.com/api/v8/workspaces/{workspace_id}/project_users
+```
+
+Successful request will return a list of all project users in the workspace.
+Note: Does not support the `fields` parameter (hence a `fullname` field won't be returned)
+
 ###Create multiple project users for single project###
 To create multiple project users for a single project, you must add multiple user ids separated with a comma with the `uid` parameter.
 
