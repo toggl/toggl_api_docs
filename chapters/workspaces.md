@@ -225,6 +225,34 @@ Successful response is an array of workspace clients
 ]
 ```
 
+##Get workspace groups##
+
+To get a successful response, the token owner must be workspace admin.
+`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/groups`
+
+Example request
+```shell
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
+-X GET https://www.toggl.com/api/v8/workspaces/777/groups
+```
+
+Successful response is an array of workspace groups
+```json
+[
+	{
+		"id":123,
+		"wid":777,
+		"name":"Management",
+		"at":"2013-03-06T09:06:13+00:00"
+	},{
+		"id":987,
+		"wid":777,
+		"name":"Developers",
+		"at":"2013-03-06T09:05:40+00:00"
+	}
+]
+```
+
 ##Get workspace projects##
 
 To get a successful response, the token owner must be workspace admin.
