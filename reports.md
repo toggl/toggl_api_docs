@@ -31,7 +31,7 @@ limits set upon token/IP combination.
 ##Authentication##
 
 You can authenticate in the reports API **only** with your API token. For HTTP Basic Auth you have to add the Authorization header with the request.
-The token is sent as user name and the string 'api_token' as the password.
+The API token is the user name and the string 'api_token' is the password.
 Whenever possible please use the tools and interfaces provided by your http library to do Basic Auth (for example, curl uses the -u switch for that).
 
 ##Request Parameters##
