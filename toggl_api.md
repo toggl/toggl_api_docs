@@ -79,6 +79,10 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - delete a client
  - get clients visible to user
  - get client projects
+* [Groups](chapters/groups.md)
+ - create a group
+ - update a group
+ - delete a group
 * [Projects](chapters/projects.md)
  - create a project
  - get project data
@@ -123,6 +127,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - get user workspaces
  - get workspace users
  - get workspace clients
+ - get workspace groups
  - get workspace projects
  - get workspace tasks
  - get workspace tags
