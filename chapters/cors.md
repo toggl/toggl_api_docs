@@ -40,7 +40,7 @@ Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X GET https://www.toggl.com/api/v9/cors
+	-X GET https://www.toggl.com/api/v9/me/cors
 ```
 
 Successful response
