@@ -8,7 +8,7 @@ The result of each action is communicated via standard HTTP response codes.
 
 ###CORS###
 
-If you wish to use the API using CORS, we'll need to whitelist you first. Please send us a note at support@toggl.com to whitelist your domain(s).
+If you wish to use the API using CORS, we'll need to whitelist you first. Please refer to the [CORS documentation](https://github.com/toggl/toggl_api_docs/blob/master/chapters/cors.md)
 
 ###Successful requests###
 
