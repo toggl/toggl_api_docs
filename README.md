@@ -48,6 +48,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### Java ###
 * [Benno](https://github.com/bennob) has updated JToggl, a Java wrapper for the Toggl API to support v8: https://github.com/bbaumgartner/jtoggl
+* [rocketbase-io](https://github.com/rocketbase-io) build Toggl-Report-Api, a Java wrapper for the Toggl Report API: https://github.com/rocketbase-io/toggl-report-api
 
 ### Python ###
 * [Mosab Ahmad](https://github.com/mos3abof) has created a project using Toggl API to calculate how many hours he should work to achieve monthly goals: https://github.com/mos3abof/toggl_target
