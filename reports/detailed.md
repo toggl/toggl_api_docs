@@ -1,19 +1,19 @@
-#Detailed report#
+# Detailed report
 
 The detailed report returns the time entries for the requested parameters/filters.
 
-##Request##
+## Request
 
 In addition to the [standard request parameters](../reports.md#request-parameters), there is one additional parameter in detailed reports. As the returned data is paginated you have to add the page parameter.
 * `page`: integer, default 1
 
-##Response##
+## Response
 
 The response will include the [standard response parameters](../reports.md#successful-response), as well as:
 * `total_count`: total number of time entries that were found for the request. Pay attention to the fact that the amount of time entries returned is max the number which is returned with the `per_page` field (currently 50). To get the next batch of time entries you need to do a new request with same parameters and the incremented `page` parameter. It is not possible to get all the time entries with one request.
 * `per_page`: how many time entries are displayed in one request
 
-###Data array###
+### Data array
 
 Time entry data
 * id: time entry id
@@ -35,7 +35,7 @@ Time entry data
 * cur: billable amount currency
 * tags: array of tag names, which assigned for the time entry
 
-##Example##
+## Example
 
 Example request
 ```shell
