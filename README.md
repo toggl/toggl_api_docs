@@ -59,6 +59,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### Ruby ###
 * [Tom Kane](https://github.com/kanet77) has written a Ruby wrapper for Toggl API v8: https://github.com/kanet77/togglv8
+* [Nick Lowery](https://github.com/ClockVapor) has written a Ruby conversion of the RPi.GPIO Python module: https://github.com/ClockVapor/rpi_gpio
 
 ### Node.js ###
 * [Damian Mee](https://github.com/meeDamian) has written a CLI tool in Node.js for Toggl API v8: https://github.com/meeDamian/toggl-cli
