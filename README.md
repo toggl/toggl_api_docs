@@ -79,6 +79,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ### PHP ###
 * [Arend Jan Tetteroo](https://github.com/arendjantetteroo) has written a library for PHP for Toggl API v8, based on the excellent Guzzle library: https://github.com/arendjantetteroo/guzzle-toggl
 * [Morning Train](https://morningtrain.dk) has written PHP classes for Toggl API v8 (It is based on Guzzle 6): https://github.com/Morning-Train/toggl-api
+* [Ixudra](https://ixudra.be) has written a Laravel PHP library for Toggl API v8: https://github.com/ixudra/toggl
 
 ### Go ###
 * [Doug Chimento] (https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
