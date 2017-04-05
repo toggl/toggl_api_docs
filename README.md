@@ -82,7 +82,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Ixudra](https://ixudra.be) has written a Laravel PHP library for Toggl API v8: https://github.com/ixudra/toggl
 
 ### Go ###
-* [Doug Chimento] (https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
+* [Doug Chimento](https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
 
 ### Elixir ###
 * [Víctor Viruete](https://github.com/hopsor) has written an Elixir wrapper for Toggl API v8 and Reports API: https://github.com/diacode/togglex
@@ -91,8 +91,8 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
 
 ### Perl ###
-* [Jason Kruczynski] (https://github.com/jkruczynski) has written a perl wrapper for the API. It creates and authenticates a session for API V8 or API V2 depending on the URL. It implements a few functions for exporting reports. https://github.com/jkruczynski/Toggl-API-Wrapper-Perl
+* [Jason Kruczynski](https://github.com/jkruczynski) has written a perl wrapper for the API. It creates and authenticates a session for API V8 or API V2 depending on the URL. It implements a few functions for exporting reports. https://github.com/jkruczynski/Toggl-API-Wrapper-Perl
 
 ### R ###
-* [Vincent Guyader] (http://thinkr.fr) has written a simple R and Rstudio implementation for the API. https://github.com/ThinkRstat/togglr
+* [Vincent Guyader](http://thinkr.fr) has written a simple R and Rstudio implementation for the API. https://github.com/ThinkRstat/togglr
 
