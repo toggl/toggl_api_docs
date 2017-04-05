@@ -11,7 +11,7 @@ For changing data, including tracking time, you'll need to use the **Toggl API**
 
 If you want to get time entries of all the workspace users and aggregated data for reporting, you need to use the read-only **Reports API**, which gives you many options for filtering, grouping and sorting.
 
-##The API Format##
+## The API Format
 
 The API accepts only JSON requests. Please make sure you're setting `Content-Type: application/json`in your request header. Each request returns a **JSON-encoded** body.
 
@@ -25,7 +25,7 @@ Please do note that the times and dates are stored in UTC (GMT), on return the d
 For rate limiting we have implemented a [Leaky bucket](http://en.wikipedia.org/wiki/Leaky_bucket). When a limit has been hit the request will get a HTTP 429 response and it's the task of the client to sleep/wait until bucket is empty. Limits will and can change during time, but a safe window will be *1 request per second*.
 Limiting is applied per api token per IP, meaning two users from the same IP will get their rate allocated separately.
 
-###Example requests###
+### Example requests
 
 The example requests here are done using a command line tool called [cURL](http://en.wikipedia.org/wiki/CURL). If you want to try the requests out yourself, you can download cURL from [here](http://curl.haxx.se/download.html). It is available for all possible operating systems.
 
@@ -35,22 +35,22 @@ Under Ubuntu installing cURL is very easy:
 sudo apt-get install curl
 ```
 
-##API token##
+## API token
 
 Each user in Toggl.com has an API token. They can find it under "My Profile" in their Toggl account.
 
 
-##Help us towards a better API##
+## Help us towards a better API
 
 The Toggl API has moved to Github so you could actively participate in helping us making the API better. If you have any requests or you found a bug, you can use Github issues to let us know. You can also fork the docs and send a pull request with improvements
 
-##Code examples##
+## Code examples
 
-### Java ###
+### Java
 * [Benno](https://github.com/bennob) has updated JToggl, a Java wrapper for the Toggl API to support v8: https://github.com/bbaumgartner/jtoggl
 * [rocketbase-io](https://github.com/rocketbase-io) build Toggl-Report-Api, a Java wrapper for the Toggl Report API: https://github.com/rocketbase-io/toggl-report-api
 
-### Python ###
+### Python
 * [Mosab Ahmad](https://github.com/mos3abof) has created a project using Toggl API to calculate how many hours he should work to achieve monthly goals: https://github.com/mos3abof/toggl_target
 * [Mikhail Novikov](https://github.com/kurtgn) has created a graphical utility for displaying historical data: https://github.com/kurtgn/chronicl
 * [Robert Adams](https://github.com/drobertadams) and [Beau Raines](https://github.com/beauraines) have updated [toggl-cli](https://github.com/drobertadams/toggl-cli) to API v8. It provides a set of Python objects for interacting with Toggl, as well as a command-line interface: https://github.com/drobertadams/toggl-cli
@@ -58,43 +58,43 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Matthias Büchi](https://github.com/ynop) has created a simple tool to calculate the difference between the tracked hours in Toggl and the hours one should work in a given period: https://github.com/ynop/togglore
 * [David Cako](https://github.com/david-cako) has written an efficient command line interface for inputting time-insensitive toggl entries: https://github.com/david-cako/toggl-hammer
 
-### Ruby ###
+### Ruby
 * [Tom Kane](https://github.com/kanet77) has written a Ruby wrapper for Toggl API v8: https://github.com/kanet77/togglv8
 
-### Node.js ###
+### Node.js
 * [Damian Mee](https://github.com/meeDamian) has written a CLI tool in Node.js for Toggl API v8: https://github.com/meeDamian/toggl-cli
 * [Alexander Makarenko](https://github.com/estliberitas) has written a library for Node.js for Toggl API v8: https://github.com/7eggs/node-toggl-api
 
-### C++ ###
+### C++
 
 * TogglDesktop has an [open source, cross platform library](https://github.com/toggl/toggldesktop/tree/master/src/lib) that can be reused in your own apps.
 
-### .NET ###
+### .NET
 
 * Toggl mobile apps have a [shared C# library (Phoebe)](https://github.com/toggl/mobile/tree/master/Phoebe) which provides access to API and also some common clientside business logic we use. Feel free to use as little or much of it you want.
 * [Ilya Pirozhenko](https://github.com/sochix) has written a .NET library: https://www.nuget.org/packages/TogglAPI.Net/
 
-### Scala ###
+### Scala
 * [Gabriele Alese](https://github.com/gabalese) has written a command line client for Toggl: https://github.com/gabalese/toggl-cli
 
-### PHP ###
+### PHP
 * [Arend Jan Tetteroo](https://github.com/arendjantetteroo) has written a library for PHP for Toggl API v8, based on the excellent Guzzle library: https://github.com/arendjantetteroo/guzzle-toggl
 * [Morning Train](https://morningtrain.dk) has written PHP classes for Toggl API v8 (It is based on Guzzle 6): https://github.com/Morning-Train/toggl-api
 * [Ixudra](https://ixudra.be) has written a Laravel PHP library for Toggl API v8: https://github.com/ixudra/toggl
 
-### Go ###
-* [Doug Chimento](https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
+### Go
+* [Doug Chimento] (https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
 
-### Elixir ###
+### Elixir
 * [Víctor Viruete](https://github.com/hopsor) has written an Elixir wrapper for Toggl API v8 and Reports API: https://github.com/diacode/togglex
 
-##3rd party apps##
+## 3rd party apps
 * [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
 * [rocketbase-io](https://github.com/rocketbase-io/toggl-reporter) has written a tiny SpringBoot-Application, build with vaadin and mongodb, that pulls your TimeEntries from toggl. The stored information allow a fine grained reporting and analysis that aren't possible within toggl (like detailed working hours in comparison between team-members and many more). A [docker-image](https://hub.docker.com/r/rocketbaseio/toggl-reporter/) is also provided...
 
-### Perl ###
-* [Jason Kruczynski](https://github.com/jkruczynski) has written a perl wrapper for the API. It creates and authenticates a session for API V8 or API V2 depending on the URL. It implements a few functions for exporting reports. https://github.com/jkruczynski/Toggl-API-Wrapper-Perl
+### Perl
+* [Jason Kruczynski] (https://github.com/jkruczynski) has written a perl wrapper for the API. It creates and authenticates a session for API V8 or API V2 depending on the URL. It implements a few functions for exporting reports. https://github.com/jkruczynski/Toggl-API-Wrapper-Perl
 
-### R ###
-* [Vincent Guyader](http://thinkr.fr) has written a simple R and Rstudio implementation for the API. https://github.com/ThinkRstat/togglr
+### R
+* [Vincent Guyader] (http://thinkr.fr) has written a simple R and Rstudio implementation for the API. https://github.com/ThinkRstat/togglr
 
