@@ -39,31 +39,29 @@ Whenever possible please use the tools and interfaces provided by your http libr
 The API expects the request parameters as the query string of the URL.
 
 The following parameters and filters can be used in all of the reports
-* user_agent: string, **required**, the name of your application or your email address so we can get in touch in case you're doing something wrong.
-* workspace_id: integer, **required**. The workspace whose data you want to access.
-* since: string, ISO 8601 date (YYYY-MM-DD), by default until - 6 days.
-* until: string, ISO 8601 date (YYYY-MM-DD), by default today
-* billable: possible values: yes/no/both, default both
-* client_ids: client ids separated by a comma, **0** if you want to filter out time entries without a client
-* project_ids: project ids separated by a comma, **0** if you want to filter out time entries without a project
-* user_ids: user ids separated by a comma
-* members_of_group_ids: group ids separated by a comma. This limits provided user_ids to the provided group members
-* or_members_of_group_ids: group ids separated by a comma. This extends provided user_ids with the provided group members
-* tag_ids: tag ids separated by a comma, **0** if you want to filter out time entries without a tag
-* task_ids: task ids separated by a comma, **0** if you want to filter out time entries without a task
-* time_entry_ids: time entry ids separated by a comma
-* description: string, time entry description
-* without_description: true/false, filters out the time entries which do not have a description ('(no description)')
-* order_field:
-  * date/description/duration/user in detailed reports
-  * title/duration/amount in summary reports
-  * title/day1/day2/day3/day4/day5/day6/day7/week_total in weekly report
-* order_desc: on/off, `on` for descending and `off` for ascending order
-* distinct_rates: on/off, default off
-* rounding: on/off, default off, rounds time according to workspace settings
-* display_hours: decimal/minutes, display hours with minutes or as a decimal number, default minutes
-
-NB! Maximum date span (until - since) is one year.
+* `user_agent`: **Required**. The name of your application or your email address so we can get in touch in case you're doing something wrong.
+* `workspace_id`: **Required**. The workspace whose data you want to access.
+* `since`: ISO 8601 date (YYYY-MM-DD) format. Defaults to 6 days before `until`.
+* `until`: ISO 8601 date (YYYY-MM-DD) format. Defaults to today's date. (Note: Maximum date span (`until - since`) is one year.)
+* `billable`: "yes", "no", or "both". Defaults to "both".
+* `client_ids`: A list of client IDs separated by a comma. Use "0" if you want to filter out time entries without a client.
+* `project_ids`: A list of project IDs separated by a comma. Use "0" if you want to filter out time entries without a project.
+* `user_ids`: A list of user IDs separated by a comma.
+* `members_of_group_ids`: A list of group IDs separated by a comma. This limits provided `user_ids` to the members of the given groups.
+* `or_members_of_group_ids`: A list of group IDs separated by a comma. This extends provided `user_ids` with the members of the given groups.
+* `tag_ids`: A list of tag IDs separated by a comma. Use "0" if you want to filter out time entries without a tag.
+* `task_ids`: A list of task IDs separated by a comma. Use "0" if you want to filter out time entries without a task.
+* `time_entry_ids`: A list of time entry IDs separated by a comma.
+* `description`: Matches against time entry descriptions.
+* `without_description`: "true" or "false". Filters out the time entries which do not have a description (literally "(no description)").
+* `order_field`:
+  * For detailed reports: "date", "description", "duration", or "user"
+  * For summary reports: "title", "duration", or "amount"
+  * For weekly reports: "title", "day1", "day2", "day3", "day4", "day5", "day6", "day7", or "week_total"
+* `order_desc`: "on" for descending, or "off" for ascending order.
+* `distinct_rates`: "on" or "off". Defaults to "off".
+* `rounding`: "on" or "off". Defaults to "off". Rounds time according to workspace settings.
+* `display_hours`: "decimal" or "minutes". Defaults to "minutes". Determines whether to display hours as a decimal number or with minutes.
 
 ##Successful response##
 
