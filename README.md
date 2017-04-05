@@ -48,13 +48,14 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### Java
 * [Benno](https://github.com/bennob) has updated JToggl, a Java wrapper for the Toggl API to support v8: https://github.com/bbaumgartner/jtoggl
+* [rocketbase-io](https://github.com/rocketbase-io) build Toggl-Report-Api, a Java wrapper for the Toggl Report API: https://github.com/rocketbase-io/toggl-report-api
 
 ### Python
 * [Mosab Ahmad](https://github.com/mos3abof) has created a project using Toggl API to calculate how many hours he should work to achieve monthly goals: https://github.com/mos3abof/toggl_target
 * [Mikhail Novikov](https://github.com/kurtgn) has created a graphical utility for displaying historical data: https://github.com/kurtgn/chronicl
 * [Robert Adams](https://github.com/drobertadams) and [Beau Raines](https://github.com/beauraines) have updated [toggl-cli](https://github.com/drobertadams/toggl-cli) to API v8. It provides a set of Python objects for interacting with Toggl, as well as a command-line interface: https://github.com/drobertadams/toggl-cli
 * [Matthew Downey](https://github.com/matthewdowney) has started a Toggl API wrapper: https://github.com/matthewdowney/TogglPy
-* [Matthias Büchi](https://github.com/ynop) has created a simple tool to calculate the difference between the tracked hours in toggle and the hours one should work in a given period: https://github.com/ynop/togglore
+* [Matthias Büchi](https://github.com/ynop) has created a simple tool to calculate the difference between the tracked hours in Toggl and the hours one should work in a given period: https://github.com/ynop/togglore
 * [David Cako](https://github.com/david-cako) has written an efficient command line interface for inputting time-insensitive toggl entries: https://github.com/david-cako/toggl-hammer
 
 ### Ruby
@@ -79,6 +80,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ### PHP
 * [Arend Jan Tetteroo](https://github.com/arendjantetteroo) has written a library for PHP for Toggl API v8, based on the excellent Guzzle library: https://github.com/arendjantetteroo/guzzle-toggl
 * [Morning Train](https://morningtrain.dk) has written PHP classes for Toggl API v8 (It is based on Guzzle 6): https://github.com/Morning-Train/toggl-api
+* [Ixudra](https://ixudra.be) has written a Laravel PHP library for Toggl API v8: https://github.com/ixudra/toggl
 
 ### Go
 * [Doug Chimento] (https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
@@ -88,6 +90,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ## 3rd party apps
 * [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
+* [rocketbase-io](https://github.com/rocketbase-io/toggl-reporter) has written a tiny SpringBoot-Application, build with vaadin and mongodb, that pulls your TimeEntries from toggl. The stored information allow a fine grained reporting and analysis that aren't possible within toggl (like detailed working hours in comparison between team-members and many more). A [docker-image](https://hub.docker.com/r/rocketbaseio/toggl-reporter/) is also provided...
 
 ### Perl
 * [Jason Kruczynski] (https://github.com/jkruczynski) has written a perl wrapper for the API. It creates and authenticates a session for API V8 or API V2 depending on the URL. It implements a few functions for exporting reports. https://github.com/jkruczynski/Toggl-API-Wrapper-Perl

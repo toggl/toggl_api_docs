@@ -5,14 +5,15 @@ User has the following properties
 * api_token: (string)
 * default_wid: default workspace id (integer)
 * email: (string)
+* fullname: (string)
 * jquery_timeofday_format: (string)
-* jquery_date_format:(string)
+* jquery_date_format: (string)
 * timeofday_format: (string)
 * date_format: (string)
 * store_start_and_stop_time: whether start and stop time are saved on time entry (boolean)
 * beginning_of_week: (integer 0-6, Sunday=0)
 * language: user's language (string)
-* image_url: url with the user's profile picture(string)
+* image_url: url with the user's profile picture (string)
 * sidebar_piechart: should a piechart be shown on the sidebar (boolean)
 * at: timestamp of last changes
 * new_blog_post: an object with toggl blog post title and link
@@ -122,7 +123,7 @@ Successful response
 				"name":"Important project",
 				"billable":false,
 				"active":false,
-				"at":"2013-03-06T09:13:31+00:00"
+				"at":"2013-03-06T09:13:31+00:00",
 				"color":"5"
 			}
 		],
