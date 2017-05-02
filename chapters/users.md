@@ -162,7 +162,7 @@ Successful response
 }
 ```
 
-##Update user data##
+## Update user data ##
 
 `PUT https://www.toggl.com/api/v8/me`
 
@@ -229,7 +229,7 @@ Successful response
 }
 ```
 
-##Reset API token##
+## Reset API token ##
 `POST https://www.toggl.com/api/v8/reset_token`
 
 Example request
@@ -245,11 +245,11 @@ Successful response is a string with the new API token:
 ```
 
 
-##Get workspace users##
+## Get workspace users ##
 
 Retrieving workspace users is documented [here](workspaces.md#get-workspace-users).
 
-##Sign up new user##
+## Sign up new user ##
 
 To create a user you must provide these parameters for the user:
 * email: a valid email for the user whose account is created (string, required)
