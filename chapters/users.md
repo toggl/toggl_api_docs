@@ -271,7 +271,6 @@ Successful response includes created user's data and API token
 {
 	"data":{
 		"id":599978901,
-		"api_token":"808lolae4eab897cce9729a53642124effe",
 		"default_wid":983493,
 		"email":"test.user@toggl.com",
 		"fullname":"Test User",
