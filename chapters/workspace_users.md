@@ -8,7 +8,7 @@ Workspace user has the following properties:
 * active: if the workspace user has accepted the invitation to this workspace (boolean)
 * invite_url: if user has not accepted the invitation the url for accepting his/her invitation is sent when the request is made by workspace_admin
 
-##Invite users to workspace##
+## Invite users to workspace ##
 
 You can add users to workspace by email addresses. A letter inviting the user to your workspace is sent to the user's email.
 
@@ -48,7 +48,7 @@ Successful response
 ```
 
 
-##Update workspace user##
+## Update workspace user ##
 
 Only the admin flag can be changed.
 
@@ -77,7 +77,7 @@ Successful response
 }
 ```
 
-##Delete workspace user##
+## Delete workspace user ##
 
 `DELETE https://www.toggl.com/api/v8/workspace_users/{workspace_user_id}`
 
@@ -89,7 +89,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
 
-##Get workspace users##
+## Get workspace users ##
 
 This request returns not the user objects, but the `workspace_user` objects (the connection between user and workspace)
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/workspace_users`

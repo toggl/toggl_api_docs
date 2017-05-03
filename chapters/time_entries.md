@@ -17,7 +17,7 @@ Time entry has the following properties
 * duronly: should Toggl show the start and stop time of this time entry? (boolean, not required)
 * at: timestamp that is sent in the response, indicates the time item was last updated
 
-##Create a time entry##
+## Create a time entry ##
 
 `POST https://www.toggl.com/api/v8/time_entries`
 
@@ -48,7 +48,7 @@ Successful response
 }
 ```
 
-##Start a time entry##
+## Start a time entry ##
 
 `POST https://www.toggl.com/api/v8/time_entries/start`
 
@@ -79,7 +79,7 @@ Successful response
 }
 ```
 
-##Stop a time entry##
+## Stop a time entry ##
 
 `PUT https://www.toggl.com/api/v8/time_entries/{time_entry_id}/stop`
 
@@ -107,7 +107,7 @@ Successful response
 }
 ```
 
-##Get time entry details##
+## Get time entry details ##
 
 `GET https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
 
@@ -138,7 +138,7 @@ Successful response
 ```
 
 
-##Get running time entry##
+## Get running time entry ##
 
 `GET https://www.toggl.com/api/v8/time_entries/current`
 
@@ -166,7 +166,7 @@ Successful response
 ```
 
 
-##Update a time entry##
+## Update a time entry ##
 `PUT https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
 
 Example request
@@ -198,7 +198,7 @@ Successful response
 }
 ```
 
-##Delete a time entry##
+## Delete a time entry ##
 
 
 `DELETE https://www.toggl.com/api/v8/time_entries/{time_entry_id}`
@@ -212,7 +212,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 Successful request will return `200 OK`
 
 
-##Get time entries started in a specific time range##
+## Get time entries started in a specific time range ##
 
 `GET https://www.toggl.com/api/v8/time_entries`
 

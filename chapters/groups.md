@@ -6,7 +6,7 @@ Group has the following properties
 * wid: workspace ID, where the group will be used (integer, required)
 * at: timestamp that is sent in the response, indicates the time group was last updated
 
-##Create a group##
+## Create a group ##
 
 `POST https://www.toggl.com/api/v8/groups`
 
@@ -32,7 +32,7 @@ Successful response
 }
 ```
 
-##Update a group##
+## Update a group ##
 `PUT https://www.toggl.com/api/v8/groups/{group_id}`
 
 Workspace id (wid) can't be changed.
@@ -57,7 +57,7 @@ Successful response
 }
 ```
 
-##Delete a group##
+## Delete a group ##
 
 `DELETE https://www.toggl.com/api/v8/groups/{group_id}`
 
@@ -70,6 +70,6 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
 
 
-##Get workspace groups##
+## Get workspace groups ##
 
 Retrieving workspace groups is documented [here](workspaces.md#get-workspace-groups).

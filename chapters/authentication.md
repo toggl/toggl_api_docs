@@ -83,7 +83,7 @@ Response
 
 ```
 
-##HTTP Basic Auth with API token##
+## HTTP Basic Auth with API token ##
 When using Basic Auth and API token, use the API token as username and string "api_token" as password.
 
 Example request

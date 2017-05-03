@@ -1,8 +1,8 @@
-#Project dashboard#
+# Project dashboard #
 
 [Project dashboard](http://support.toggl.com/project-dashboard/) returns at-a glance information for a single project. This feature is only available with Toggl pro.
 
-##Request##
+## Request ##
 
 `GET /reports/api/v2/project`
  
@@ -19,7 +19,7 @@ Parameters are:
 * `order_desc` string:  on/off, `on` for descending and `off` for ascending 
 order
 
-##Response##
+## Response ##
 
 Project dashboard response has following strucure: ([json schema]
 (project_dashboard_schema.json))
@@ -65,7 +65,7 @@ Project dashboard response has following strucure: ([json schema]
 * `tasks_page` is array holding all tasks of given project, one page 
  at a time
 
-##Example##
+## Example ##
  
 request:
 ```shell
