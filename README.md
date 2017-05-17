@@ -71,7 +71,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### .NET
 
-* Toggl mobile apps have a [shared C# library (Phoebe)](https://github.com/toggl/mobile/tree/master/Phoebe) which provides access to API and also some common clientside business logic we use. Feel free to use as little or much of it you want.
+* The Toggl mobile apps have [shared C# libraries](https://github.com/toggl/mobileapp) which provide access to the API and also common clientside business logic we use. Feel free to use as little or much of it as you want.
 * [Ilya Pirozhenko](https://github.com/sochix) has written a .NET library: https://www.nuget.org/packages/TogglAPI.Net/
 
 ### Scala
