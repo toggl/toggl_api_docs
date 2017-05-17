@@ -9,7 +9,7 @@ More detailed information for the reports.
 * [Summary report](reports/summary.md)
 * [Project dashboard](reports/project.md)
 
-##URLs##
+## URLs ##
 
 The reports API base URL is `https://toggl.com/reports/api/v2`
 
@@ -21,20 +21,20 @@ Summary report URL: `GET https://toggl.com/reports/api/v2/summary`
 
 For PDF response add .pdf to the end of the URL.
 
-##Rate limiting##
+## Rate limiting ##
 
 There is rate limiting of 1 request per second (per IP per API token), this
 limit may change in future. In case client application exceeds rate limit
 HTTP status 429 will be returned. Excessive requests may yield in stricter 
 limits set upon token/IP combination.
 
-##Authentication##
+## Authentication ##
 
 You can authenticate in the reports API **only** with your API token. For HTTP Basic Auth you have to add the Authorization header with the request.
 The API token is the user name and the string 'api_token' is the password.
 Whenever possible please use the tools and interfaces provided by your http library to do Basic Auth (for example, curl uses the -u switch for that).
 
-##Request Parameters##
+## Request Parameters ##
 
 The API expects the request parameters as the query string of the URL.
 
@@ -63,7 +63,7 @@ The following parameters and filters can be used in all of the reports
 * `rounding`: "on" or "off". Defaults to "off". Rounds time according to workspace settings.
 * `display_hours`: "decimal" or "minutes". Defaults to "minutes". Determines whether to display hours as a decimal number or with minutes.
 
-##Successful response##
+## Successful response ##
 
 The general structure of the successful response
 ```json
@@ -81,7 +81,7 @@ The response may include some additional attributes depending on the report type
 * total_currencies: an array with amounts and currencies for the selected report
 * data: an array with detailed information of the requested report. The structure of the data in the array depends on the report.
 
-##Failed requests##
+## Failed requests ##
 
 In case of unsuccessful request the API returns the error in JSON and corresponding HTTP status code
 * message: the general message of the occurred error

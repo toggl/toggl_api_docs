@@ -1,8 +1,8 @@
-#Summary report#
+# Summary report #
 
 Summary report returns the aggregated time entries data.
 
-##Request##
+## Request ##
 
 In addition to the [standard request parameters](../reports.md#request-parameters), summaries accept the following additional parameters:
 * `grouping`
@@ -28,11 +28,11 @@ Following groupings with subgroupings are available in the summary report
   * projects
   * clients
 
-##Response##
+## Response ##
 
 The response will include the [standard response parameters](../reports.md#successful-response).
 
-###Data array###
+### Data array ###
 
 General structure of the item in the data array
 * id: the id of the grouping object
@@ -70,10 +70,10 @@ General structure of the item in the data array
   }
 ```
 
-##Project colors##
+## Project colors ##
 When grouped by project the title part of the return will contain color and color_hex fields. First one contains the color id (returned also by APIv8), second one will return the corresponding HEX value. (Please note: color return is a subject of change).
 
-##Example##
+## Example ##
 
 Example request
 ```shell

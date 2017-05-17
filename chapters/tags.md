@@ -5,7 +5,7 @@ Tag has the following properties
 * name: The name of the tag (string, required, unique in workspace)
 * wid: workspace ID, where the tag will be used (integer, required)
 
-##Create tag##
+## Create tag ##
 
 `POST https://www.toggl.com/api/v8/tags`
 
@@ -30,7 +30,7 @@ Successful response
 }
 ```
 
-##Update a tag##
+## Update a tag ##
 `PUT https://www.toggl.com/api/v8/tags/{tag_id}`
 
 Workspace id (wid) can't be changed.
@@ -54,7 +54,7 @@ Successful response
 }
 ```
 
-##Delete a tag##
+## Delete a tag ##
 
 `DELETE https://www.toggl.com/api/v8/tags/{tag_id}`
 
