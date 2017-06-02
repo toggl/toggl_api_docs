@@ -2,6 +2,7 @@ Groups
 ====================
 
 Group has the following properties
+* id: The id of the group (integer, required)
 * name: The name of the group (string, required)
 * wid: workspace ID, where the group will be used (integer, required)
 * at: timestamp that is sent in the response, indicates the time group was last updated
