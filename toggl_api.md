@@ -6,11 +6,11 @@ If the time entry is currently running, the *duration* attribute contains a nega
 
 The result of each action is communicated via standard HTTP response codes.
 
-###CORS###
+### CORS ###
 
 If you wish to use the API using CORS, we'll need to whitelist you first. Please refer to the [CORS documentation](https://github.com/toggl/toggl_api_docs/blob/master/chapters/cors.md)
 
-###Successful requests###
+### Successful requests ###
 
 When request is successful (2xx), a nested response object is returned. Fields which value is NULL are not in the response.
 
@@ -43,7 +43,7 @@ Response
 }
 ```
 
-###Failed requests###
+### Failed requests ###
 
 If a create or update action failed, HTTP status code 404 and an array of localized error messages will be returned.
 
@@ -59,13 +59,13 @@ Response
 `["Start can't be blank"]`
 
 
-##Authentication##
+## Authentication ##
 
 To use the API, you need to authenticate yourself. This can be done via HTTP POST or HTTP Basic Auth. After successful authentication a session is created using a cookie.
 
 If authentication fails, HTTP status code 403 is returned. You can read more about authentication and see sample requests [here](chapters/authentication.md).
 
-##Supported API requests##
+## Supported API requests ##
 
 * [Authenticate and get user data](chapters/authentication.md)
  - HTTP Basic Auth with e-mail and password
