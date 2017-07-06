@@ -18,7 +18,7 @@ Project has the following properties
 * at: timestamp indicating when the project was created (UTC time), read-only
 
 
-##Create project##
+## Create project
 
 `POST https://www.toggl.com/api/v8/projects`
 
@@ -49,7 +49,7 @@ Successful response
 }
 ```
 
-##Get project data##
+## Get project data
 
 `GET https://www.toggl.com/api/v8/projects/{project_id}`
 
@@ -79,7 +79,7 @@ Successful response
 }
 ```
 
-##Update project data##
+## Update project data
 
 `PUT https://www.toggl.com/api/v8/projects/{project_id}`
 
@@ -110,7 +110,7 @@ Successful response
 }
 ```
 
-##Delete a project##
+## Delete a project
 
 `DELETE https://www.toggl.com/api/v8/projects/{project_id}`
 
@@ -120,7 +120,7 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-X DELETE https://www.toggl.com/api/v8/projects/4692190
 ```
 
-##Get project users##
+## Get project users
 
 `GET https://www.toggl.com/api/v8/projects/{project_id}/project_users`
 Read more about project user fields from [here](project_users.md).
@@ -155,7 +155,7 @@ Successful response is an array of the project's users
 ]
 ```
 
-##Get project tasks##
+## Get project tasks
 Available only for pro workspaces
 
 `GET https://www.toggl.com/api/v8/projects/{project_id}/tasks`
@@ -192,14 +192,14 @@ Successful response is an array of the project's tasks
 ]
 ```
 
-##Get workspace projects##
+## Get workspace projects
 
 Retrieving workspace projects is documented [here](workspaces.md#get-workspace-projects).
 
 
-##Mass Actions##
+## Mass Actions
 
-###Delete multiple projects###
+### Delete multiple projects
 
 By supplying multiple projectuser ids, you can mass delete projects.
 `DELETE https://www.toggl.com/api/v8/projects/{project_ids}`

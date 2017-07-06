@@ -22,7 +22,7 @@ Workspace has the following properties
 | round up   | 1       |
 
 
-##Get workspaces##
+## Get workspaces
 
 `GET https://www.toggl.com/api/v8/workspaces`
 Get data about all the workspaces where the token owner belongs to.
@@ -65,7 +65,7 @@ Successful response is an array of workspaces
 ]
 ```
 
-##Get single workspace##
+## Get single workspace
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}`
 
 Example request
@@ -94,7 +94,7 @@ Successful response
 }
 ```
 
-##Update workspace##
+## Update workspace
 
 `PUT https://www.toggl.com/api/v8/workspaces/{workspace_id}`
 
@@ -129,7 +129,7 @@ Successful response
 }
 ```
 
-##Get workspace users##
+## Get workspace users
 
 To get a successful response, the token owner must be workspace admin.
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/users`
@@ -191,7 +191,7 @@ Successful response is an array of workspace users
 ]
 ```
 
-##Get workspace clients##
+## Get workspace clients
 
 To get a successful response, the token owner must be workspace admin.
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/clients`
@@ -225,7 +225,7 @@ Successful response is an array of workspace clients
 ]
 ```
 
-##Get workspace groups##
+## Get workspace groups
 
 To get a successful response, the token owner must be workspace admin.
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/groups`
@@ -253,7 +253,7 @@ Successful response is an array of workspace groups
 ]
 ```
 
-##Get workspace projects##
+## Get workspace projects
 
 To get a successful response, the token owner must be workspace admin.
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/projects`
@@ -298,7 +298,7 @@ Successful response is an array of active workspace projects
 ]
 ```
 
-##Get workspace tasks##
+## Get workspace tasks
 
 Available only for pro workspaces
 To get a successful response, the token owner must be workspace admin.
@@ -348,7 +348,7 @@ Successful response is an array of workspace tasks
 ]
 ```
 
-##Get workspace tags##
+## Get workspace tags
 
 `GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/tags`
 

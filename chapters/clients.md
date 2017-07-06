@@ -7,7 +7,7 @@ Client has the following properties
 * notes: Notes for the client (string, not required)
 * at: timestamp that is sent in the response, indicates the time client was last updated
 
-##Create a client##
+## Create a client
 
 `POST https://www.toggl.com/api/v8/clients`
 
@@ -33,7 +33,7 @@ Successful response
 }
 ```
 
-##Get client details##
+## Get client details
 
 `GET https://www.toggl.com/api/v8/clients/{client_id}`
 
@@ -58,7 +58,7 @@ Successful response
 }
 ```
 
-##Update a client##
+## Update a client
 `PUT https://www.toggl.com/api/v8/clients/{client_id}`
 
 Workspace id (wid) can't be changed.
@@ -84,7 +84,7 @@ Successful response
 }
 ```
 
-##Delete a client##
+## Delete a client
 
 `DELETE https://www.toggl.com/api/v8/clients/{client_id}`
 
@@ -97,12 +97,12 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
 
 
-##Get workspace clients##
+## Get workspace clients
 
 Retrieving workspace clients is documented [here](workspaces.md#get-workspace-clients).
 
 
-##Get clients visible to user##
+## Get clients visible to user
 
 `GET https://www.toggl.com/api/v8/clients`
 
@@ -131,7 +131,7 @@ Successful response is an array of clients
 ]
 ```
 
-##Get client projects##
+## Get client projects
 
 `GET https://www.toggl.com/api/v8/clients/{client_id}/projects`
 
