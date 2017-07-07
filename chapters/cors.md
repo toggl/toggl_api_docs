@@ -8,8 +8,8 @@ A CORS whitelist record has the following properties
 
 Record id (id) can't be changed on update.
 
-##Actions##
-###Create an entry###
+## Actions
+### Create an entry
 
 `POST https://www.toggl.com/api/v9/me/cors`
 
@@ -32,7 +32,7 @@ Successful response
 }
 ```
 
-###Get entries for current user###
+### Get entries for current user
 
 `GET https://www.toggl.com/api/v9/me/cors`
 
@@ -64,7 +64,7 @@ Successful response
 ]
 ```
 
-###Delete an entry###
+### Delete an entry
 
 `DELETE https://www.toggl.com/api/v9/me/cors/{id}`
 

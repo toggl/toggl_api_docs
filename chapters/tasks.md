@@ -14,8 +14,8 @@ Task has the following properties
 
 Workspace id (wid) and project id (pid) can't be changed on update.
 
-##Actions for single project user##
-###Create a task###
+## Actions for single project user
+### Create a task
 
 `POST https://www.toggl.com/api/v8/tasks`
 
@@ -43,7 +43,7 @@ Successful response
 }
 ```
 
-###Get task details###
+### Get task details
 
 `GET https://www.toggl.com/api/v8/tasks/{task_id}`
 
@@ -68,7 +68,7 @@ Successful response
 }
 ```
 
-###Update a task###
+### Update a task
 
 `PUT https://www.toggl.com/api/v8/tasks/{task_id}`
 
@@ -97,7 +97,7 @@ Successful response
 }
 ```
 
-###Delete a task###
+### Delete a task
 
 `DELETE https://www.toggl.com/api/v8/tasks/{task_id}`
 
@@ -109,9 +109,9 @@ curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
 
-##Mass Actions##
+## Mass Actions
 
-###Update multiple tasks###
+### Update multiple tasks
 
 By supplying multiple task ids, you can mass update tasks. This is good for marking tasks as done or not done (`active`).
 
@@ -153,7 +153,7 @@ Successful response is an array of tasks.
 }
 ```
 
-###Delete multiple tasks###
+### Delete multiple tasks
 By supplying multiple task ids, you can mass delete tasks.
 `DELETE https://www.toggl.com/api/v8/tasks/{task_ids}`
 

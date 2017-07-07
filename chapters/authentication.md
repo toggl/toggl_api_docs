@@ -13,7 +13,7 @@ For HTTP Basic Auth you have to add the Authorization header with the request. T
 
 If authentication fails, HTTP status code 403 is returned.
 
-## HTTP Basic Auth with e-mail and password ##
+## HTTP Basic Auth with e-mail and password
 
 Example request ([See also chapter about getting detailed user data](users.md))
 ```shell
@@ -83,7 +83,7 @@ Response
 
 ```
 
-##HTTP Basic Auth with API token##
+##HTTP Basic Auth with API token
 When using Basic Auth and API token, use the API token as username and string "api_token" as password.
 
 Example request
@@ -124,7 +124,7 @@ Response
 
 ```
 
-## Authentication with a session cookie ##
+## Authentication with a session cookie
 
 `POST https://www.toggl.com/api/v8/sessions`
 

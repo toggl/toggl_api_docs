@@ -20,7 +20,7 @@ Most active user object has the following properties
 * user_id: user ID
 * duration: Sum of time entry durations that have been created during last 7 days
 
-##Get Dashboard data##
+## Get Dashboard data
 
 `GET https://www.toggl.com/api/v8/dashboard/{workspace_id}`
 
