@@ -41,8 +41,8 @@ The API expects the request parameters as the query string of the URL.
 The following parameters and filters can be used in all of the reports
 * `user_agent`: **Required**. The name of your application or your email address so we can get in touch in case you're doing something wrong.
 * `workspace_id`: **Required**. The workspace whose data you want to access.
-* `since`: ISO 8601 date (YYYY-MM-DD) format. Defaults to 6 days before `until`.
-* `until`: ISO 8601 date (YYYY-MM-DD) format. Defaults to today's date. (Note: Maximum date span (`until - since`) is one year.)
+* `since`: ISO 8601 date (YYYY-MM-DD) format. Defaults to today - 6 days.
+* `until`: ISO 8601 date (YYYY-MM-DD) format. Note: Maximum date span (`until - since`) is one year. Defaults to today, unless since is in future or more than year ago, in this case until is since + 6 days.
 * `billable`: "yes", "no", or "both". Defaults to "both".
 * `client_ids`: A list of client IDs separated by a comma. Use "0" if you want to filter out time entries without a client.
 * `project_ids`: A list of project IDs separated by a comma. Use "0" if you want to filter out time entries without a project.
