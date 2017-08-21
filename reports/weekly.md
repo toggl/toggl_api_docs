@@ -1,8 +1,8 @@
-#Weekly report#
+# Weekly report
 
 The weekly report gives aggregated 7 day durations or earnings grouped by users and projects.
 
-##Request##
+## Request
 
 The weekly report accepts all of the [standard request parameters](../reports.md#request-parameters), with the exception of the `until` parameter.  Instead, 7 days starting from `since` are shown.
 
@@ -10,12 +10,12 @@ Additional request parameters for this report are:
 * `grouping`: `users`/`projects`, default projects. If one grouping is selected, the other acts as subgrouping.
 * `calculate`: `time`/`earnings`, default time
 
-##Response##
+## Response
 
 The response will include the [standard response parameters](../reports.md#successful-response), as well as:
 * `week_totals`: array of total amounts/hours for every day (null if there's no work on a certain day)
 
-###Data array###
+### Data array
 
 Grouping is `projects` the main grouping looks like this
 * title: object containing project and client name
@@ -87,7 +87,7 @@ If `calculate=earnings`, it is an array of objects with currency string and the 
   ]
 ```
 
-##Example##
+## Example
 
 Example request
 ```shell
