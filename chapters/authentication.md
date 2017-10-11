@@ -133,7 +133,7 @@ It's possible to create a session. The session creation request sets a cookie in
 Example request
 
 ```shell
-curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X POST https://www.toggl.com/api/v8/sessions
+curl --data="" -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X POST https://www.toggl.com/api/v8/sessions
 ```
 
 Successful response header includes the cookie
