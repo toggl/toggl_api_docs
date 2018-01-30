@@ -37,7 +37,7 @@ sudo apt-get install curl
 
 ## API token
 
-Each user in Toggl.com has an API token. They can find it under "My Profile" in their Toggl account.
+Each user in Toggl.com has an API token. They can find it under "[My Profile](https://www.toggl.com/app/profile)" in their Toggl account.
 
 
 ## Help us towards a better API
