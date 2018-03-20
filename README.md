@@ -83,7 +83,10 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Ixudra](https://ixudra.be) has written a Laravel PHP library for Toggl API v8: https://github.com/ixudra/toggl
 
 ### Go
-* [Doug Chimento](https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
+* [Doug Chimento](https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl
+* [Akeda Bagus](https://github.com/gedex) has written a library for Go for Toggl API v8:
+https://github.com/gedex/go-toggl
+* [Tobias Ranft](https://github.com/devtop) has written a library for Toggl Reports API in Go
 
 ### Elixir
 * [Víctor Viruete](https://github.com/hopsor) has written an Elixir wrapper for Toggl API v8 and Reports API: https://github.com/diacode/togglex
@@ -97,4 +100,3 @@ The Toggl API has moved to Github so you could actively participate in helping u
 
 ### R
 * [Vincent Guyader](http://thinkr.fr) has written a simple R and Rstudio implementation for the API. https://github.com/ThinkRstat/togglr
-
