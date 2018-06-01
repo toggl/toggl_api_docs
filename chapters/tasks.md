@@ -1,6 +1,6 @@
 Tasks
 ====================
-Tasks are available only for pro workspaces.
+Tasks are available only for starter and other paid workspaces.
 
 Task has the following properties
 * name: The name of the task (string, required, unique in project)
