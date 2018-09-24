@@ -17,7 +17,7 @@ If authentication fails, HTTP status code 403 is returned.
 
 Example request ([See also chapter about getting detailed user data](users.md))
 ```shell
-curl -v -u john.doe@gmail.com:secret -X GET https://www.toggl.com/api/v8/me
+curl -v -u john.doe@gmail.com:secret GET https://www.toggl.com/api/v8/me
 
 ```
 
@@ -88,7 +88,7 @@ When using Basic Auth and API token, use the API token as username and string "a
 
 Example request
 ```shell
-curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.com/api/v8/me
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token GET https://www.toggl.com/api/v8/me
 ```
 
 Response
