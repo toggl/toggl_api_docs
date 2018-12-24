@@ -1,3 +1,9 @@
+**Notice**
+> This portion of the API is disabled, if you require CORS whitelisting for your website please contact support@toggl.com for further assistance.
+
+<hr>
+<br><br><br>
+
 CORS whitelists
 ====================
 
