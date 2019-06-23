@@ -10,7 +10,7 @@ Time entry has the following properties
 * tid: task ID (integer, not required)
 * billable: (boolean, not required, default false, available for pro workspaces)
 * start: time entry start time (string, required, ISO 8601 date and time)
-* stop: time entry stop time (string, not required, ISO 8601 date and time)
+* end: time entry stop time (string, not required, ISO 8601 date and time)
 * duration: time entry duration in seconds. If the time entry is currently running, the duration attribute contains a negative value, denoting the start of the time entry in seconds since epoch (Jan 1 1970). The correct duration can be calculated as current_time + duration, where current_time is the current time in seconds since epoch. (integer, required)
 * created_with: the name of your client app (string, required)
 * tags: a list of tag names (array of strings, not required)
@@ -128,7 +128,7 @@ Successful response
 		"tid":13350500,
 		"billable":false,
 		"start":"2013-02-27T01:24:00+00:00",
-		"stop":"2013-02-27T07:24:00+00:00",
+		"end":"2013-02-27T07:24:00+00:00",
 		"duration":21600,
 		"description":"Some serious work",
 		"tags":["billed"],
@@ -174,7 +174,7 @@ Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
-	-d '{"time_entry":{"description":"Meeting with possible clients","tags":[""],"duration":1240,"start":"2013-03-05T07:58:58.000Z","stop":"2013-03-05T08:58:58.000Z","duronly":true,"pid":123,"billable":true}}' \
+	-d '{"time_entry":{"description":"Meeting with possible clients","tags":[""],"duration":1240,"start":"2013-03-05T07:58:58.000Z","end":"2013-03-05T08:58:58.000Z","duronly":true,"pid":123,"billable":true}}' \
 	-X PUT https://www.toggl.com/api/v8/time_entries/436694100
 
 ```
@@ -189,7 +189,7 @@ Successful response
 		"wid":777,
 		"billable":false,
 		"start":"2013-03-05T07:58:58.000Z",
-		"stop":"2013-03-05T08:58:58.000Z",
+		"end":"2013-03-05T08:58:58.000Z",
 		"duration":1240,
 		"description":"Meeting with possible clients",
 		"billable": true,
@@ -236,7 +236,7 @@ Successful response
 		"pid":123,
 		"billable":true,
 		"start":"2013-03-11T11:36:00+00:00",
-		"stop":"2013-03-11T15:36:00+00:00",
+		"end":"2013-03-11T15:36:00+00:00",
 		"duration":14400,
 		"description":"Meeting with the client",
 		"tags":[""],
@@ -246,7 +246,7 @@ Successful response
 		"wid":777,
 		"billable":false,
 		"start":"2013-03-12T10:32:43+00:00",
-		"stop":"2013-03-12T14:32:43+00:00",
+		"end":"2013-03-12T14:32:43+00:00",
 		"duration":18400,
 		"description":"important work",
 		"tags":[""],
@@ -288,7 +288,7 @@ Successful response
 			"pid":20123718,
 			"billable":true,
 			"start":"2013-08-01T10:46:00",
-			"stop":"2013-08-01T11:46:02",
+			"end":"2013-08-01T11:46:02",
 			"duration":3602,
 			"description":"Development",
 			"tags":["billed","poductive","overhours"],
@@ -300,7 +300,7 @@ Successful response
 			"wid":777,
 			"billable":false,
 			"start":"2013-08-01T11:11:00",
-			"stop":"2013-08-01T11:46:04",
+			"end":"2013-08-01T11:46:04",
 			"duration":2104,
 			"description":"Meeting with the client",
 			"tags":["billed","poductive","holiday"],
