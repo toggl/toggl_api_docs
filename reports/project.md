@@ -1,6 +1,6 @@
 # Project dashboard
 
-[Project dashboard](http://support.toggl.com/project-dashboard/) returns at-a glance information for a single project. This feature is only available with paid Toggl plans.
+[Project dashboard](https://support.toggl.com/en/articles/3167701-project-dashboard) returns at-a glance information for a single project. This feature is only available with paid Toggl plans.
 
 ## Request
 
