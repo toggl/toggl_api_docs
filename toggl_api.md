@@ -68,74 +68,73 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 ## Supported API requests
 
 * [Authenticate and get user data](chapters/authentication.md)
- - HTTP Basic Auth with e-mail and password
- - HTTP Basic Auth with API token
- - Authentication with a session cookie
- - Destroy the session
+  - HTTP Basic Auth with e-mail and password
+  - HTTP Basic Auth with API token
+  - Authentication with a session cookie
+  - Destroy the session
 * [Clients](chapters/clients.md)
- - create a client
- - get client details
- - update a client
- - delete a client
- - get clients visible to user
- - get client projects
+  - create a client
+  - get client details
+  - update a client
+  - delete a client
+  - get clients visible to user
+  - get client projects
 * [Groups](chapters/groups.md)
- - create a group
- - update a group
- - delete a group
+  - create a group
+  - update a group
+  - delete a group
 * [Projects](chapters/projects.md)
- - create a project
- - get project data
- - update project data
- - delete a project
- - get project users
- - get project tasks
- - delete multiple projects
+  - create a project
+  - get project data
+  - update project data
+  - delete a project
+  - get project users
+  - get project tasks
+  - delete multiple projects
 * [Project users](chapters/project_users.md)
- - create a project user
- - update a project user
- - delete a project user
- - add multiple users to a project
- - update multiple project users
- - delete multiple project users
+  - create a project user
+  - update a project user
+  - delete a project user
+  - add multiple users to a project
+  - update multiple project users
+  - delete multiple project users
 * [Tags](chapters/tags.md)
- - create a tag
- - update a tag
- - delete a tag
+  - create a tag
+  - update a tag
+  - delete a tag
 * [Tasks](chapters/tasks.md) *(available only for pro workspaces)*
- - create a task
- - get task details
- - update a task
- - delete a task
- - update multiple tasks
- - delete multiple tasks
+  - create a task
+  - get task details
+  - update a task
+  - delete a task
+  - update multiple tasks
+  - delete multiple tasks
 * [Time entries](chapters/time_entries.md)
- - create a time entry
- - start a time entry
- - stop a time entry
- - get time entry details
- - update time entry
- - delete time entry
- - get time entries started in a specific time range
- - bulk update time entries tags
+  - create a time entry
+  - start a time entry
+  - stop a time entry
+  - get time entry details
+  - update time entry
+  - delete time entry
+  - get time entries started in a specific time range
+  - bulk update time entries tags
 * [Users](chapters/users.md)
- - get current user data and time entries
- - update current user data
- - reset API token
- - sign up new user
+  - get current user data and time entries
+  - update current user data
+  - reset API token
+  - sign up new user
 * [Workspaces](chapters/workspaces.md)
- - get user workspaces
- - get workspace users
- - get workspace clients
- - get workspace groups
- - get workspace projects
- - get workspace tasks
- - get workspace tags
+  - get user workspaces
+  - get workspace users
+  - get workspace clients
+  - get workspace groups
+  - get workspace projects
+  - get workspace tasks
+  - get workspace tags
 * [Workspace users](chapters/workspace_users.md)
- - invite users to workspace
- - update workspace user
- - delete workspace user
- - get workspace users for a workspace
+  - invite users to workspace
+  - update workspace user
+  - delete workspace user
+  - get workspace users for a workspace
 * [Dashboard](chapters/dashboard.md)
- - Get a generic overview of your team
-
+  - Get a generic overview of your team
