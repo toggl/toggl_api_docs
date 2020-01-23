@@ -98,3 +98,6 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ### R
 * [Vincent Guyader](http://thinkr.fr) has written a simple R and Rstudio implementation for the API. https://github.com/ThinkRstat/togglr
 
+### Swift
+* [Nghia Tran](https://github.com/NghiaTranUIT) has written a macOS wrapper in Swift 4.2. So, we can integrate the Toggl API v8 to your own app easier: https://github.com/NghiaTranUIT/Toggl-Swift
+
