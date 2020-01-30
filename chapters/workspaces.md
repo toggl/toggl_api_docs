@@ -2,6 +2,8 @@ Workspaces
 ====================
 
 Workspace has the following properties
+
+* id: the id of the workspace (integer). This ID is globally unique.
 * name: the name of the workspace (string)
 * premium: If it's a pro workspace or not. Shows if someone is paying for the workspace or not (boolean)
 * admin: shows whether currently requesting user has admin access to the workspace (boolean)
