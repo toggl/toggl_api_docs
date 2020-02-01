@@ -201,7 +201,7 @@ Retrieving workspace projects is documented [here](workspaces.md#get-workspace-p
 
 ### Delete multiple projects
 
-By supplying multiple projectuser ids, you can mass delete projects.
+By supplying multiple project ids, you can mass delete projects.
 `DELETE https://www.toggl.com/api/v8/projects/{project_ids}`
 
 Example request
