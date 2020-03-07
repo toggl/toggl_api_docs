@@ -17,11 +17,11 @@ If authentication fails, HTTP status code 403 is returned.
 
 Example request ([See also chapter about getting detailed user data](users.md))
 ```shell
-curl -v -u john.doe@gmail.com:secret -X GET https://www.toggl.com/api/v8/me
+curl -v -u john.doe@gmail.com:secret -X GET https://www.toggl.com/api/v8/me?with_related_data=true
 
 ```
 
-Response
+Response (including Detailed User Data)
 ```json
 {
 	"since":1361780172,
@@ -91,7 +91,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET https://www.toggl.com/api/v8/me
 ```
 
-Response
+Response (without related data)
 ```json
 {
 	"since":1361780172,
