@@ -57,6 +57,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Matthew Downey](https://github.com/matthewdowney) has started a Toggl API wrapper: https://github.com/matthewdowney/TogglPy
 * [Matthias Büchi](https://github.com/ynop) has created a simple tool to calculate the difference between the tracked hours in Toggl and the hours one should work in a given period: https://github.com/ynop/togglore
 * [David Cako](https://github.com/david-cako) has written an efficient command line interface for inputting time-insensitive toggl entries: https://github.com/david-cako/toggl-hammer
+* [Jonathan Yates](https://github.com/yatesjr) has created a CLI tool to manage Toggl projects, tags, and timers (including starting, stopping, resuming, and updating): https://github.com/yatesjr/toggl-cmder
 
 ### Ruby
 * [Tom Kane](https://github.com/kanet77) has written a Ruby wrapper for Toggl API v8: https://github.com/kanet77/togglv8
@@ -83,7 +84,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Ixudra](https://ixudra.be) has written a Laravel PHP library for Toggl API v8: https://github.com/ixudra/toggl
 
 ### Go
-* [Doug Chimento](https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl 
+* [Doug Chimento](https://github.com/dougEfresh) has written a Go wrapper for Toggl API v8: https://github.com/dougEfresh/gtoggl
 
 ### Elixir
 * [Víctor Viruete](https://github.com/hopsor) has written an Elixir wrapper for Toggl API v8 and Reports API: https://github.com/diacode/togglex
