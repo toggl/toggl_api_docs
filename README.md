@@ -56,6 +56,7 @@ The Toggl API has moved to Github so you could actively participate in helping u
 * [Robert Adams](https://github.com/drobertadams) and [Beau Raines](https://github.com/beauraines) have updated [toggl-cli](https://github.com/drobertadams/toggl-cli) to API v8. It provides a set of Python objects for interacting with Toggl, as well as a command-line interface: https://github.com/drobertadams/toggl-cli
 * [Matthew Downey](https://github.com/matthewdowney) has started a Toggl API wrapper: https://github.com/matthewdowney/TogglPy
 * [Matthias Büchi](https://github.com/ynop) has created a simple tool to calculate the difference between the tracked hours in Toggl and the hours one should work in a given period: https://github.com/ynop/togglore
+* [Italo Fernandes](https://github.com/italogsfernandes) has created a tool to notify the end of the workday based on the work of Matthias Büchi: https://github.com/italogsfernandes/togglore
 * [David Cako](https://github.com/david-cako) has written an efficient command line interface for inputting time-insensitive toggl entries: https://github.com/david-cako/toggl-hammer
 
 ### Ruby
