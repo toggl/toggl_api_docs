@@ -17,7 +17,7 @@ Record id (id) can't be changed on update.
 ## Actions
 ### Create an entry
 
-`POST https://www.toggl.com/api/v9/me/cors`
+`POST https://api.track.toggl.com/api/v9/me/cors`
 
 Example request
 
@@ -25,7 +25,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"domain":"url.com"}' \
-	-X POST https://www.toggl.com/api/v9/me/cors
+	-X POST https://api.track.toggl.com/api/v9/me/cors
 
 ```
 
@@ -40,13 +40,13 @@ Successful response
 
 ### Get entries for current user
 
-`GET https://www.toggl.com/api/v9/me/cors`
+`GET https://api.track.toggl.com/api/v9/me/cors`
 
 Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X GET https://www.toggl.com/api/v9/me/cors
+	-X GET https://api.track.toggl.com/api/v9/me/cors
 ```
 
 Successful response
@@ -72,12 +72,12 @@ Successful response
 
 ### Delete an entry
 
-`DELETE https://www.toggl.com/api/v9/me/cors/{id}`
+`DELETE https://api.track.toggl.com/api/v9/me/cors/{id}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X DELETE https://www.toggl.com/api/v9/me/cors/1335076912
+	-X DELETE https://api.track.toggl.com/api/v9/me/cors/1335076912
 ```
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
