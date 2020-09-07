@@ -1,7 +1,7 @@
 Toggl Reports API v2
 =================
 
-Here you can get the general information about how to use Toggl reports API, from how to authenticate, what filters to use and how the response is structured. The available reports are similar to the reports available in [Toggl reports page](https://www.toggl.com/app/reports).
+Here you can get the general information about how to use Toggl reports API, from how to authenticate, what filters to use and how the response is structured. The available reports are similar to the reports available in [Toggl reports page](https://track.toggl.com/reports).
 
 More detailed information for the reports.
 * [Weekly report](reports/weekly.md)
@@ -11,13 +11,13 @@ More detailed information for the reports.
 
 ## URLs
 
-The reports API base URL is `https://toggl.com/reports/api/v2`
+The reports API base URL is `https://api.track.toggl.com/reports/api/v2`
 
-Weekly report URL `GET https://toggl.com/reports/api/v2/weekly`
+Weekly report URL `GET https://api.track.toggl.com/reports/api/v2/weekly`
 
-Detailed report URL: `GET https://toggl.com/reports/api/v2/details`
+Detailed report URL: `GET https://api.track.toggl.com/reports/api/v2/details`
 
-Summary report URL: `GET https://toggl.com/reports/api/v2/summary`
+Summary report URL: `GET https://api.track.toggl.com/reports/api/v2/summary`
 
 For PDF response add .pdf to the end of the URL. For CSV response add .csv as well.
 
@@ -118,6 +118,6 @@ Example warning
     Warning:Human readable warning message
 
 There are two test endpoints, that return error so you can test client side 
-error handling: [Error 400](https://www.toggl.com/reports/api/v2/error400) and 
-[Error 500](https://www.toggl.com/reports/api/v2/error500) both of them set 
+error handling: [Error 400](https://api.track.toggl.com/reports/api/v2/error400) and 
+[Error 500](https://api.track.toggl.com/reports/api/v2/error500) both of them set 
 Warning header to test value.

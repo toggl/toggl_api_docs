@@ -69,7 +69,7 @@ Project dashboard response has following strucure: ([json schema]
  
 request:
 ```shell
-curl -u my-secret-toggl-api-token:api_token -X GET "https://www.toggl.com/reports/api/v2/project/?page=1&user_agent=devteam@example.com&workspace_id=1&project_id=2"
+curl -u my-secret-toggl-api-token:api_token -X GET "https://api.track.toggl.com/reports/api/v2/project/?page=1&user_agent=devteam@example.com&workspace_id=1&project_id=2"
 ```
 
 response (formatted for readability):
