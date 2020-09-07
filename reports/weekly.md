@@ -91,7 +91,7 @@ If `calculate=earnings`, it is an array of objects with currency string and the 
 
 Example request
 ```shell
-curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://toggl.com/reports/api/v2/weekly?workspace_id=123&since=2013-05-19&until=2013-05-20&user_agent=api_test"
+curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token -X GET "https://api.track.toggl.com/reports/api/v2/weekly?workspace_id=123&since=2013-05-19&until=2013-05-20&user_agent=api_test"
 ```
 
 Successful response
@@ -148,7 +148,7 @@ require 'JSON'
 wsid = # your workspace id
 api_token = #your api token
 
-uri = URI("https://toggl.com/reports/api/v2/weekly?workspace_id=#{wsid}&since=2014-03-01&until=2014-03-05&user_agent=api_example_test")
+uri = URI("https://api.track.toggl.com/reports/api/v2/weekly?workspace_id=#{wsid}&since=2014-03-01&until=2014-03-05&user_agent=api_example_test")
 
 req = Net::HTTP::Get.new(uri)
 req.basic_auth api_token, 'api_token'

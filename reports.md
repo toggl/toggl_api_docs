@@ -11,13 +11,13 @@ More detailed information for the reports.
 
 ## URLs
 
-The reports API base URL is `https://toggl.com/reports/api/v2`
+The reports API base URL is `https://api.track.toggl.com/reports/api/v2`
 
-Weekly report URL `GET https://toggl.com/reports/api/v2/weekly`
+Weekly report URL `GET https://api.track.toggl.com/reports/api/v2/weekly`
 
-Detailed report URL: `GET https://toggl.com/reports/api/v2/details`
+Detailed report URL: `GET https://api.track.toggl.com/reports/api/v2/details`
 
-Summary report URL: `GET https://toggl.com/reports/api/v2/summary`
+Summary report URL: `GET https://api.track.toggl.com/reports/api/v2/summary`
 
 For PDF response add .pdf to the end of the URL. For CSV response add .csv as well.
 
