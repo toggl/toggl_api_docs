@@ -22,12 +22,12 @@ Most active user object has the following properties
 
 ## Get Dashboard data
 
-`GET https://www.toggl.com/api/v8/dashboard/{workspace_id}`
+`GET https://track.toggl.com/api/v8/dashboard/{workspace_id}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/dashboard/3134975
+-X GET https://track.toggl.com/api/v8/dashboard/3134975
 ```
 
 Successful response

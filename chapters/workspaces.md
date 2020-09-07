@@ -24,13 +24,13 @@ Workspace has the following properties
 
 ## Get workspaces
 
-`GET https://www.toggl.com/api/v8/workspaces`
+`GET https://track.toggl.com/api/v8/workspaces`
 Get data about all the workspaces where the token owner belongs to.
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces
+-X GET https://track.toggl.com/api/v8/workspaces
 ```
 
 Successful response is an array of workspaces
@@ -66,12 +66,12 @@ Successful response is an array of workspaces
 ```
 
 ## Get single workspace
-`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}`
+`GET https://track.toggl.com/api/v8/workspaces/{workspace_id}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces/3134975
+-X GET https://track.toggl.com/api/v8/workspaces/3134975
 ```
 
 Successful response
@@ -96,7 +96,7 @@ Successful response
 
 ## Update workspace
 
-`PUT https://www.toggl.com/api/v8/workspaces/{workspace_id}`
+`PUT https://track.toggl.com/api/v8/workspaces/{workspace_id}`
 
 Example request
 
@@ -105,7 +105,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"workspace":{"default_currency": "EUR", "default_hourly_rate": 50, "name": "John's ws", "only_admins_may_create_projects": false, "only_admins_see_billable_rates": true, "rounding": 1, "rounding_minutes": 60}}' \
-	-X PUT https://www.toggl.com/api/v8/workspaces/3134975
+	-X PUT https://track.toggl.com/api/v8/workspaces/3134975
 ```
 
 
@@ -132,12 +132,12 @@ Successful response
 ## Get workspace users
 
 To get a successful response, the token owner must be workspace admin.
-`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/users`
+`GET https://track.toggl.com/api/v8/workspaces/{workspace_id}/users`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces/777/users
+-X GET https://track.toggl.com/api/v8/workspaces/777/users
 ```
 
 Successful response is an array of workspace users
@@ -155,7 +155,7 @@ Successful response is an array of workspace users
 		"store_start_and_stop_time":true,
 		"beginning_of_week":0,
 		"language":"en_US",
-		"image_url":"https://www.toggl.com/system/avatars/123123/small/open-uri20121116-2767-b1qr8l.png",
+		"image_url":"https://track.toggl.com/system/avatars/123123/small/open-uri20121116-2767-b1qr8l.png",
 		"sidebar_piechart":false,
 		"at":"2013-03-06T08:57:12+00:00",
 		"retention":9,
@@ -177,7 +177,7 @@ Successful response is an array of workspace users
 		"store_start_and_stop_time":true,
 		"beginning_of_week":1,
 		"language":"en_US",
-		"image_url":"https://www.toggl.com/images/profile.png",
+		"image_url":"https://track.toggl.com/images/profile.png",
 		"sidebar_piechart":false,
 		"at":"2013-03-06T08:46:07+00:00",
 		"created_at":"2013-03-06T07:52:03+00:00",
@@ -194,12 +194,12 @@ Successful response is an array of workspace users
 ## Get workspace clients
 
 To get a successful response, the token owner must be workspace admin.
-`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/clients`
+`GET https://track.toggl.com/api/v8/workspaces/{workspace_id}/clients`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces/777/clients
+-X GET https://track.toggl.com/api/v8/workspaces/777/clients
 ```
 
 Successful response is an array of workspace clients
@@ -228,12 +228,12 @@ Successful response is an array of workspace clients
 ## Get workspace groups
 
 To get a successful response, the token owner must be workspace admin.
-`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/groups`
+`GET https://track.toggl.com/api/v8/workspaces/{workspace_id}/groups`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces/777/groups
+-X GET https://track.toggl.com/api/v8/workspaces/777/groups
 ```
 
 Successful response is an array of workspace groups
@@ -256,7 +256,7 @@ Successful response is an array of workspace groups
 ## Get workspace projects
 
 To get a successful response, the token owner must be workspace admin.
-`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/projects`
+`GET https://track.toggl.com/api/v8/workspaces/{workspace_id}/projects`
 
 To filter projects by their state you can add the additional param to the request url:
 * active: possible values `true`/`false`/`both`. By default true. If false, only archived projects are returned.
@@ -270,7 +270,7 @@ To get only project templates add the additional param to the request url:
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces/777/projects
+-X GET https://track.toggl.com/api/v8/workspaces/777/projects
 ```
 
 Successful response is an array of active workspace projects
@@ -303,7 +303,7 @@ Successful response is an array of active workspace projects
 Available only for pro workspaces
 To get a successful response, the token owner must be workspace admin.
 Get all not done tasks in this workspace.
-`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/tasks`
+`GET https://track.toggl.com/api/v8/workspaces/{workspace_id}/tasks`
 
 To filter tasks by their state you can add the additional param to the request url:
 * active: possible values `true`/`false`/`both`. By default true. If false, only done tasks are returned.
@@ -312,7 +312,7 @@ To filter tasks by their state you can add the additional param to the request u
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces/777/tasks
+-X GET https://track.toggl.com/api/v8/workspaces/777/tasks
 ```
 
 Successful response is an array of workspace tasks
@@ -350,12 +350,12 @@ Successful response is an array of workspace tasks
 
 ## Get workspace tags
 
-`GET https://www.toggl.com/api/v8/workspaces/{workspace_id}/tags`
+`GET https://track.toggl.com/api/v8/workspaces/{workspace_id}/tags`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
--X GET https://www.toggl.com/api/v8/workspaces/777/tags
+-X GET https://track.toggl.com/api/v8/workspaces/777/tags
 ```
 
 Successful response is an array of active workspace tags

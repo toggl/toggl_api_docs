@@ -8,7 +8,7 @@ Group has the following properties
 
 ## Create a group
 
-`POST https://www.toggl.com/api/v8/groups`
+`POST https://track.toggl.com/api/v8/groups`
 
 Example request
 
@@ -16,7 +16,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"group":{"name":"Developers","wid":777}}' \
-	-X POST https://www.toggl.com/api/v8/groups
+	-X POST https://track.toggl.com/api/v8/groups
 
 ```
 
@@ -33,7 +33,7 @@ Successful response
 ```
 
 ## Update a group
-`PUT https://www.toggl.com/api/v8/groups/{group_id}`
+`PUT https://track.toggl.com/api/v8/groups/{group_id}`
 
 Workspace id (wid) can't be changed.
 
@@ -42,7 +42,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"group":{"name":"Front-end Developers"}}' \
-	-X PUT https://www.toggl.com/api/v8/groups/1239455
+	-X PUT https://track.toggl.com/api/v8/groups/1239455
 ```
 
 Successful response
@@ -59,12 +59,12 @@ Successful response
 
 ## Delete a group
 
-`DELETE https://www.toggl.com/api/v8/groups/{group_id}`
+`DELETE https://track.toggl.com/api/v8/groups/{group_id}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X DELETE https://www.toggl.com/api/v8/groups/1239455
+	-X DELETE https://track.toggl.com/api/v8/groups/1239455
 ```
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`

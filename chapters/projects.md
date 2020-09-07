@@ -20,7 +20,7 @@ Project has the following properties
 
 ## Create project
 
-`POST https://www.toggl.com/api/v8/projects`
+`POST https://track.toggl.com/api/v8/projects`
 
 Example request
 
@@ -28,7 +28,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"project":{"name":"An awesome project","wid":777,"template_id":10237,"is_private":true,"cid":123397}}' \
-	-X POST https://www.toggl.com/api/v8/projects
+	-X POST https://track.toggl.com/api/v8/projects
 ```
 
 Successful response
@@ -51,13 +51,13 @@ Successful response
 
 ## Get project data
 
-`GET https://www.toggl.com/api/v8/projects/{project_id}`
+`GET https://track.toggl.com/api/v8/projects/{project_id}`
 
 Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X GET https://www.toggl.com/api/v8/projects/193838628
+	-X GET https://track.toggl.com/api/v8/projects/193838628
 
 ```
 
@@ -81,7 +81,7 @@ Successful response
 
 ## Update project data
 
-`PUT https://www.toggl.com/api/v8/projects/{project_id}`
+`PUT https://track.toggl.com/api/v8/projects/{project_id}`
 
 Example request
 
@@ -89,7 +89,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"project":{"name":"Changed the name","is_private":false,"cid":123398, "color": "6"}}' \
-	-X PUT https://www.toggl.com/api/v8/projects/193838628
+	-X PUT https://track.toggl.com/api/v8/projects/193838628
 ```
 
 
@@ -112,24 +112,24 @@ Successful response
 
 ## Delete a project
 
-`DELETE https://www.toggl.com/api/v8/projects/{project_id}`
+`DELETE https://track.toggl.com/api/v8/projects/{project_id}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X DELETE https://www.toggl.com/api/v8/projects/4692190
+	-X DELETE https://track.toggl.com/api/v8/projects/4692190
 ```
 
 ## Get project users
 
-`GET https://www.toggl.com/api/v8/projects/{project_id}/project_users`
+`GET https://track.toggl.com/api/v8/projects/{project_id}/project_users`
 Read more about project user fields from [here](project_users.md).
 
 Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X GET https://www.toggl.com/api/v8/projects/193838628/project_users
+	-X GET https://track.toggl.com/api/v8/projects/193838628/project_users
 
 ```
 
@@ -158,14 +158,14 @@ Successful response is an array of the project's users
 ## Get project tasks
 Available for Starter, Premium and Enterprise workspaces
 
-`GET https://www.toggl.com/api/v8/projects/{project_id}/tasks`
+`GET https://track.toggl.com/api/v8/projects/{project_id}/tasks`
 Read more about task fields from [here](tasks.md).
 
 Example request
 
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X GET https://www.toggl.com/api/v8/projects/777/tasks
+	-X GET https://track.toggl.com/api/v8/projects/777/tasks
 
 ```
 
@@ -202,10 +202,10 @@ Retrieving workspace projects is documented [here](workspaces.md#get-workspace-p
 ### Delete multiple projects
 
 By supplying multiple projectuser ids, you can mass delete projects.
-`DELETE https://www.toggl.com/api/v8/projects/{project_ids}`
+`DELETE https://track.toggl.com/api/v8/projects/{project_ids}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X DELETE https://www.toggl.com/api/v8/projects/4692190,4692192,4692193
+	-X DELETE https://track.toggl.com/api/v8/projects/4692190,4692192,4692193
 ```

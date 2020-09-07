@@ -21,7 +21,7 @@ It's possible to get user's fullname. For that you have to send the `fields` par
 
 ### Create a project user
 
-`POST https://www.toggl.com/api/v8/project_users`
+`POST https://track.toggl.com/api/v8/project_users`
 
 Example request
 
@@ -29,7 +29,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"project_user":{"pid":777,"uid":123,"rate":4.0,"manager":true}}' \
-	-X POST https://www.toggl.com/api/v8/project_users
+	-X POST https://track.toggl.com/api/v8/project_users
 
 ```
 
@@ -51,7 +51,7 @@ Successful response
 
 ### Update a project user
 
-`PUT https://www.toggl.com/api/v8/project_users/{project_user_id}`
+`PUT https://track.toggl.com/api/v8/project_users/{project_user_id}`
 
 Workspace id (wid), project id (pid) and user id (uid) can't be changed.
 
@@ -60,7 +60,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"project_user":{"manager":false,"rate":15,"fields":"fullname"}}' \
-	-X PUT https://www.toggl.com/api/v8/project_users/4692190
+	-X PUT https://track.toggl.com/api/v8/project_users/4692190
 ```
 
 Successful response
@@ -81,12 +81,12 @@ Successful response
 
 ### Delete a project user
 
-`DELETE https://www.toggl.com/api/v8/project_users/{project_user_id}`
+`DELETE https://track.toggl.com/api/v8/project_users/{project_user_id}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X DELETE https://www.toggl.com/api/v8/project_users/4692190
+	-X DELETE https://track.toggl.com/api/v8/project_users/4692190
 ```
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`
@@ -96,7 +96,7 @@ Successful request will return `200 OK`. If the user has no access to delete, yo
 
 ### Get list of project users in a Workspace
 ```shell
-curl -v -u TOKEN:api_token https://www.toggl.com/api/v8/workspaces/{workspace_id}/project_users
+curl -v -u TOKEN:api_token https://track.toggl.com/api/v8/workspaces/{workspace_id}/project_users
 ```
 
 Successful request will return a list of all project users in the workspace.
@@ -105,7 +105,7 @@ Note: Does not support the `fields` parameter (hence a `fullname` field won't be
 ### Create multiple project users for single project
 To create multiple project users for a single project, you must add multiple user ids separated with a comma with the `uid` parameter.
 
-`POST https://www.toggl.com/api/v8/project_users`
+`POST https://track.toggl.com/api/v8/project_users`
 
 Example request
 
@@ -113,7 +113,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"project_user":{"pid":777,"uid":"1267998,29624,112047","rate":4.0,"manager":true,"fields":"fullname"}}' \
-	-X POST https://www.toggl.com/api/v8/project_users
+	-X POST https://track.toggl.com/api/v8/project_users
 
 ```
 
@@ -151,7 +151,7 @@ Successful response is an array of project_users.
 ### Mass update for project users
 
 By supplying multiple project user ids, you can mass update project users.
-`PUT https://www.toggl.com/api/v8/project_users/{project_user_ids}`
+`PUT https://track.toggl.com/api/v8/project_users/{project_user_ids}`
 
 
 Example request
@@ -159,7 +159,7 @@ Example request
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
 	-H "Content-Type: application/json" \
 	-d '{"project_user":{"manager":false,"rate":15,"fields":"fullname"}}' \
-	-X PUT https://www.toggl.com/api/v8/project_users/4692190,4692192,4692191
+	-X PUT https://track.toggl.com/api/v8/project_users/4692190,4692192,4692191
 ```
 
 Successful response is an array of project_users.
@@ -198,12 +198,12 @@ Successful response is an array of project_users.
 ### Delete multiple project users
 
 By supplying multiple project user ids, you can mass delete project users.
-`DELETE https://www.toggl.com/api/v8/project_users/{project_user_ids}`
+`DELETE https://track.toggl.com/api/v8/project_users/{project_user_ids}`
 
 Example request
 ```shell
 curl -v -u 1971800d4d82861d8f2c1651fea4d212:api_token \
-	-X DELETE https://www.toggl.com/api/v8/project_users/4692190,4692192,4692193
+	-X DELETE https://track.toggl.com/api/v8/project_users/4692190,4692192,4692193
 ```
 
 Successful request will return `200 OK`. If the user has no access to delete, you'll get a status code `4xx`

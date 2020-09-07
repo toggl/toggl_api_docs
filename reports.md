@@ -1,7 +1,7 @@
 Toggl Reports API v2
 =================
 
-Here you can get the general information about how to use Toggl reports API, from how to authenticate, what filters to use and how the response is structured. The available reports are similar to the reports available in [Toggl reports page](https://www.toggl.com/app/reports).
+Here you can get the general information about how to use Toggl reports API, from how to authenticate, what filters to use and how the response is structured. The available reports are similar to the reports available in [Toggl reports page](https://track.toggl.com/app/reports).
 
 More detailed information for the reports.
 * [Weekly report](reports/weekly.md)
@@ -118,6 +118,6 @@ Example warning
     Warning:Human readable warning message
 
 There are two test endpoints, that return error so you can test client side 
-error handling: [Error 400](https://www.toggl.com/reports/api/v2/error400) and 
-[Error 500](https://www.toggl.com/reports/api/v2/error500) both of them set 
+error handling: [Error 400](https://track.toggl.com/reports/api/v2/error400) and 
+[Error 500](https://track.toggl.com/reports/api/v2/error500) both of them set 
 Warning header to test value.
