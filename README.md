@@ -1,11 +1,12 @@
 Toggl API Documentation
 ====================
 
+> :warning: **Using the API from toggl.com or www.toggl.com will be dropped soon use api.track.toggl.com**
+
 Toggl API is divided into two
 
 * [Toggl API](toggl_api.md)
 * [Reports API](reports.md)
-
 
 For changing data, including tracking time, you'll need to use the **Toggl API**.
 
