@@ -1,7 +1,7 @@
 Toggl API Documentation
 ====================
 
-> :warning: **Using the API from toggl.com or www.toggl.com will be dropped soon use api.track.toggl.com**
+> :warning: **Using the API from toggl.com or www.toggl.com will be dropped at The End of June 2021. Switch to api.track.toggl.com**
 
 Toggl API is divided into two
 
