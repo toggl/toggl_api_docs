@@ -96,29 +96,45 @@ Response
 {
 	"since":1361780172,
 	"data": {
-		"id":123,
-		"api_token":"1971800d4d82861d8f2c1651fea4d212",
-		"default_wid":777,
-		"email":"john.doe@gmail.com",
-		"fullname":"John Doe",
-		"jquery_timeofday_format":"h:i A",
-		"jquery_date_format":"m/d/Y",
-		"timeofday_format":"h:mm A",
-		"date_format":"MM/DD/YYYY",
-		"store_start_and_stop_time":true,
-		"beginning_of_week":1,
-		"language":"en_US",
-		"image_url":"https://www.toggl.com/images/profile.png",
-		"new_blog_post":{},
-		"projects": [],
-		"tags": [],
-		"tasks": [],
-		"workspaces": [
-			{
-				"id":777,"name":"John's WS","at":"2012-11-28T11:56:49+00:00"
-			}
-		],
-		"clients": []
+	    "id": 963247,
+	    "achievements_enabled": true,
+	    "api_token": "1971800d4d82861d8f2c1651fea4d212",
+	    "at": "2020-02-12T12:30:39+00:00",
+	    "beginning_of_week": 1,
+	    "created_at": "2006-01-01T00:00:00+00:00",
+	    "date_format": "MM/DD/YYYY",
+	    "default_wid": 777,
+	    "duration_format": "improved",
+	    "email": "john.doe@gmail.com",
+	    "fullname": "John Doe",
+	    "image_url": "https://www.toggl.com/images/profile.png",
+	    "invitation": {},
+	    "jquery_date_format": "m/d/Y",
+	    "jquery_timeofday_format": "h:i A",
+	    "language": "en_US",
+	    "last_blog_entry": "http://blog.toggl.com/2016/04/5-useful-toggl-features/",
+	    "new_blog_post": {},
+	    "openid_email": "john.doe@gmail.com",
+	    "openid_enabled": true,
+	    "record_timeline": false,
+	    "render_timeline": false,
+	    "retention": 9,
+	    "send_product_emails": true,
+	    "send_timer_notifications": false,
+	    "send_weekly_report": false,
+	    "should_upgrade": true,
+	    "sidebar_piechart": true,
+	    "store_start_and_stop_time": true,
+	    "timeline_enabled": false,
+	    "timeline_experiment": false,
+	    "timeofday_format": "h:mm A",
+	    "timezone": "America/New_York",
+	    "used_next": true,
+	    "workspaces": [
+		{
+		    "id":777,"name":"John's WS","at":"2012-11-28T11:56:49+00:00"
+		}
+	    ]
 	}
 }
 
