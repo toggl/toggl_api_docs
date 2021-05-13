@@ -210,7 +210,6 @@ Successful response is an array of workspace clients
 		"wid":777,
 		"name":"Rising Start-Up",
 		"at":"2013-03-06T09:06:13+00:00",
-		"notes":"Arrange a discount for them",
 		"hrate":2,
 		"cur":"USD"
 	},{
@@ -218,7 +217,6 @@ Successful response is an array of workspace clients
 		"wid":777,
 		"name":"Big Company Inc",
 		"at":"2013-03-06T09:05:40+00:00",
-		"notes":"We had some lovely projects with them",
 		"hrate":10,
 		"cur":"EUR"
 	}
