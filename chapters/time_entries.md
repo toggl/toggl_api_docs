@@ -1,7 +1,7 @@
 Time Entries
 ====================
 
-The requests are scoped with the user whose API token is used. Only his/her time entries and time entries in a workspace where the user is an admin are updated, retrieved and created.
+The requests are scoped with the user whose API token is used. This means the user can update, create, and retrieve their own time entries, and time entries in workspaces where the user is an admin.
 
 Time entry has the following properties
 * description: (string, strongly suggested to be used)
