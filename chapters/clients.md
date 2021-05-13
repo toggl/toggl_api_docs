@@ -1,11 +1,20 @@
 Clients
 ====================
 
-Client has the following properties
-* name: The name of the client (string, required, unique in workspace)
-* wid: workspace ID, where the client will be used (integer, required)
-* notes: Notes for the client (string, not required)
-* at: timestamp that is sent in the response, indicates the time client was last updated
+### Client has the following properties
+
+| Property  | Description  | Data type | Required |
+|:-------------:|:---------------:|:-------------:|:-------------:|
+| name | The name of the client, unique in workspace | string | yes |
+| wid | The workspace ID, where the client will be used | integer | yes |
+| notes | Notes for the client | string | optional |
+| at | The timestamp that is sent in the response, indicates the time client was last updated | string (date and time) | no |
+
+### Path parameters
+
+| Path parameter | Description |
+|:-------------:|:---------------:|
+|{client_id}|Id of the client, which must be retrieved, updated or deleted|
 
 ## Create a client
 
