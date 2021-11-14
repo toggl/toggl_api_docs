@@ -91,6 +91,8 @@ The Toggl API has moved to Github so you could actively participate in helping u
 ## 3rd party apps
 * [Federico Vaga](https://github.com/FedericoVaga) has written a little plasmoid for KDE: https://github.com/FedericoVaga/plasmoggl (on opendesktop: http://opendesktop.org/content/show.php/Plasmoggl?content=168536)
 * [rocketbase-io](https://github.com/rocketbase-io/toggl-reporter) has written a tiny SpringBoot-Application, build with vaadin and mongodb, that pulls your TimeEntries from toggl. The stored information allow a fine grained reporting and analysis that aren't possible within toggl (like detailed working hours in comparison between team-members and many more). A [docker-image](https://hub.docker.com/r/rocketbaseio/toggl-reporter/) is also provided...
+* [Gustav Tonér](https://github.com/gazab) has written an alternative web client for Toggl Track using React called Togglol: https://github.com/gazab/togglol. It uses a Google 
+Calendar like interface and is available for everyone to use on [https://www.togglol.com](https://www.togglol.com)
 
 ### Perl
 * [Jason Kruczynski](https://github.com/jkruczynski) has written a perl wrapper for the API. It creates and authenticates a session for API V8 or API V2 depending on the URL. It implements a few functions for exporting reports. https://github.com/jkruczynski/Toggl-API-Wrapper-Perl
