@@ -1,16 +1,17 @@
 Toggl API Documentation
 ====================
 
-> :warning: **Using the API from toggl.com or www.toggl.com will be dropped at The End of June 2021. Switch to api.track.toggl.com**
-
-Toggl API is divided into two
+Toggl API is divided into three:
 
 * [Toggl API](toggl_api.md)
 * [Reports API](reports.md)
+* [Webhooks API](webhooks.md)
 
 For changing data, including tracking time, you'll need to use the **Toggl API**.
 
 If you want to get time entries of all the workspace users and aggregated data for reporting, you need to use the read-only **Reports API**, which gives you many options for filtering, grouping and sorting.
+
+For monitoring data changes in a workspace, you'll need the **Webhooks API**.
 
 ## The API Format
 
