@@ -1,6 +1,12 @@
 Toggl Webhooks API v1
 =====================
 
+### Important
+
+This document has been migrated to https://developers.track.toggl.com/docs/webhooks_start
+
+----
+
 Here you can get the general information about how to use Toggl Webhooks API: how to authenticate, create and list webhooks subscription, validate their URL endpoints and validate the received payloads.
 
 ## Authentication
