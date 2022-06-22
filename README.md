@@ -3,7 +3,7 @@ Toggl API Documentation
 
 ## Important
 
-We're moving to https://developers.track.toggl.space/docs/ where you will find up-to date docs for both the Toggl API and Webhooks API services.
+We're moving to https://developers.track.toggl.com/docs/ where you will find up-to date docs for both the Toggl API and Webhooks API services.
 
 In the meanwhile you can continue using these docs for the Reports API.
 
