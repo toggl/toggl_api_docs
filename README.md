@@ -1,11 +1,11 @@
 Toggl API Documentation
 ====================
 
-## Important
+## ⚠️ Important ⚠️
 
-We're moving to https://developers.track.toggl.com/docs/ where you will find up-to date docs for both the Toggl API and Webhooks API services.
+We're moving our documentation to https://developers.track.toggl.com/docs/ where you will find up-to date docs for both the Toggl API and Webhooks API services. We're also working on moving the Reports API documentation soon, but for now this repository can still be used for the Reports API.
 
-In the meanwhile you can continue using these docs for the Reports API.
+If you're running into issues or require help with anything, please contact our dedicated 24/5 support staff over on [our support pages](https://support.toggl.com/en/). You can chat with them using the icon on the right bottom.
 
 ----
 
