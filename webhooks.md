@@ -131,7 +131,7 @@ curl -u {api_token}:api_token \
         "url_callback": "{url_callback}",
         "event_filters": [
             {"entity": "*", "action": "*"}
-        ]
+        ],
         "enabled": true,
         "secret": "new secret string",
         "description": "My first Webhooks subscription"
